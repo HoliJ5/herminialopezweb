@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Herminia López</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+        
+        /* Tipografías fluidas y proporcionales */
+        .h1-fluido {
+            font-size: clamp(2rem, 5.5vw, 3.75rem);
+        }
+        .p-fluido {
+            font-size: clamp(0.95rem, 2vw, 1.125rem);
+        }
+    </style>
+</head>
+<body id="pagina-inicio" class="opacity-0 transition-opacity duration-500 ease-in-out bg-[#fafafa] text-[#1c1c1c] font-sans antialiased flex flex-col min-h-screen text-base">
+    <div id="nav-placeholder"></div>
+
+    <main class="flex-grow flex items-end justify-center px-4 sm:px-6 bg-cover bg-center bg-no-repeat relative bg-[url('img/principales/FotoPortadaMovil2.webp')] md:bg-[url('img/principales/fotoPortada.webp')]">
+        
+        <div class="absolute inset-0 bg-black/45 z-10"></div>
+
+        <header class="max-w-4xl mx-auto py-12 md:py-20 text-center relative z-20 text-white">
+            <h1 class="font-serif h1-fluido font-normal leading-tight max-w-3xl mx-auto mb-6 drop-shadow-md">
+                Explorando la luz, la textura y el lienzo contemporáneo.
+            </h1>
+            <p class="text-neutral-200 max-w-lg mx-auto p-fluido font-light mb-8 md:mb-10 drop-shadow-sm">
+                Portafolio digital de obras originales, óleo sobre lienzo y colecciones de arte abstracto.
+            </p>
+            <a href="galeria.html" class="inline-block border border-white text-white px-6 py-3 sm:px-8 sm:py-3.5 uppercase tracking-widest text-[10px] sm:text-xs font-semibold hover:bg-white hover:text-neutral-900 transition-colors bg-black/10 backdrop-blur-xs">
+                Ver las obras
+            </a>
+        </header>
+    </main>
+
+    <div id="footer-placeholder" class="mt-auto"></div>
+
+    <script src="componentes.js"></script>
+</body>
+</html>

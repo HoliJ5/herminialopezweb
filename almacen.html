@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacén | Herminia López</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+        
+        .titulo-fluido {
+            font-size: clamp(1.75rem, 4vw, 3rem);
+        }
+    </style>
+</head>
+<body class="opacity-0 transition-opacity duration-500 ease-in-out bg-[#fafafa] text-[#1c1c1c] font-sans antialiased flex flex-col min-h-screen text-base">
+
+    <div id="nav-placeholder"></div>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12 w-full">
+        <h2 class="font-serif titulo-fluido font-normal mb-8 md:mb-10 text-center">Obras en venta</h2>
+        <div id="almacen-contenedor" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"></div>
+    </main>
+
+    <div id="footer-placeholder" class="mt-auto"></div>
+
+    <div id="modal-obra" class="fixed inset-0 bg-black/95 z-50 flex items-center justify-center hidden" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+        <button id="modal-cerrar" class="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/80 hover:text-white text-3xl sm:text-4xl font-light leading-none transition-colors z-50" aria-label="Cerrar vista completa">&times;</button>
+        
+        <div class="relative max-w-4xl max-h-[95vh] w-full px-4 flex flex-col items-center justify-center overflow-y-auto py-6">
+            <!-- Imagen principal con altura fija para evitar saltos y movimientos del contenido -->
+            <img id="modal-imagen" src="" alt="" class="w-full h-[50vh] sm:h-[60vh] object-contain transition-opacity duration-300">
+            <div id="modal-miniaturas" class="flex gap-2 sm:gap-3 mt-4 sm:mt-6 overflow-x-auto max-w-full pb-2 scrollbar-none"></div>
+
+            <div id="modal-info" class="text-center text-white mt-4 max-w-xl px-2">
+                <h3 id="modal-titulo" class="font-serif text-xl sm:text-2xl font-medium"></h3>
+                <p id="modal-detalles" class="text-xs sm:text-sm text-neutral-300 mt-1"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="componentes.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contenedor = document.getElementById('almacen-contenedor');
+            const modal = document.getElementById('modal-obra');
+            const modalImagen = document.getElementById('modal-imagen');
+            const modalTitulo = document.getElementById('modal-titulo');
+            const modalDetalles = document.getElementById('modal-detalles');
+            const modalCerrar = document.getElementById('modal-cerrar');
+            const modalMiniaturas = document.getElementById('modal-miniaturas');
+
+            function abrirModal(obra) {
+                modalImagen.src = obra.imagen;
+                modalImagen.alt = obra.titulo;
+                modalTitulo.textContent = obra.titulo;
+                modalDetalles.textContent = `${obra.tecnica} — ${obra.anio}`;
+                modalMiniaturas.innerHTML = '';
+
+                const todasLasImagenes = [obra.imagen];
+                if (obra.imagenes && obra.imagenes.length > 0) {
+                    todasLasImagenes.push(...obra.imagenes);
+                }
+
+                if (todasLasImagenes.length > 1) {
+                    todasLasImagenes.forEach((imgSrc, index) => {
+                        const thumb = document.createElement('img');
+                        thumb.src = imgSrc;
+                        thumb.alt = `Vista ${index + 1} de ${obra.titulo}`;
+                        thumb.className = 'w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 object-cover cursor-pointer border-2 transition-all duration-200';
+                        
+                        if (index === 0) {
+                            thumb.classList.add('border-white', 'opacity-100');
+                        } else {
+                            thumb.classList.add('border-transparent', 'opacity-50', 'hover:opacity-100');
+                        }
+                        
+                        thumb.addEventListener('click', () => {
+                            modalImagen.src = imgSrc;
+                            Array.from(modalMiniaturas.children).forEach(t => {
+                                t.classList.remove('border-white', 'opacity-100');
+                                t.classList.add('border-transparent', 'opacity-50', 'hover:opacity-100');
+                            });
+                            thumb.classList.remove('border-transparent', 'opacity-50', 'hover:opacity-100');
+                            thumb.classList.add('border-white', 'opacity-100');
+                        });
+
+                        modalMiniaturas.appendChild(thumb);
+                    });
+                }
+
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function cerrarModal() {
+                modal.classList.add('hidden');
+                modalImagen.src = '';
+                modalMiniaturas.innerHTML = '';
+                document.body.style.overflow = '';
+            }
+
+            fetch('obras.json')
+                .then(res => res.json())
+                .then(obras => {
+                    const obrasAlmacen = obras.filter(obra => obra.almacen === 1);
+                    obrasAlmacen.forEach(obra => {
+                        const obraElement = document.createElement('div');
+                        obraElement.className = 'group cursor-pointer w-full';
+                        obraElement.innerHTML = `
+                            <div class="overflow-hidden bg-neutral-100 aspect-[4/5] relative mb-3 rounded-sm">
+                                <img src="${obra.imagen}" alt="${obra.titulo}" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                            </div>
+                            <h3 class="font-serif text-base sm:text-lg font-medium text-neutral-800">${obra.titulo}</h3>
+                            <p class="text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-0.5">${obra.tecnica} — ${obra.anio}</p>
+                            <p class="text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-0.5">${obra.precio.toFixed(2)}€</p>
+                        `;
+                        obraElement.addEventListener('click', () => abrirModal(obra));
+                        contenedor.appendChild(obraElement);
+                    });
+                }).catch(err => console.error("Error al cargar almacén:", err));
+
+            modalCerrar.addEventListener('click', cerrarModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) cerrarModal();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    cerrarModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

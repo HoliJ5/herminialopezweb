@@ -1,0 +1,28 @@
+[
+  {
+    "subtipo": "acuarela",
+    "tipo": "cuadro",
+    "descripcion": "Los cuadros de <strong>acuarela</strong> les pasa que blabla bla y era se una vez una persona que bla bla bla",
+    "imagenes": [
+      "img/cuadro1.webp",
+      "img/cuadro2.webp"
+    ]
+  }, 
+  {
+    "subtipo": "artatak",
+    "tipo": "cuadro",
+    "descripcion": "Los cuadros de artatak les pasa que blabla bla y era se una vez una persona que bla bla bla",
+    "imagenes": [
+      "img/cuadro5.webp"
+    ]
+  },
+  {
+    "subtipo": "desierto",
+    "tipo": "cuadro",
+    "descripcion": "Los cuadros de desierto les pasa que blabla bla y era se una vez una persona que bla bla bla",
+    "imagenes": [
+      "img/cuadro6.webp",
+      "img/cuadro7.webp"
+    ]
+  }
+]

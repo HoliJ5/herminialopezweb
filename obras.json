@@ -1,0 +1,60 @@
+[
+  {
+    "titulo": "Fragmentos del Tiempo",
+    "tecnica": "Óleo sobre lienzo",
+    "anio": "2026",
+    "imagen": "img/cuadro1.webp",
+    "imagenes": [
+      "img/cuadro1-2.webp"
+    ],
+    "tipo": "cuadro",
+    "subtipo": "acuarela",
+    "almacen":1,
+    "precio": 20
+  },
+  {
+    "titulo": "Fragmentos",
+    "tecnica": "Óleo sobre lienzo",
+    "anio": "2026",
+    "imagen": "img/cuadro2.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "acuarela",
+    "almacen":1,
+    "precio": 45
+  },
+  {
+    "titulo": "Aguacate",
+    "tecnica": "Comida",
+    "anio": "2025",
+    "imagen": "img/cuadro4.webp",
+    "imagenes": [
+    ],
+    "tipo": "cuadro",
+    "almacen":1,
+    "precio": 2
+  },
+  {
+    "titulo": "Sinfonía en Azul",
+    "tecnica": "Acrílico y texturas",
+    "anio": "2025",
+    "imagen": "img/cuadro3.webp",
+    "imagenes": [
+    ],
+    "tipo": "ropa",
+    "subtipo": "abanico",
+    "almacen":1,
+    "precio": 20
+  },
+  {
+    "titulo": "Sns",
+    "tecnica": "Acrílico y texturas",
+    "anio": "2025",
+    "imagen": "img/cuadro6.webp",
+    "imagenes": [
+    ],
+    "tipo": "cuadro",
+    "subtipo": "desierto",
+    "almacen":0
+  }
+]
