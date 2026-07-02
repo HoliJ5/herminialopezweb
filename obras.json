@@ -1,60 +1,310 @@
 [
   {
-    "titulo": "Fragmentos del Tiempo",
+    "titulo": "Ana",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/Ana.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Ana Cara",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/AnaCara.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Ana Esperanza",
+    "tecnica": "Carboncillo",
+    "anio": "2026",
+    "imagen": "img/Ana-esperanza.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Grafito y Carboncillo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Ana y Laura",
+    "tecnica": "Lápiz",
+    "anio": "2026",
+    "imagen": "img/AnaYLaura.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Lápiz",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Bebé",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/bebe.webp",
+    "imagenes": [
+      "img/bebe_1.webp"
+    ],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Cuadro 1",
     "tecnica": "Óleo sobre lienzo",
     "anio": "2026",
     "imagen": "img/cuadro1.webp",
     "imagenes": [
       "img/cuadro1-2.webp"
     ],
-    "tipo": "cuadro",
-    "subtipo": "acuarela",
-    "almacen":1,
-    "precio": 20
+    "tipo": "ropa",
+    "subtipo": "Óleo",
+    "almacen": 0,
+    "precio": 0
   },
   {
-    "titulo": "Fragmentos",
+    "titulo": "Cuadro 2",
     "tecnica": "Óleo sobre lienzo",
     "anio": "2026",
     "imagen": "img/cuadro2.webp",
     "imagenes": [],
-    "tipo": "cuadro",
-    "subtipo": "acuarela",
-    "almacen":1,
-    "precio": 45
-  },
-  {
-    "titulo": "Aguacate",
-    "tecnica": "Comida",
-    "anio": "2025",
-    "imagen": "img/cuadro4.webp",
-    "imagenes": [
-    ],
-    "tipo": "cuadro",
-    "almacen":1,
-    "precio": 2
-  },
-  {
-    "titulo": "Sinfonía en Azul",
-    "tecnica": "Acrílico y texturas",
-    "anio": "2025",
-    "imagen": "img/cuadro3.webp",
-    "imagenes": [
-    ],
     "tipo": "ropa",
-    "subtipo": "abanico",
-    "almacen":1,
-    "precio": 20
+    "subtipo": "Óleo",
+    "almacen": 0,
+    "precio": 0
   },
   {
-    "titulo": "Sns",
-    "tecnica": "Acrílico y texturas",
-    "anio": "2025",
+    "titulo": "Cuadro 3",
+    "tecnica": "Óleo sobre lienzo",
+    "anio": "2026",
+    "imagen": "img/cuadro3.webp",
+    "imagenes": [],
+    "tipo": "ropa",
+    "subtipo": "Óleo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Cuadro 4",
+    "tecnica": "Óleo sobre lienzo",
+    "anio": "2026",
+    "imagen": "img/cuadro4.webp",
+    "imagenes": [],
+    "tipo": "ropa",
+    "subtipo": "Óleo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Cuadro 5",
+    "tecnica": "Óleo sobre lienzo",
+    "anio": "2026",
+    "imagen": "img/cuadro5.webp",
+    "imagenes": [],
+    "tipo": "ropa",
+    "subtipo": "Óleo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Cuadro 6",
+    "tecnica": "Óleo sobre lienzo",
+    "anio": "2026",
     "imagen": "img/cuadro6.webp",
+    "imagenes": [],
+    "tipo": "ropa",
+    "subtipo": "Óleo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Cuadro 7",
+    "tecnica": "Óleo sobre lienzo",
+    "anio": "2026",
+    "imagen": "img/cuadro7.webp",
+    "imagenes": [],
+    "tipo": "ropa",
+    "subtipo": "Óleo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Cuadro 8",
+    "tecnica": "Óleo sobre lienzo",
+    "anio": "2026",
+    "imagen": "img/cuadro8.webp",
+    "imagenes": [],
+    "tipo": "ropa",
+    "subtipo": "Óleo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Cuadro 9",
+    "tecnica": "Óleo sobre lienzo",
+    "anio": "2026",
+    "imagen": "img/cuadro9.webp",
+    "imagenes": [],
+    "tipo": "ropa",
+    "subtipo": "Óleo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "El Carmen",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/ElCarmen.webp",
     "imagenes": [
+      "img/ElCarmen_1.webp"
     ],
     "tipo": "cuadro",
-    "subtipo": "desierto",
-    "almacen":0
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Elena",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/Elena.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Enrique",
+    "tecnica": "Grafito",
+    "anio": "2026",
+    "imagen": "img/Enrique.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Grafito y Carboncillo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Eva",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/Eva.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Jose Antonio",
+    "tecnica": "Carboncillo",
+    "anio": "2026",
+    "imagen": "img/JoseAntonio.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Grafito y Carboncillo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Laura",
+    "tecnica": "Grafito",
+    "anio": "2026",
+    "imagen": "img/Laura.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Grafito y Carboncillo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Laura y Ara",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/LauraYAra.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Lucía",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/Lucia.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Lucía Esperanza",
+    "tecnica": "Carboncillo",
+    "anio": "2026",
+    "imagen": "img/Lucia-esperanza.webp",
+    "imagenes": [
+      "img/Lucia-esperanza_1.webp"
+    ],
+    "tipo": "cuadro",
+    "subtipo": "Grafito y Carboncillo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Luismi",
+    "tecnica": "Grafito",
+    "anio": "2026",
+    "imagen": "img/Luismi.webp",
+    "imagenes": [
+      "img/Luismi_1.webp",
+      "img/Luismi_2.webp"
+    ],
+    "tipo": "cuadro",
+    "subtipo": "Grafito y Carboncillo",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Manolo",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/Manolo.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Noa",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/Noa.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Perritos",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/Perritos.webp",
+    "imagenes": [],
+    "tipo": "cuadro",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
   }
 ]
