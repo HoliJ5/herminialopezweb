@@ -3,16 +3,17 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         .font-montserrat { font-family: 'Montserrat', sans-serif; }
     </style>
-
 </head>
 <nav class="sticky top-0 z-40 bg-[#726260]/80 backdrop-blur-md border-b border-[#726260] px-4 sm:px-6 py-3 sm:py-4 w-full">
-    <div class="max-w-8xl mx-auto flex flex-col sm:flex-row gap-3 sm:gap-0 items-center justify-between w-full">
+    <!-- Cambiado sm:flex-row por md:flex-row y añadido md:gap-8 para separación mínima -->
+    <div class="max-w-8xl mx-auto flex flex-col md:flex-row gap-3 md:gap-8 lg:gap-12 items-center justify-between w-full">
         
         <a href="index.html" class="font-montserrat text-lg sm:text-xl font-semibold tracking-widest flex-shrink-0 text-[#2b1f28]">
             HERMINIA LÓPEZ
         </a>
         
-        <div id="enlaces-menu" class="flex items-center justify-center sm:justify-end gap-x-4 md:gap-x-6 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-200 max-w-full overflow-x-auto whitespace-nowrap scrollbar-none w-full sm:w-auto">
+        <!-- Cambiado sm:justify-end a md:justify-end y sm:w-auto a md:w-auto -->
+        <div id="enlaces-menu" class="flex items-center justify-center md:justify-end gap-x-4 md:gap-x-6 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-200 max-w-full overflow-x-auto whitespace-nowrap scrollbar-none w-full md:w-auto">
              <a href="index.html" class="hover:text-[#4b262a] transition-colors py-1">Inicio</a>
              <a href="galeria.html" class="hover:text-[#4b262a] transition-colors py-1">Galería</a>
              <a href="almacen.html" class="hover:text-[#4b262a] transition-colors py-1">Almacén</a>

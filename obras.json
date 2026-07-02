@@ -34,12 +34,12 @@
   },
   {
     "titulo": "Ana y Laura",
-    "tecnica": "Lápiz",
+    "tecnica": "Grafito",
     "anio": "2026",
     "imagen": "img/AnaYLaura.webp",
     "imagenes": [],
     "tipo": "cuadro",
-    "subtipo": "Lápiz",
+    "subtipo": "Grafito y Carboncillo",
     "almacen": 0,
     "precio": 0
   },
@@ -216,12 +216,12 @@
   },
   {
     "titulo": "Laura",
-    "tecnica": "Grafito",
+    "tecnica": "Tinta",
     "anio": "2026",
     "imagen": "img/Laura.webp",
     "imagenes": [],
     "tipo": "cuadro",
-    "subtipo": "Grafito y Carboncillo",
+    "subtipo": "Tinta",
     "almacen": 0,
     "precio": 0
   },
@@ -287,12 +287,12 @@
   },
   {
     "titulo": "Noa",
-    "tecnica": "Acuarela",
+    "tecnica": "Acrilico",
     "anio": "2026",
     "imagen": "img/Noa.webp",
     "imagenes": [],
     "tipo": "cuadro",
-    "subtipo": "Acuarela",
+    "subtipo": "Acrilico",
     "almacen": 0,
     "precio": 0
   },

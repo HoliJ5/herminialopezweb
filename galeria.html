@@ -9,7 +9,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
         .font-serif { font-family: 'Playfair Display', serif; }
         .font-sans { font-family: 'Inter', sans-serif; }
-        /* Tipografía fluida usando clamp() y rem/vw para el título en pantallas gigantes */
         .titulo-fluido {
             font-size: clamp(1.75rem, 4vw, 3rem);
         }
@@ -43,16 +42,25 @@
     <div id="modal-obra" class="fixed inset-0 bg-black/95 z-50 flex items-center justify-center hidden" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
         <button id="modal-cerrar" class="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/80 hover:text-white text-3xl sm:text-4xl font-light leading-none transition-colors z-50" aria-label="Cerrar vista completa">&times;</button>
         
-        <div class="relative max-w-4xl max-h-[95vh] w-full px-4 flex flex-col items-center justify-center overflow-y-auto py-6">
+        <button id="modal-prev" class="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 text-white/50 hover:text-white text-5xl sm:text-7xl font-light transition-colors z-50 hidden select-none" aria-label="Imagen anterior">&lsaquo;</button>
+        <button id="modal-next" class="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 text-white/50 hover:text-white text-5xl sm:text-7xl font-light transition-colors z-50 hidden select-none" aria-label="Siguiente imagen">&rsaquo;</button>
+
+        <div class="relative max-w-4xl max-h-[95vh] w-full px-4 flex flex-col items-center justify-center overflow-y-auto py-6" id="modal-area-deslizable">
             
-            <!-- Imagen principal con altura fija para evitar saltos y movimientos del contenido -->
-            <img id="modal-imagen" src="" alt="" class="w-full h-[50vh] sm:h-[60vh] object-contain transition-opacity duration-300">
+            <img id="modal-imagen" src="" alt="" class="w-full h-[50vh] sm:h-[60vh] object-contain transition-opacity duration-300 select-none pointer-events-none sm:pointer-events-auto">
             
             <div id="modal-miniaturas" class="flex gap-2 sm:gap-3 mt-4 sm:mt-6 overflow-x-auto max-w-full pb-2 scrollbar-none"></div>
 
-            <div id="modal-info" class="text-center text-white mt-4 max-w-xl px-2">
+            <div id="modal-info" class="text-center text-white mt-4 max-w-xl px-2 flex flex-col items-center">
                 <h3 id="modal-titulo" class="font-serif text-xl sm:text-2xl font-medium"></h3>
                 <p id="modal-detalles" class="text-xs sm:text-sm text-neutral-300 mt-1"></p>
+                
+                <a id="modal-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-4 text-xs sm:text-sm font-medium text-white hover:text-[#25D366] bg-white/10 hover:bg-white/20 px-5 py-2 rounded-full transition-all duration-300 border border-white/20 hover:border-[#25D366]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                    </svg>
+                    Solicitar presupuesto
+                </a>
             </div>
             
         </div>
@@ -68,52 +76,89 @@
             const modalDetalles = document.getElementById('modal-detalles');
             const modalCerrar = document.getElementById('modal-cerrar');
             const modalMiniaturas = document.getElementById('modal-miniaturas');
+            const modalWhatsapp = document.getElementById('modal-whatsapp'); // Capturamos el nuevo botón
+            
+            const btnPrev = document.getElementById('modal-prev');
+            const btnNext = document.getElementById('modal-next');
+            const areaDeslizable = document.getElementById('modal-area-deslizable');
 
             let obrasData = [];
             let infoData = [];
             let filtroActual = 'todos';
             let subfiltroActual = 'todos';
 
+            let imagenesModalActuales = [];
+            let indiceModalActual = 0;
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            function actualizarVistaModal() {
+                modalImagen.src = imagenesModalActuales[indiceModalActual];
+                
+                Array.from(modalMiniaturas.children).forEach((thumb, index) => {
+                    if (index === indiceModalActual) {
+                        thumb.classList.remove('border-transparent', 'opacity-50', 'hover:opacity-100');
+                        thumb.classList.add('border-white', 'opacity-100');
+                    } else {
+                        thumb.classList.add('border-transparent', 'opacity-50', 'hover:opacity-100');
+                        thumb.classList.remove('border-white', 'opacity-100');
+                    }
+                });
+            }
+
+            function cambiarImagenModal(direccion) {
+                if (imagenesModalActuales.length <= 1) return;
+                
+                indiceModalActual += direccion;
+                if (indiceModalActual >= imagenesModalActuales.length) indiceModalActual = 0;
+                if (indiceModalActual < 0) indiceModalActual = imagenesModalActuales.length - 1;
+                
+                actualizarVistaModal();
+            }
+
             function abrirModal(obra) {
-                modalImagen.src = obra.imagen;
+                imagenesModalActuales = [obra.imagen];
+                if (obra.imagenes && obra.imagenes.length > 0) {
+                    imagenesModalActuales.push(...obra.imagenes);
+                }
+                indiceModalActual = 0;
+
                 modalImagen.alt = obra.titulo;
                 modalTitulo.textContent = obra.titulo;
                 modalDetalles.textContent = `${obra.tecnica} — ${obra.anio}`;
+                
+                // NUEVO: Configurar el enlace de WhatsApp dinámico
+                const numeroWhatsApp = "34644241265";
+                const mensaje = encodeURIComponent(`¡Hola! Me gustaría solicitar un presupuesto".`);
+                modalWhatsapp.href = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+
                 modalMiniaturas.innerHTML = '';
 
-                const todasLasImagenes = [obra.imagen];
-                if (obra.imagenes && obra.imagenes.length > 0) {
-                    todasLasImagenes.push(...obra.imagenes);
+                if (imagenesModalActuales.length > 1) {
+                    btnPrev.classList.remove('hidden');
+                    btnNext.classList.remove('hidden');
+                } else {
+                    btnPrev.classList.add('hidden');
+                    btnNext.classList.add('hidden');
                 }
 
-                if (todasLasImagenes.length > 1) {
-                    todasLasImagenes.forEach((imgSrc, index) => {
+                if (imagenesModalActuales.length > 1) {
+                    imagenesModalActuales.forEach((imgSrc, index) => {
                         const thumb = document.createElement('img');
                         thumb.src = imgSrc;
                         thumb.alt = `Vista ${index + 1} de ${obra.titulo}`;
-                        // Tamaño de miniatura adaptable (rem/px controlado mediante Tailwind)
                         thumb.className = 'w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 object-cover cursor-pointer border-2 transition-all duration-200';
                         
-                        if (index === 0) {
-                            thumb.classList.add('border-white', 'opacity-100');
-                        } else {
-                            thumb.classList.add('border-transparent', 'opacity-50', 'hover:opacity-100');
-                        }
-                        
                         thumb.addEventListener('click', () => {
-                            modalImagen.src = imgSrc;
-                            Array.from(modalMiniaturas.children).forEach(t => {
-                                t.classList.remove('border-white', 'opacity-100');
-                                t.classList.add('border-transparent', 'opacity-50', 'hover:opacity-100');
-                            });
-                            thumb.classList.remove('border-transparent', 'opacity-50', 'hover:opacity-100');
-                            thumb.classList.add('border-white', 'opacity-100');
+                            indiceModalActual = index;
+                            actualizarVistaModal();
                         });
 
                         modalMiniaturas.appendChild(thumb);
                     });
                 }
 
+                actualizarVistaModal();
                 modal.classList.remove('hidden');
                 document.body.style.overflow = 'hidden';
             }
@@ -123,6 +168,34 @@
                 modalImagen.src = '';
                 modalMiniaturas.innerHTML = '';
                 document.body.style.overflow = '';
+            }
+
+            btnPrev.addEventListener('click', (e) => {
+                e.stopPropagation();
+                cambiarImagenModal(-1);
+            });
+            btnNext.addEventListener('click', (e) => {
+                e.stopPropagation();
+                cambiarImagenModal(1);
+            });
+
+            areaDeslizable.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            areaDeslizable.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                manejarSwipe();
+            }, { passive: true });
+
+            function manejarSwipe() {
+                const umbral = 50;
+                if (touchEndX < touchStartX - umbral) {
+                    cambiarImagenModal(1);
+                }
+                if (touchEndX > touchStartX + umbral) {
+                    cambiarImagenModal(-1);
+                }
             }
 
             function renderizerSubfiltros() {
@@ -180,7 +253,6 @@
                 });
 
                 infoFiltrada.forEach((info, index) => {
-                    // En móvil se apilan en columna (flex-col). Desde pantallas medianas alternan dirección.
                     const direccionFlex = index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse';
 
                     let collageHtml = '';
@@ -201,7 +273,6 @@
                     const bloqueInfo = document.createElement('div');
                     bloqueInfo.className = `flex flex-col ${direccionFlex} gap-6 md:gap-12 items-center w-full`;
                     
-                    // Interpretación nativa de innerHTML para admitir etiquetas <strong> en info.json
                     bloqueInfo.innerHTML = `
                         <div class="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left">
                             <h3 class="font-serif text-2xl sm:text-3xl font-medium mb-3 capitalize text-neutral-800">${info.subtipo}</h3>
@@ -277,7 +348,6 @@
                 aplicarFiltro(); 
             });
 
-            // Promesas paralelas para cargar ambos JSON de manera óptima
             Promise.all([
                 fetch('obras.json').then(res => res.json()),
                 fetch('info.json').then(res => res.json())
@@ -289,12 +359,16 @@
             }).catch(err => console.error("Error cargando los datos de la galería:", err));
 
             modalCerrar.addEventListener('click', cerrarModal);
+            
             modal.addEventListener('click', (e) => {
-                if (e.target === modal) cerrarModal();
+                if (e.target === modal || e.target.id === 'modal-area-deslizable') cerrarModal();
             });
+            
             document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-                    cerrarModal();
+                if (!modal.classList.contains('hidden')) {
+                    if (e.key === 'Escape') cerrarModal();
+                    if (e.key === 'ArrowLeft') cambiarImagenModal(-1);
+                    if (e.key === 'ArrowRight') cambiarImagenModal(1);
                 }
             });
         });

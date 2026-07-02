@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // 1. Cargar el Navbar y aplicar la lógica de ocultar enlaces en móvil SOLO en inicio
-// 1. Cargar el Navbar
     cargarComponente('nav-placeholder', 'nav.html', () => {
         // Lógica de móvil para inicio
         if (document.body.id === 'pagina-inicio') {
@@ -37,8 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.remove('opacity-0');
     });
 
-    // 2. Cargar el Footer (no necesita lógica extra, así que no le pasamos callback)
-    cargarComponente('footer-placeholder', 'footer.html');
+    // 2. Lógica para el Footer
+    if (document.body.id !== 'pagina-inicio') {
+        // Si NO es inicio, cargamos el footer normalmente
+        cargarComponente('footer-placeholder', 'footer.html');
+    } else {
+        // Si SÍ es inicio, eliminamos el placeholder del HTML para que no reserve espacio en blanco
+        const footerPlaceholder = document.getElementById('footer-placeholder');
+        if (footerPlaceholder) {
+            footerPlaceholder.remove();
+        }
+    }
 
     // 3. Lógica para el botón de WhatsApp
     // Verificamos el ID del body. Si NO es "pagina-inicio", entonces inyectamos el botón.
@@ -50,6 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(waContainer);
         
         // Llamamos a la función fetch para cargar el botón dentro de este nuevo contenedor
-        cargarComponente('whatsapp-placeholder', 'btnWhatsApp.html');
+        cargarComponente('whatsapp-placeholder', './btnWhatsapp.html');
     }
 });
