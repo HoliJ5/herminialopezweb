@@ -22,10 +22,8 @@
         
         <h2 class="font-serif titulo-fluido font-normal mb-6 text-center">Galeria</h2>
         
-        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-4">
-            <button id="btn-todos" class="bg-transparent hover:text-[#4b262a] transition-colors py-1">Mostrar todos</button>
-            <button id="btn-cuadros" class="bg-transparent hover:text-[#4b262a] transition-colors py-1">Cuadros</button>
-            <button id="btn-ropa" class="bg-transparent hover:text-[#4b262a] transition-colors py-1">Ropa</button>
+        <!-- CONTENEDOR DE FILTROS PRINCIPALES (Ahora dinámico) -->
+        <div id="filtros-contenedor" class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-4">
         </div>
 
         <div id="subfiltros-contenedor" class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[11px] sm:text-xs font-medium tracking-wide uppercase text-neutral-400 mb-8 hidden">
@@ -76,7 +74,7 @@
             const modalDetalles = document.getElementById('modal-detalles');
             const modalCerrar = document.getElementById('modal-cerrar');
             const modalMiniaturas = document.getElementById('modal-miniaturas');
-            const modalWhatsapp = document.getElementById('modal-whatsapp'); // Capturamos el nuevo botón
+            const modalWhatsapp = document.getElementById('modal-whatsapp');
             
             const btnPrev = document.getElementById('modal-prev');
             const btnNext = document.getElementById('modal-next');
@@ -127,9 +125,8 @@
                 modalTitulo.textContent = obra.titulo;
                 modalDetalles.textContent = `${obra.tecnica} — ${obra.anio}`;
                 
-                // NUEVO: Configurar el enlace de WhatsApp dinámico
                 const numeroWhatsApp = "34644241265";
-                const mensaje = encodeURIComponent(`¡Hola! Me gustaría solicitar un presupuesto".`);
+                const mensaje = encodeURIComponent(`¡Hola! Me gustaría solicitar un presupuesto.`);
                 modalWhatsapp.href = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
 
                 modalMiniaturas.innerHTML = '';
@@ -188,14 +185,44 @@
                 manejarSwipe();
             }, { passive: true });
 
-            function manejarSwipe() {
-                const umbral = 50;
-                if (touchEndX < touchStartX - umbral) {
-                    cambiarImagenModal(1);
-                }
-                if (touchEndX > touchStartX + umbral) {
-                    cambiarImagenModal(-1);
-                }
+            // NUEVA FUNCIÓN: Generar filtros principales basados en los "tipos" únicos
+            function renderizarFiltrosPrincipales() {
+                const contenedorFiltros = document.getElementById('filtros-contenedor');
+                contenedorFiltros.innerHTML = '';
+
+                // Obtener tipos únicos del array de obras (ignorando valores vacíos)
+                const tiposUnicos = [...new Set(obrasData.map(o => o.tipo).filter(Boolean))];
+
+                // Crear botón de "Mostrar todos"
+                const btnTodos = document.createElement('button');
+                btnTodos.textContent = 'Mostrar todos';
+                btnTodos.className = `bg-transparent hover:text-[#4b262a] transition-colors py-1 ${filtroActual === 'todos' ? 'text-black font-semibold' : ''}`;
+                btnTodos.addEventListener('click', () => {
+                    filtroActual = 'todos';
+                    subfiltroActual = 'todos';
+                    renderizarFiltrosPrincipales(); // Actualiza estilos del botón activo
+                    renderizerSubfiltros();
+                    aplicarFiltro();
+                });
+                contenedorFiltros.appendChild(btnTodos);
+
+                // Crear botón dinámico por cada tipo único
+                tiposUnicos.forEach(tipo => {
+                    const btn = document.createElement('button');
+                    // Capitalizar primera letra (ej: 'cuadro' -> 'Cuadro')
+                    btn.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
+                    btn.className = `bg-transparent hover:text-[#4b262a] transition-colors py-1 ${filtroActual === tipo ? 'text-black font-semibold' : ''}`;
+                    
+                    btn.addEventListener('click', () => {
+                        filtroActual = tipo;
+                        subfiltroActual = 'todos';
+                        renderizarFiltrosPrincipales(); // Actualiza estilos del botón activo
+                        renderizerSubfiltros();
+                        aplicarFiltro();
+                    });
+                    
+                    contenedorFiltros.appendChild(btn);
+                });
             }
 
             function renderizerSubfiltros() {
@@ -307,46 +334,9 @@
                     obraElement.addEventListener('click', () => abrirModal(obra));
                     contenedor.appendChild(obraElement);
                 });
-                actualizarBotones();
+                
                 renderizarInfoSubtipos();
             }
-
-            function actualizarBotones() {
-                const botones = [
-                    { id: 'todos', filtro: 'todos' },
-                    { id: 'cuadros', filtro: 'cuadro' },
-                    { id: 'ropa', filtro: 'ropa' }
-                ];
-                botones.forEach(item => {
-                    const btn = document.getElementById('btn-' + item.id);
-                    if (btn) {
-                        if (filtroActual === item.filtro) {
-                            btn.classList.add('text-black', 'font-semibold');
-                        } else {
-                            btn.classList.remove('text-black', 'font-semibold');
-                        }
-                    }
-                });
-            }
-
-            document.getElementById('btn-todos').addEventListener('click', () => { 
-                filtroActual = 'todos'; 
-                subfiltroActual = 'todos'; 
-                renderizerSubfiltros();
-                aplicarFiltro(); 
-            });
-            document.getElementById('btn-cuadros').addEventListener('click', () => { 
-                filtroActual = 'cuadro'; 
-                subfiltroActual = 'todos'; 
-                renderizerSubfiltros();
-                aplicarFiltro(); 
-            });
-            document.getElementById('btn-ropa').addEventListener('click', () => { 
-                filtroActual = 'ropa'; 
-                subfiltroActual = 'todos'; 
-                renderizerSubfiltros();
-                aplicarFiltro(); 
-            });
 
             Promise.all([
                 fetch('obras.json').then(res => res.json()),
@@ -354,8 +344,12 @@
             ]).then(([obras, info]) => {
                 obrasData = obras;
                 infoData = info;
+                renderizarFiltrosPrincipales(); // <--- Generamos los botones al cargar los datos
                 renderizerSubfiltros();
                 aplicarFiltro();
+                
+                // Mostrar la web suavemente tras cargar los datos
+                document.body.classList.remove('opacity-0');
             }).catch(err => console.error("Error cargando los datos de la galería:", err));
 
             modalCerrar.addEventListener('click', cerrarModal);
