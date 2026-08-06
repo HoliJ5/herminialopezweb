@@ -580,11 +580,22 @@
     "imagen": "img/Jesus-nazareno.webp",
     "imagenes": [
       "img/Jesus-nazareno-1.webp",
-      "img/Jesus-nazareno-medio.webp",
-      "img/Jesus-nazareno-medio_1.webp",
       "img/Jesus-nazareno_2.webp"
     ],
     "tipo": "Ilustraciones personalizadas",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Jesús Nazareno medio",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/Jesus-nazareno-medio.webp",
+    "imagenes": [
+      "img/Jesus-nazareno-medio_1.webp"
+    ],
+    "tipo": "Abanicos artesanales",
     "subtipo": "Acuarela",
     "almacen": 0,
     "precio": 0
@@ -846,8 +857,19 @@
     "anio": "2026",
     "imagen": "img/Olivia.webp",
     "imagenes": [
-      "img/Olivia_1.webp",
-      "img/Olivias.webp",
+      "img/Olivia_1.webp"
+    ],
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "Olivias",
+    "tecnica": "Acuarela",
+    "anio": "2026",
+    "imagen": "img/Olivias.webp",
+    "imagenes": [
       "img/Olivias_1.webp"
     ],
     "tipo": "Abanicos artesanales",
