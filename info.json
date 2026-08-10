@@ -1,28 +1,39 @@
 [
   {
-    "subtipo": "acuarela",
-    "tipo": "cuadro",
-    "descripcion": "Los cuadros de <strong>acuarela</strong> les pasa que blabla bla y era se una vez una persona que bla bla bla",
-    "imagenes": [
-      "img/cuadro1.webp",
-      "img/cuadro2.webp"
-    ]
-  }, 
-  {
-    "subtipo": "artatak",
-    "tipo": "cuadro",
-    "descripcion": "Los cuadros de artatak les pasa que blabla bla y era se una vez una persona que bla bla bla",
-    "imagenes": [
-      "img/cuadro5.webp"
+    "tipo": "Retratos personalizados",
+    "descripcion": "<strong>Selección de retratos</strong> creados a lo largo de los últimos años. La mayoría de estas piezas ya forman parte de colecciones privadas y espacios particulares, pero sirven como muestra e inspiración para dar vida a tu propio encargo a medida.",
+    "obras": [
+      "Angelita",
+      "Carmen"
     ]
   },
   {
-    "subtipo": "desierto",
-    "tipo": "cuadro",
-    "descripcion": "Los cuadros de desierto les pasa que blabla bla y era se una vez una persona que bla bla bla",
-    "imagenes": [
-      "img/cuadro6.webp",
-      "img/cuadro7.webp"
+    "tipo": "Obras pictoricas",
+    "descripcion": "Colección de piezas nacidas de mi propia inspiración y creadas en el taller para su venta directa. Una muestra de mi trabajo personal donde exploro temáticas libres, listas para formar parte de tu hogar.",
+    "obras": [
+      "El Carmen"
+    ]
+  },
+  {
+    "tipo": "Abanicos artesanales",
+    "descripcion": "Abanicos para diario, fines de semana e invitadas de eventos.Mucho más que un accesorio: un gesto pintado a mano sobre auténtico varillaje certificado AEA. Diseños creados tanto para dar un toque especial a tu día a día como para completar tu vestuario de invitada.",
+    "obras": [
+      "Abanico Seda Pájaro"
+    ]
+  },
+  {
+    "tipo": "Bodas y eventos",
+    "descripcion": "Abanicos de novia, bastidores de alianzas, saquitos y limosneras. El valor de los detalles en tus días más señalados. Diseños minuciosos con pincel y aguja en complementos de ceremonia pensados para formar parte de tu historia.",
+    "obras": [
+      "Bastidor Inma y Juan",
+      "Lazo Marina y Jose"
+    ]
+  },
+  {
+    "tipo": "Complementos pintados a mano",
+    "descripcion": "Cojines, ropa y bolsos personalizados. Pinceladas con estilo propio sobre diferentes soportes textiles y artesanales. Una selección de accesorios creados para acompañarte.",
+    "obras": [
+      "Falda Marrón Ramas"
     ]
   }
 ]

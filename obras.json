@@ -1,8 +1,36 @@
 [
   {
+    "titulo": "Amalia y Juan Carlos",
+    "tecnica": "Acuarela",
+    "imagen": "img/Amalia-Juan-Carlos.webp",
+    "imagenes": [
+      "img/Amalia-Juan-Carlos_1.webp",
+      "img/Amalia-Juan-Carlos_2.webp"
+    ],
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
+    "titulo": "El Carmen",
+    "tecnica": "Acuarela",
+    "imagen": "img/ElCarmen.webp",
+    "imagenes": [
+      "img/ElCarmen_1.webp",
+      "img/ElCarmen_2.webp",
+      "img/ElCarmen_3.webp",
+      "img/ElCarmen_4.webp",
+      "img/ElCarmen_5.webp"
+    ],
+    "tipo": "Obras pictoricas",
+    "subtipo": "Acuarela",
+    "almacen": 0,
+    "precio": 0
+  },
+  {
     "titulo": "Abanico Ara",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Abanico-Ara.webp",
     "imagenes": [
       "img/Abanico-Ara_1.webp"
@@ -15,7 +43,6 @@
   {
     "titulo": "Abanico Bordado",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/abanico-bordado.webp",
     "imagenes": [
       "img/abanico-bordado_1.webp",
@@ -29,7 +56,6 @@
   {
     "titulo": "Abanico Cara Virgen",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/abanico-cara-virgen.webp",
     "imagenes": [
       "img/abanico-cara-virgen_1.webp",
@@ -46,7 +72,6 @@
   {
     "titulo": "Abanico Jesús Nazareno",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Abanico-Jesus-nazareno.webp",
     "imagenes": [
       "img/Abanico-Jesus-nazareno_1.webp",
@@ -61,7 +86,6 @@
   {
     "titulo": "Abanico Seda Pájaro",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/abanico-seda-pajaro.webp",
     "imagenes": [
       "img/abanico-seda-pajaro_1.webp",
@@ -75,7 +99,6 @@
   {
     "titulo": "Abanico Virgen Pastora Verde",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Abanico-Virgen-pastora-verde.webp",
     "imagenes": [
       "img/Abanico-Virgen-pastora-verde_1.webp",
@@ -89,7 +112,6 @@
   {
     "titulo": "Abanico Feria",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/abanico_feria.webp",
     "imagenes": [],
     "tipo": "Abanicos artesanales",
@@ -100,7 +122,6 @@
   {
     "titulo": "Álvaro",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Alvaro.webp",
     "imagenes": [
       "img/Alvaro_1.webp"
@@ -111,23 +132,8 @@
     "precio": 0
   },
   {
-    "titulo": "Amalia y Juan Carlos",
-    "tecnica": "Acuarela",
-    "anio": "2026",
-    "imagen": "img/Amalia-Juan-Carlos.webp",
-    "imagenes": [
-      "img/Amalia-Juan-Carlos_1.webp",
-      "img/Amalia-Juan-Carlos_2.webp"
-    ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
-  },
-  {
     "titulo": "Ana Ciudad",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/ana-ciudad_1.webp",
     "imagenes": [
       "img/ana-ciudad.webp",
@@ -141,7 +147,6 @@
   {
     "titulo": "Ana Esperanza",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Ana-esperanza.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -152,7 +157,6 @@
   {
     "titulo": "Ana",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Ana.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -163,7 +167,6 @@
   {
     "titulo": "Ana Cara",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/AnaCara.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -174,7 +177,6 @@
   {
     "titulo": "Ana y Laura",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/AnaYLaura.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -185,7 +187,6 @@
   {
     "titulo": "Angelita",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/angelita.webp",
     "imagenes": [
       "img/angelita_1.webp",
@@ -201,7 +202,6 @@
   {
     "titulo": "Anna Flamenca",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Anna flamenca 1.jpg",
     "imagenes": [
       "img/Anna flamenca 2.jpg",
@@ -215,7 +215,6 @@
   {
     "titulo": "Antonio",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Antonio.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -226,7 +225,6 @@
   {
     "titulo": "Araceli",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Araceli.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -237,7 +235,6 @@
   {
     "titulo": "Aroa",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Aroa.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -248,7 +245,6 @@
   {
     "titulo": "Bastidor Inma y Juan",
     "tecnica": "Pintado a mano",
-    "anio": "2026",
     "imagen": "img/bastidor-Inma-juan.webp",
     "imagenes": [
       "img/bastidor-Inma-juan_1.webp"
@@ -261,7 +257,6 @@
   {
     "titulo": "Bastidor y Saquito Juan y Mari",
     "tecnica": "Pintado a mano",
-    "anio": "2026",
     "imagen": "img/bastidor-saquito-juan-mari.webp",
     "imagenes": [],
     "tipo": "Bodas y eventos",
@@ -272,7 +267,6 @@
   {
     "titulo": "Bolso Hojas Granates",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/bolso-hojas-granates.webp",
     "imagenes": [],
     "tipo": "Complementos pintados a mano",
@@ -283,7 +277,6 @@
   {
     "titulo": "Bolso Mariposas Negras",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/bolso-mariposas-negras.webp",
     "imagenes": [],
     "tipo": "Complementos pintados a mano",
@@ -294,7 +287,6 @@
   {
     "titulo": "Cari",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/cari.webp",
     "imagenes": [
       "img/cari_1.webp",
@@ -308,7 +300,6 @@
   {
     "titulo": "Carmen",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/carmen.webp",
     "imagenes": [
       "img/carmen_1.webp",
@@ -322,7 +313,6 @@
   {
     "titulo": "Carrasquilla",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Carrasquilla.webp",
     "imagenes": [
       "img/Carrasquilla_1.webp"
@@ -335,7 +325,6 @@
   {
     "titulo": "Cazadora Mickey",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/cazador-Mickey.webp",
     "imagenes": [],
     "tipo": "Complementos pintados a mano",
@@ -346,7 +335,6 @@
   {
     "titulo": "Cojín Cuento",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/cojin-cuento.webp",
     "imagenes": [
       "img/cojin-cuento-1.webp",
@@ -361,7 +349,6 @@
   {
     "titulo": "Cojín Flores",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/Cojin_flores.webp",
     "imagenes": [
       "img/Cojin_flores_2.webp"
@@ -374,7 +361,6 @@
   {
     "titulo": "Colibrí y Flores",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Colibri_flores.webp",
     "imagenes": [
       "img/Colibri_flores_2.webp"
@@ -387,7 +373,6 @@
   {
     "titulo": "Converse Mariposa",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/converse-mariposa.webp",
     "imagenes": [
       "img/converse-mariposa_1.webp",
@@ -399,26 +384,8 @@
     "precio": 0
   },
   {
-    "titulo": "El Carmen",
-    "tecnica": "Acuarela",
-    "anio": "2026",
-    "imagen": "img/ElCarmen.webp",
-    "imagenes": [
-      "img/ElCarmen_1.webp",
-      "img/ElCarmen_2.webp",
-      "img/ElCarmen_3.webp",
-      "img/ElCarmen_4.webp",
-      "img/ElCarmen_5.webp"
-    ],
-    "tipo": "Ilustraciones personalizadas",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
-  },
-  {
     "titulo": "Elena",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Elena.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -429,7 +396,6 @@
   {
     "titulo": "Enrique",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Enrique.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -440,7 +406,6 @@
   {
     "titulo": "Esperanza Niña",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/esperanza-nina.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -451,7 +416,6 @@
   {
     "titulo": "Eva",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Eva.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -462,7 +426,6 @@
   {
     "titulo": "Falda Marrón Ramas",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/falda-marron-ramas.webp",
     "imagenes": [],
     "tipo": "Complementos pintados a mano",
@@ -473,7 +436,6 @@
   {
     "titulo": "Falda Negra Garza",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/falda-negra-garza.webp",
     "imagenes": [],
     "tipo": "Complementos pintados a mano",
@@ -484,7 +446,6 @@
   {
     "titulo": "Gabardina Tucán",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/gabardina-tucan.webp",
     "imagenes": [],
     "tipo": "Complementos pintados a mano",
@@ -495,7 +456,6 @@
   {
     "titulo": "Garzas y Bambú",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Garzas-y-bambu.webp",
     "imagenes": [
       "img/Garzas-y-bambu_1.webp",
@@ -509,7 +469,6 @@
   {
     "titulo": "Golondrina Seda",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/golondrina-seda.webp",
     "imagenes": [
       "img/golondrina-seda_1.webp",
@@ -526,7 +485,6 @@
   {
     "titulo": "Golondrinas y Bambú",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Golondrinas-y-bambu.webp",
     "imagenes": [
       "img/Golondrinas-y-bambu_1.webp",
@@ -541,7 +499,6 @@
   {
     "titulo": "Ignacio y Sara",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Ignacio-y-Sara.webp",
     "imagenes": [
       "img/Ignacio-y-Sara_1.webp"
@@ -554,7 +511,6 @@
   {
     "titulo": "Iván y Laura",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Ivan-y-Laura.webp",
     "imagenes": [],
     "tipo": "Bodas y eventos",
@@ -565,7 +521,6 @@
   {
     "titulo": "J Antonio y Noa",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/JAntonio-y-Noa.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -576,13 +531,12 @@
   {
     "titulo": "Jesús Nazareno",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Jesus-nazareno.webp",
     "imagenes": [
       "img/Jesus-nazareno-1.webp",
       "img/Jesus-nazareno_2.webp"
     ],
-    "tipo": "Ilustraciones personalizadas",
+    "tipo": "Retratos personalizados",
     "subtipo": "Acuarela",
     "almacen": 0,
     "precio": 0
@@ -590,7 +544,6 @@
   {
     "titulo": "Jesús Nazareno medio",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Jesus-nazareno-medio.webp",
     "imagenes": [
       "img/Jesus-nazareno-medio_1.webp"
@@ -603,7 +556,6 @@
   {
     "titulo": "José Antonio",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/JoseAntonio.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -614,7 +566,6 @@
   {
     "titulo": "Juan y Esperanza",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Juan-Esperanza.webp",
     "imagenes": [
       "img/Juan-Esperanza_1.webp"
@@ -627,7 +578,6 @@
   {
     "titulo": "Laura, Ara y Lara",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Laura-ara-Lara.webp",
     "imagenes": [
       "img/Laura-ara-Lara_1.webp",
@@ -641,7 +591,6 @@
   {
     "titulo": "Laura",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Laura.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -652,7 +601,6 @@
   {
     "titulo": "Laura y Ara",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/LauraYAra.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -663,7 +611,6 @@
   {
     "titulo": "Lazo Guille",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/lazo-Guille.webp",
     "imagenes": [],
     "tipo": "Bodas y eventos",
@@ -674,7 +621,6 @@
   {
     "titulo": "Lazo Marina y Jose",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/lazo-Marina-y-jose.webp",
     "imagenes": [
       "img/lazo-Marina-y-jose_1.webp",
@@ -691,7 +637,6 @@
   {
     "titulo": "Lazo Olga",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/lazo-Olga.webp",
     "imagenes": [
       "img/lazo-Olga_1.webp",
@@ -705,7 +650,6 @@
   {
     "titulo": "Limosnera Guille",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/limosnera-guille.webp",
     "imagenes": [],
     "tipo": "Bodas y eventos",
@@ -716,7 +660,6 @@
   {
     "titulo": "Lola Vico",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/lola-Vico.webp",
     "imagenes": [
       "img/lola-Vico_1.webp",
@@ -730,7 +673,6 @@
   {
     "titulo": "Lucas",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Lucas.webp",
     "imagenes": [
       "img/Lucas_1.webp"
@@ -743,7 +685,6 @@
   {
     "titulo": "Lucía Esperanza",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/lucia-esperanza.webp",
     "imagenes": [
       "img/lucia-esperanza_1.webp",
@@ -757,7 +698,6 @@
   {
     "titulo": "Lucía",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Lucia.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -768,7 +708,6 @@
   {
     "titulo": "Luismi",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Luismi.webp",
     "imagenes": [
       "img/Luismi_1.webp",
@@ -782,7 +721,6 @@
   {
     "titulo": "Magnolias Seda Oro",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Magnolias-seda-oro.webp",
     "imagenes": [
       "img/Magnolias-seda-oro_1.webp",
@@ -797,7 +735,6 @@
   {
     "titulo": "Manolo",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Manolo.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -808,7 +745,6 @@
   {
     "titulo": "Mery",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Mery.webp",
     "imagenes": [
       "img/Mery_1.webp",
@@ -823,7 +759,6 @@
   {
     "titulo": "Meseros",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/meseros.webp",
     "imagenes": [
       "img/meseros_1.webp",
@@ -835,18 +770,17 @@
       "img/meseros_7.webp",
       "img/meseros_8.webp"
     ],
-    "tipo": "Bodas y eventos",
+    "tipo": "Obras pictoricas",
     "subtipo": "Papelería",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 1,
+    "precio": 12
   },
   {
     "titulo": "Noa",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Noa.webp",
     "imagenes": [],
-    "tipo": "Ilustraciones personalizadas",
+    "tipo": "Retratos personalizados",
     "subtipo": "Acuarela",
     "almacen": 0,
     "precio": 0
@@ -854,7 +788,6 @@
   {
     "titulo": "Olivia",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Olivia.webp",
     "imagenes": [
       "img/Olivia_1.webp"
@@ -867,7 +800,6 @@
   {
     "titulo": "Olivias",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Olivias.webp",
     "imagenes": [
       "img/Olivias_1.webp"
@@ -880,7 +812,6 @@
   {
     "titulo": "Pajaritos Dorados Flecos",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Pajaritos-dorados-flecos.webp",
     "imagenes": [
       "img/Pajaritos-dorados-flecos_1.webp",
@@ -894,7 +825,6 @@
   {
     "titulo": "Pepa",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Pepa.webp",
     "imagenes": [
       "img/Pepa_1.webp"
@@ -907,26 +837,12 @@
   {
     "titulo": "Perritos",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Perritos.webp",
     "imagenes": [
       "img/Perritos_1.webp",
       "img/Perritos_2.webp"
     ],
-    "tipo": "Ilustraciones personalizadas",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
-  },
-  {
-    "titulo": "Ranas",
-    "tecnica": "Acuarela",
-    "anio": "2026",
-    "imagen": "img/Ranas.webp",
-    "imagenes": [
-      "img/Ranas_1.webp"
-    ],
-    "tipo": "Ilustraciones personalizadas",
+    "tipo": "Retratos personalizados",
     "subtipo": "Acuarela",
     "almacen": 0,
     "precio": 0
@@ -934,7 +850,6 @@
   {
     "titulo": "Rocío Pareja",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/Rocio_pareja.webp",
     "imagenes": [
       "img/Rocio_pareja_1.webp"
@@ -947,7 +862,6 @@
   {
     "titulo": "Saco Navidad",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/Saco-navidad.webp",
     "imagenes": [],
     "tipo": "Complementos pintados a mano",
@@ -958,7 +872,6 @@
   {
     "titulo": "Salva",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/salva.webp",
     "imagenes": [],
     "tipo": "Retratos personalizados",
@@ -969,7 +882,6 @@
   {
     "titulo": "Santero Fran",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/santero-fran.webp",
     "imagenes": [
       "img/santero-fran_1.webp"
@@ -982,7 +894,6 @@
   {
     "titulo": "Saquito Juan Mari",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/saquito-juan-mari.webp",
     "imagenes": [],
     "tipo": "Bodas y eventos",
@@ -993,7 +904,6 @@
   {
     "titulo": "Saquito Lazo Antonio y Ángela",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/saquito-lazo-Antonio-y-Angela.webp",
     "imagenes": [
       "img/saquito-lazo-Antonio-y-Angela_1.webp",
@@ -1007,7 +917,6 @@
   {
     "titulo": "Saquito Guille",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/Saquito_guille.webp",
     "imagenes": [],
     "tipo": "Bodas y eventos",
@@ -1018,7 +927,6 @@
   {
     "titulo": "Saquito Inma",
     "tecnica": "Pintura en tela",
-    "anio": "2026",
     "imagen": "img/saquito_inma.webp",
     "imagenes": [],
     "tipo": "Bodas y eventos",
@@ -1029,7 +937,6 @@
   {
     "titulo": "Virgen Frente",
     "tecnica": "Acuarela",
-    "anio": "2026",
     "imagen": "img/virgen_frente.webp",
     "imagenes": [],
     "tipo": "Abanicos artesanales",
@@ -1040,13 +947,12 @@
   {
     "titulo": "Zorro",
     "tecnica": "Lápiz",
-    "anio": "2026",
     "imagen": "img/Zorro.webp",
     "imagenes": [
       "img/Zorro_1.webp",
       "img/Zorro_2.webp"
     ],
-    "tipo": "Ilustraciones personalizadas",
+    "tipo": "Retratos personalizados",
     "subtipo": "Lápiz",
     "almacen": 0,
     "precio": 0

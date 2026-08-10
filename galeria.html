@@ -20,19 +20,16 @@
 
     <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12 w-full">
         
-        <h2 class="font-serif titulo-fluido font-normal mb-6 text-center">Galeria</h2>
+        <h2 class="font-serif titulo-fluido font-normal mb-6 text-center">Portfolio</h2>
         
-        <!-- CONTENEDOR DE FILTROS PRINCIPALES (Ahora dinámico) -->
-        <div id="filtros-contenedor" class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-4">
-        </div>
+        <div id="filtros-contenedor" class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-4"></div>
 
-        <div id="subfiltros-contenedor" class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[11px] sm:text-xs font-medium tracking-wide uppercase text-neutral-400 mb-8 hidden">
-        </div>
+        <div id="subfiltros-contenedor" class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[11px] sm:text-xs font-medium tracking-wide uppercase text-neutral-400 mb-8 hidden"></div>
+
+        <div id="info-subtipos-contenedor" class="mt-4 md:mt-8 flex flex-col gap-12 md:gap-20 empty:hidden border-b border-neutral-200 pb-12 mb-12 md:pb-16 md:mb-16"></div>
 
         <div id="galeria-contenedor" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"></div>
         
-        <div id="info-subtipos-contenedor" class="mt-16 md:mt-24 pt-10 border-t border-neutral-200 flex flex-col gap-12 md:gap-20 empty:hidden">
-        </div>
     </main>
 
     <div id="footer-placeholder" class="mt-auto"></div>
@@ -123,7 +120,7 @@
 
                 modalImagen.alt = obra.titulo;
                 modalTitulo.textContent = obra.titulo;
-                modalDetalles.textContent = `${obra.tecnica} — ${obra.anio}`;
+                modalDetalles.textContent = `${obra.tecnica}`;
                 
                 const numeroWhatsApp = "34644241265";
                 const mensaje = encodeURIComponent(`¡Hola! Me gustaría solicitar un presupuesto.`);
@@ -185,38 +182,33 @@
                 manejarSwipe();
             }, { passive: true });
 
-            // NUEVA FUNCIÓN: Generar filtros principales basados en los "tipos" únicos
             function renderizarFiltrosPrincipales() {
                 const contenedorFiltros = document.getElementById('filtros-contenedor');
                 contenedorFiltros.innerHTML = '';
 
-                // Obtener tipos únicos del array de obras (ignorando valores vacíos)
                 const tiposUnicos = [...new Set(obrasData.map(o => o.tipo).filter(Boolean))];
 
-                // Crear botón de "Mostrar todos"
                 const btnTodos = document.createElement('button');
                 btnTodos.textContent = 'Mostrar todos';
                 btnTodos.className = `bg-transparent hover:text-[#4b262a] transition-colors py-1 ${filtroActual === 'todos' ? 'text-black font-semibold' : ''}`;
                 btnTodos.addEventListener('click', () => {
                     filtroActual = 'todos';
                     subfiltroActual = 'todos';
-                    renderizarFiltrosPrincipales(); // Actualiza estilos del botón activo
+                    renderizarFiltrosPrincipales(); 
                     renderizerSubfiltros();
                     aplicarFiltro();
                 });
                 contenedorFiltros.appendChild(btnTodos);
 
-                // Crear botón dinámico por cada tipo único
                 tiposUnicos.forEach(tipo => {
                     const btn = document.createElement('button');
-                    // Capitalizar primera letra (ej: 'cuadro' -> 'Cuadro')
                     btn.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
                     btn.className = `bg-transparent hover:text-[#4b262a] transition-colors py-1 ${filtroActual === tipo ? 'text-black font-semibold' : ''}`;
                     
                     btn.addEventListener('click', () => {
                         filtroActual = tipo;
                         subfiltroActual = 'todos';
-                        renderizarFiltrosPrincipales(); // Actualiza estilos del botón activo
+                        renderizarFiltrosPrincipales(); 
                         renderizerSubfiltros();
                         aplicarFiltro();
                     });
@@ -274,41 +266,92 @@
                 contenedorInfo.innerHTML = '';
 
                 const infoFiltrada = infoData.filter(info => {
-                    const cumpleTipo = filtroActual === 'todos' || info.tipo === filtroActual;
-                    const cumpleSubtipo = subfiltroActual === 'todos' || info.subtipo === subfiltroActual;
-                    return cumpleTipo && cumpleSubtipo;
+                    return filtroActual === 'todos' || info.tipo === filtroActual;
                 });
 
                 infoFiltrada.forEach((info, index) => {
                     const direccionFlex = index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse';
 
                     let collageHtml = '';
-                    if (info.imagenes && info.imagenes.length > 0) {
-                        const gridCols = info.imagenes.length === 1 ? 'grid-cols-1' : 'grid-cols-2';
-                        
-                        collageHtml = `<div class="w-full md:w-1/2 grid ${gridCols} gap-3 sm:gap-4">`;
-                        info.imagenes.forEach(img => {
-                            collageHtml += `
-                                <div class="overflow-hidden bg-neutral-100 aspect-square rounded-sm">
-                                    <img src="${img}" alt="Ejemplo de ${info.subtipo}" class="w-full h-full object-cover">
-                                </div>
-                            `;
-                        });
-                        collageHtml += `</div>`;
+                    if (info.obras && info.obras.length > 0) {
+                        const obrasEncontradas = info.obras.map(tituloObra => {
+                            return obrasData.find(o => o.titulo === tituloObra);
+                        }).filter(Boolean);
+
+                        if (obrasEncontradas.length > 0) {
+                            const gridCols = obrasEncontradas.length === 1 ? 'grid-cols-1' : 'grid-cols-2';
+                            
+                            const collageContenedor = document.createElement('div');
+                            collageContenedor.className = `w-full md:w-1/2 grid ${gridCols} gap-3 sm:gap-4`;
+
+                            obrasEncontradas.forEach(obra => {
+                                const imgWrapper = document.createElement('div');
+                                imgWrapper.className = "overflow-hidden bg-neutral-100 aspect-square rounded-sm cursor-pointer group";
+                                
+                                const imgEl = document.createElement('img');
+                                imgEl.src = obra.imagen;
+                                imgEl.alt = `Ejemplo de ${info.tipo} - ${obra.titulo}`;
+                                imgEl.className = "w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105";
+                                
+                                imgWrapper.addEventListener('click', () => abrirModal(obra));
+                                
+                                imgWrapper.appendChild(imgEl);
+                                collageContenedor.appendChild(imgWrapper);
+                            });
+                            
+                            collageHtml = collageContenedor.outerHTML; 
+                        }
                     }
 
                     const bloqueInfo = document.createElement('div');
                     bloqueInfo.className = `flex flex-col ${direccionFlex} gap-6 md:gap-12 items-center w-full`;
                     
                     bloqueInfo.innerHTML = `
-                        <div class="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left">
-                            <h3 class="font-serif text-2xl sm:text-3xl font-medium mb-3 capitalize text-neutral-800">${info.subtipo}</h3>
-                            <p class="text-neutral-600 text-sm sm:text-base leading-relaxed">${info.descripcion}</p>
+                        <div class="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left cursor-pointer hover:bg-neutral-50 transition-colors p-2 md:p-4 rounded-sm" id="btn-info-${index}">
+                            <h3 class="font-serif text-2xl sm:text-3xl font-medium mb-3 capitalize text-neutral-800">${info.tipo}</h3>
+                            <p class="text-neutral-600 text-sm sm:text-base leading-relaxed pointer-events-none">${info.descripcion}</p>
                         </div>
-                        ${collageHtml}
                     `;
                     
+                    if (info.obras && info.obras.length > 0) {
+                        const obrasEncontradas = info.obras.map(t => obrasData.find(o => o.titulo === t)).filter(Boolean);
+                        if (obrasEncontradas.length > 0) {
+                            const gridCols = obrasEncontradas.length === 1 ? 'grid-cols-1' : 'grid-cols-2';
+                            const collageContenedor = document.createElement('div');
+                            collageContenedor.className = `w-full md:w-1/2 grid ${gridCols} gap-3 sm:gap-4`;
+
+                            obrasEncontradas.forEach(obra => {
+                                const imgWrapper = document.createElement('div');
+                                imgWrapper.className = "overflow-hidden bg-neutral-100 aspect-square rounded-sm cursor-pointer group";
+                                
+                                const imgEl = document.createElement('img');
+                                imgEl.src = obra.imagen;
+                                imgEl.alt = `Ejemplo de ${info.tipo} - ${obra.titulo}`;
+                                imgEl.className = "w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105";
+                                
+                                imgWrapper.addEventListener('click', () => abrirModal(obra));
+                                
+                                imgWrapper.appendChild(imgEl);
+                                collageContenedor.appendChild(imgWrapper);
+                            });
+                            bloqueInfo.appendChild(collageContenedor);
+                        }
+                    }
+                    
                     contenedorInfo.appendChild(bloqueInfo);
+
+                    const btnInfo = document.getElementById(`btn-info-${index}`);
+                    if(btnInfo) {
+                        btnInfo.addEventListener('click', () => {
+                            filtroActual = info.tipo;
+                            subfiltroActual = 'todos';
+                            renderizarFiltrosPrincipales();
+                            renderizerSubfiltros();
+                            aplicarFiltro();
+                            
+                            document.getElementById('filtros-contenedor').scrollIntoView({ behavior: 'smooth' });
+                        });
+                    }
                 });
             }
 
@@ -324,12 +367,18 @@
                 filtradas.forEach(obra => {
                     const obraElement = document.createElement('div');
                     obraElement.className = 'group cursor-pointer w-full';
+                    
+                    // Comprobamos si hay un subtipo seleccionado
+                    const mostrarTecnica = subfiltroActual === 'todos' 
+                        ? `<p class="text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-0.5">${obra.tecnica}</p>`
+                        : '';
+                        
                     obraElement.innerHTML = `
                         <div class="overflow-hidden bg-neutral-100 aspect-[4/5] relative mb-3 rounded-sm">
                             <img src="${obra.imagen}" alt="${obra.titulo}" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
                         </div>
                         <h3 class="font-serif text-base sm:text-lg font-medium text-neutral-800">${obra.titulo}</h3>
-                        <p class="text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-0.5">${obra.tecnica} — ${obra.anio}</p>
+                        ${mostrarTecnica}
                     `;
                     obraElement.addEventListener('click', () => abrirModal(obra));
                     contenedor.appendChild(obraElement);
@@ -344,11 +393,10 @@
             ]).then(([obras, info]) => {
                 obrasData = obras;
                 infoData = info;
-                renderizarFiltrosPrincipales(); // <--- Generamos los botones al cargar los datos
+                renderizarFiltrosPrincipales(); 
                 renderizerSubfiltros();
                 aplicarFiltro();
                 
-                // Mostrar la web suavemente tras cargar los datos
                 document.body.classList.remove('opacity-0');
             }).catch(err => console.error("Error cargando los datos de la galería:", err));
 
