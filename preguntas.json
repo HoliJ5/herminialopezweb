@@ -1,0 +1,52 @@
+[
+  {
+    "index": 1,
+    "pregunta": "¿Qué tipo de encargos realizas?",
+    "respuesta": "Mi trabajo se divide en dos mundos que se complementan: el arte tradicional y la moda artesanal. Por un lado, realizo retratos y obras pintadas sobre lienzo o papel. Por otro, transformo accesorios cotidianos y de ceremonia en piezas únicas pintadas a mano y bordadas: abanicos, bolsos, capotas, sombreros, bastidores decorativos y lazos. Si se puede pintar o bordar, se puede crear."
+  }, 
+  {
+    "index": 2,
+    "pregunta": "¿Cómo puedo conseguir uno de tus complementos exclusivos?",
+    "respuesta": "¡Hablamos por mensaje y lo diseñamos desde cero! Me cuentas tu idea, si es para el día a día o para combinar con un vestido de invitada, y yo me encargo del resto. Puede ser pintado a mano, bordado o combinando ambas técnicas para crear una pieza única adaptada totalmente a ti."
+  }, 
+  {
+    "index": 3,
+    "pregunta": "¿Puedo encargar algo aunque no vea un ejemplo parecido en la web?",
+    "respuesta": "Sí, totalmente. Las fotos que ves aquí son solo una muestra de piezas que ya han encontrado dueño, pero no son un límite. Si tienes una idea concreta o un motivo especial que quieras ver en un cuadro o en un complemento, escríbeme y buscaremos la fórmula para plasmarlo."
+  },
+  {
+    "index": 4,
+    "pregunta": "Tengo una idea muy específica en mente, ¿se podría hacer?",
+    "respuesta": "Escríbeme, cuéntame qué tienes en la cabeza y lo vamos a estudiar para que sea posible. En la artesanía personalizada no existen las normas estrictas, solo las ideas con historia. Ya sea un retrato con un fondo especial, un bolso pintado con tu mascota, o una capota de bebé con un bordado poco común, me encantan los retos y buscaremos la forma de darle vida con pincel e hilo."
+  },
+  {
+    "index": 5,
+    "pregunta": "¿Qué materiales usas en los abanicos? ¿Qué es el varillaje AEA?",
+    "respuesta": "El secreto de mis abanicos está en su base: utilizo exclusivamente varillajes con el sello certificado AEA (Abanico Español Artesano). Esto te garantiza maderas nobles fabricadas a mano en España siguiendo la tradición más auténtica. Olvídate de copias baratas de plástico o maderas malas; estos abanicos tienen una apertura fluida, se abren de maravilla y están hechos para durar toda la vida."
+  },
+  {
+    "index": 6,
+    "pregunta": "¿La pintura o el bordado se estropean al usar los complementos?",
+    "respuesta": "¡Para nada! Uso pinturas textiles profesionales fijadas con calor y los bordados van superreforzados. Tanto los abanicos como los bolsos o capotas están pensados para que los uses todo lo que quieras y los luzcas sin miedo, porque están hechos para aguantar el trote."
+  },
+  {
+    "index": 7,
+    "pregunta": "¿Cuánto tardarás en tener listo mi pedido?",
+    "respuesta": "Al ser piezas creadas a mano desde cero, el tiempo normal de entrega suele ser de 30 a 45 días. Sin embargo, esto no es una ciencia exacta: depende mucho de la complejidad del diseño (si lleva pintura, bordado complejo o ambas cosas) y de la temporada del año, sobre todo en época de bodas y comuniones. Si necesitas tu pieza para una fecha muy concreta o un evento especial, escríbeme antes de hacer el pedido; nos organizamos con la agenda del taller y vemos si es posible hacer magia a tiempo."
+  },
+  {
+    "index": 8,
+    "pregunta": "¿Cómo puedo saber el precio de un retrato o de un complemento personalizado?",
+    "respuesta": "Al ser piezas artesanales creadas exclusivamente para ti, no tengo tarifas fijas en la web. El precio final depende de muchos factores: el tamaño del retrato, la complejidad del dibujo o si tu accesorio lleva pintura, bordado o ambas técnicas combinadas. Cuéntame tu idea a través del formulario de contacto o por mensaje y te daré un presupuesto cerrado y a medida sin ningún compromiso. ¡Estaré encantada de valorar tu proyecto!"
+  },
+  {
+    "index": 9,
+    "pregunta": "¿Cómo se realiza el pago de los encargos?",
+    "respuesta": "Para confirmar el pedido y ponernos manos a la obra, se realiza un primer pago del 40% del total. El 60% restante se abona justo antes de que el pedido salga del taller o en el momento de la entrega en mano. Puedes realizar los pagos mediante Bizum, transferencia bancaria o en efectivo (si la entrega es en persona). En cuanto hablemos del diseño, te facilito los datos para el ingreso."
+  },
+  {
+    "index": 10,
+    "pregunta": "¿Qué pasa si quiero devolver mi pedido personalizado?",
+    "respuesta": "Al ser piezas exclusivas hechas por encargo y a medida, la ley estipula que no se pueden hacer cambios ni devoluciones si cambias de opinión. Cada obra, abanico o complemento se crea desde cero para ti. Eso sí, si el artículo te llega dañado por el transporte o ves algún defecto, escríbeme dentro de las primeras 48 horas con una foto y lo solucionamos juntos enseguida."
+  }
+]

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes | Herminia López</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Tipografías base heredadas de la página Sobre Mí */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+        
+        .titulo-fluido {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+        }
+
+        /* Clases para el efecto acordeón suave */
+        .faq-contenido {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.3s ease-out;
+        }
+        .faq-contenido.abierto {
+            grid-template-rows: 1fr;
+        }
+        .faq-interior {
+            overflow: hidden;
+        }
+        .icono-girado {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<!-- Estructura base flexbox min-h-screen idéntica a tu página Sobre Mí -->
+<body class="opacity-0 transition-opacity duration-500 ease-in-out bg-[#fafafa] text-[#1c1c1c] font-sans antialiased flex flex-col min-h-screen text-base">
+
+    <!-- Menú de navegación inyectado por JS -->
+    <div id="nav-placeholder"></div>
+
+    <main class="flex-grow w-full py-10 md:py-16 px-4 sm:px-6">
+        <div class="max-w-3xl mx-auto">
+            
+            <h2 class="font-serif titulo-fluido font-normal mb-8 md:mb-12 text-center text-neutral-800">Preguntas Frecuentes</h2>
+            
+            <!-- Contenedor donde JS inyectará el contenido de preguntas.json -->
+            <div id="faq-contenedor" class="flex flex-col border-t border-neutral-200">
+                <!-- Las preguntas se cargarán aquí -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer inyectado por JS -->
+    <div id="footer-placeholder" class="mt-auto"></div>
+
+    <script src="componentes.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contenedorFaq = document.getElementById('faq-contenedor');
+            
+            // Hacemos fetch al archivo JSON de preguntas
+            fetch('preguntas.json')
+                .then(response => response.json())
+                .then(preguntas => {
+                    // Recorremos cada pregunta del JSON
+                    preguntas.forEach((item) => {
+                        
+                        // Contenedor individual de cada pregunta
+                        const faqItem = document.createElement('div');
+                        faqItem.className = 'border-b border-neutral-200';
+                        
+                        // El botón clickeable (la pregunta)
+                        const botonPregunta = document.createElement('button');
+                        botonPregunta.className = 'w-full text-left py-5 flex justify-between items-center focus:outline-none hover:text-[#4b262a] transition-colors group';
+                        botonPregunta.innerHTML = `
+                            <span class="font-medium text-sm sm:text-base text-neutral-800 group-hover:text-[#4b262a] transition-colors pr-4">
+                                ${item.pregunta}
+                            </span>
+                            <span class="icono-faq text-neutral-400 text-2xl font-light transform transition-transform duration-300 flex-shrink-0">+</span>
+                        `;
+                        
+                        // El contenedor de la respuesta (oculto por defecto)
+                        const contenedorRespuesta = document.createElement('div');
+                        contenedorRespuesta.className = 'faq-contenido';
+                        contenedorRespuesta.innerHTML = `
+                            <div class="faq-interior">
+                                <p class="text-neutral-600 font-light text-sm sm:text-base leading-relaxed pb-6 pr-4 md:pr-12">
+                                    ${item.respuesta}
+                                </p>
+                            </div>
+                        `;
+                        
+                        // Lógica al clicar la pregunta
+                        botonPregunta.addEventListener('click', () => {
+                            const estaAbierto = contenedorRespuesta.classList.contains('abierto');
+                            
+                            // Paso 1: Cerrar TODAS las respuestas abiertas
+                            document.querySelectorAll('.faq-contenido').forEach(el => {
+                                el.classList.remove('abierto');
+                            });
+                            // Restaurar todos los iconos al estado '+'
+                            document.querySelectorAll('.icono-faq').forEach(icono => {
+                                icono.classList.remove('icono-girado');
+                            });
+
+                            // Paso 2: Si el que hemos clicado NO estaba abierto, lo abrimos
+                            if (!estaAbierto) {
+                                contenedorRespuesta.classList.add('abierto');
+                                botonPregunta.querySelector('.icono-faq').classList.add('icono-girado');
+                            }
+                        });
+
+                        // Ensamblamos el HTML
+                        faqItem.appendChild(botonPregunta);
+                        faqItem.appendChild(contenedorRespuesta);
+                        contenedorFaq.appendChild(faqItem);
+                    });
+                    
+                    // Mostrar la web suavemente tras cargar los datos
+                    document.body.classList.remove('opacity-0');
+                })
+                .catch(err => console.error("Error cargando las preguntas frecuentes:", err));
+        });
+    </script>
+</body>
+</html>
