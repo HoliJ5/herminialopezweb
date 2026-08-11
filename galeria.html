@@ -444,7 +444,7 @@
                     
                     // Condición para la etiqueta de venta si almacen es 1
                     const etiquetaVenta = obra.almacen === 1 
-                        ? `<div class="absolute bottom-2 right-2 bg-[#726260]/85 text-white text-[10px] sm:text-[11px] font-medium px-2 py-1 rounded-sm uppercase tracking-wider z-10 pointer-events-none shadow-sm">En venta</div>`
+                        ? `<div class="absolute bottom-2 right-2 bg-[#726260]/85 text-white text-[10px] sm:text-[11px] font-medium px-2 py-1 rounded-sm uppercase tracking-wider z-10 pointer-events-none shadow-sm">${obra['texto-venta']}</div>`
                         : '';
 
                     obraElement.innerHTML = `

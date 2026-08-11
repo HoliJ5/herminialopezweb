@@ -289,10 +289,16 @@
                     const obraElement = document.createElement('div');
                     obraElement.className = 'group cursor-pointer w-full';
                     
-                    // Mostramos la imagen de la obra, el título y el precio tal y como estaba antes
+                    // Condición para la etiqueta de venta copiada de la galería
+                    const etiquetaVenta = obra.almacen === 1 
+                        ? `<div class="absolute bottom-2 right-2 bg-[#726260]/85 text-white text-[10px] sm:text-[11px] font-medium px-2 py-1 rounded-sm uppercase tracking-wider z-10 pointer-events-none shadow-sm">${obra['texto-venta']}</div>`
+                        : '';
+
+                    // Inyección de la etiquetaVenta en el contenedor de la imagen
                     obraElement.innerHTML = `
                         <div class="overflow-hidden bg-neutral-100 aspect-[4/5] relative mb-3 rounded-sm">
                             <img src="${obra.imagen}" alt="${obra.titulo}" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                            ${etiquetaVenta}
                         </div>
                         <h3 class="font-serif text-base sm:text-lg font-medium text-neutral-800">${obra.titulo}</h3>
                         <p class="text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-0.5">${obra.precio}€</p>

@@ -701,7 +701,8 @@
     ],
     "almacen": 1,
     "precio": "desde 12",
-    "tipo-venta": "Prints"
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
   },
   {
     "tipo": "Retratos personalizados",
