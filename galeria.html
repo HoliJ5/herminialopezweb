@@ -134,10 +134,19 @@
                 indiceModalActual = 0;
 
                 modalTitulo.textContent = obra.titulo;
-                modalDetalles.textContent = `${obra.subtitulo}`;
+                
+                // Condición para mostrar el precio si está en el almacén
+                modalDetalles.textContent = obra.almacen === 1 && obra.precio !== undefined
+                    ? `${obra.subtitulo} — ${obra.precio}€`
+                    : `${obra.subtitulo}`;
                 
                 const numeroWhatsApp = "34644241265";
-                const mensaje = encodeURIComponent(`¡Hola! Me gustaría solicitar un presupuesto.`);
+                // Opcional: También puedes hacer que el mensaje de WhatsApp cambie si está en venta
+                const textoMensaje = obra.almacen === 1 
+                    ? `¡Hola! Me gustaría comprar / pedir información sobre "${obra.titulo}".` 
+                    : `¡Hola! Me gustaría solicitar un presupuesto para "${obra.titulo}".`;
+                const mensaje = encodeURIComponent(textoMensaje);
+                
                 modalWhatsapp.href = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
 
                 sliderTrack.innerHTML = '';
