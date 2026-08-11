@@ -1,20 +1,21 @@
 [
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Amalia y Juan Carlos",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Amalia-Juan-Carlos.webp",
     "imagenes": [
       "img/Amalia-Juan-Carlos_1.webp",
       "img/Amalia-Juan-Carlos_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Obras pictoricas",
+    "subtipo": "",
     "titulo": "El Carmen",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/ElCarmen.webp",
     "imagenes": [
       "img/ElCarmen_1.webp",
@@ -23,39 +24,36 @@
       "img/ElCarmen_4.webp",
       "img/ElCarmen_5.webp"
     ],
-    "tipo": "Obras pictoricas",
-    "subtipo": "",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Abstracto",
     "titulo": "Abanico Ara",
-    "tecnica": "Abstracto",
+    "subtitulo": "Abstracto",
     "imagen": "img/Abanico-Ara.webp",
     "imagenes": [
       "img/Abanico-Ara_1.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Abstracto",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Eventos",
     "titulo": "Abanico Bordado",
-    "tecnica": "Eventos",
+    "subtitulo": "Eventos",
     "imagen": "img/abanico-bordado.webp",
     "imagenes": [
       "img/abanico-bordado_1.webp",
       "img/abanico-bordado_2.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Eventos",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Devocional",
     "titulo": "Abanico Cara Virgen",
-    "tecnica": "Devocional",
+    "subtitulo": "Devocional",
     "imagen": "img/abanico-cara-virgen.webp",
     "imagenes": [
       "img/abanico-cara-virgen_1.webp",
@@ -64,129 +62,118 @@
       "img/abanico-cara-virgen_4.webp",
       "img/abanico-cara virgen 2.jpg"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Devocional",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Devocional",
     "titulo": "Abanico Jesús Nazareno",
-    "tecnica": "Devocional",
+    "subtitulo": "Devocional",
     "imagen": "img/Abanico-Jesus-nazareno.webp",
     "imagenes": [
       "img/Abanico-Jesus-nazareno_1.webp",
       "img/Abanico-Jesus-nazareno_2.webp",
       "img/Abanico-Jesus-nazareno_3.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Devocional",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Naturaleza",
     "titulo": "Abanico Seda Pájaro",
-    "tecnica": "Naturaleza",
+    "subtitulo": "Naturaleza",
     "imagen": "img/abanico-seda-pajaro.webp",
     "imagenes": [
       "img/abanico-seda-pajaro_1.webp",
       "img/abanico-seda-pajaro_2.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Naturaleza",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Devocional",
     "titulo": "Abanico Virgen Pastora Verde",
-    "tecnica": "Devocional",
+    "subtitulo": "Devocional",
     "imagen": "img/Abanico-Virgen-pastora-verde.webp",
     "imagenes": [
       "img/Abanico-Virgen-pastora-verde_1.webp",
       "img/Abanico-Virgen-pastora-verde_2.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Devocional",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Abanico Feria",
-    "tecnica": "Naturaleza",
-    "imagen": "img/abanico_feria.webp",
-    "imagenes": [],
     "tipo": "Abanicos artesanales",
     "subtipo": "Naturaleza",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Abanico Feria",
+    "subtitulo": "Naturaleza",
+    "imagen": "img/abanico_feria.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Álvaro",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Alvaro.webp",
     "imagenes": [
       "img/Alvaro_1.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acrílico",
     "titulo": "Ana Ciudad",
-    "tecnica": "Acrílico sobre lienzo",
+    "subtitulo": "Acrílico sobre lienzo",
     "imagen": "img/ana-ciudad_1.webp",
     "imagenes": [
       "img/ana-ciudad.webp",
       "img/ana-ciudad_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acrílico",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Carboncillo y grafito",
     "titulo": "Ana Esperanza",
-    "tecnica": "Carboncillo y grafito",
+    "subtitulo": "Carboncillo y grafito",
     "imagen": "img/Ana-esperanza.webp",
     "imagenes": [],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Ana",
-    "tecnica": "Acuarela",
-    "imagen": "img/Ana.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Ana",
+    "subtitulo": "Acuarela",
+    "imagen": "img/Ana.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
-    "titulo": "Ana Cara",
-    "tecnica": "Acrílico y acuarela",
-    "imagen": "img/AnaCara.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Acrílico",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Ana Cara",
+    "subtitulo": "Acrílico y acuarela",
+    "imagen": "img/AnaCara.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
-    "titulo": "Ana y Laura",
-    "tecnica": "Grafito",
-    "imagen": "img/AnaYLaura.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Ana y Laura",
+    "subtitulo": "Grafito",
+    "imagen": "img/AnaYLaura.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acrílico",
     "titulo": "Angelita",
-    "tecnica": "Acrílico sobre lienzo lino",
+    "subtitulo": "Acrílico sobre lienzo lino",
     "imagen": "img/angelita.webp",
     "imagenes": [
       "img/angelita_1.webp",
@@ -194,281 +181,256 @@
       "img/angelita_3.webp",
       "img/angelita_4.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acrílico",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Retrato",
     "titulo": "Anna Flamenca",
-    "tecnica": "Retrato",
+    "subtitulo": "Retrato",
     "imagen": "img/Anna flamenca 1.jpg",
     "imagenes": [
       "img/Anna flamenca 2.jpg",
       "img/Anna flamenca 3.jpg"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Retrato",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Carboncillo y grafito",
     "titulo": "Antonio",
-    "tecnica": "Carboncillo y grafito",
+    "subtitulo": "Carboncillo y grafito",
     "imagen": "img/Antonio.webp",
     "imagenes": [],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Carboncillo y grafito",
     "titulo": "Araceli",
-    "tecnica": "Carboncillo y grafito",
+    "subtitulo": "Carboncillo y grafito",
     "imagen": "img/Araceli.webp",
     "imagenes": [],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Aroa",
-    "tecnica": "Acrílico sobre papel",
-    "imagen": "img/Aroa.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Acrílico",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Aroa",
+    "subtitulo": "Acrílico sobre papel",
+    "imagen": "img/Aroa.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Bodas y eventos",
+    "subtipo": "Bastidor",
     "titulo": "Bastidor Inma y Juan",
-    "tecnica": "Pintado a mano",
+    "subtitulo": "Pintado a mano",
     "imagen": "img/bastidor-Inma-juan.webp",
     "imagenes": [
       "img/bastidor-Inma-juan_1.webp"
     ],
-    "tipo": "Bodas y eventos",
-    "subtipo": "Bastidor",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Bodas y eventos",
+    "subtipo": "Bastidor",
     "titulo": "Bastidor y Saquito Juan y Mari",
-    "tecnica": "Pintado a mano",
+    "subtitulo": "Pintado a mano",
     "imagen": "img/bastidor-saquito-juan-mari.webp",
     "imagenes": [],
-    "tipo": "Bodas y eventos",
-    "subtipo": "Bastidor",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Complementos pintados a mano",
+    "subtipo": "Bolso",
     "titulo": "Bolso Hojas Granates",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/bolso-hojas-granates.webp",
     "imagenes": [],
-    "tipo": "Complementos pintados a mano",
-    "subtipo": "Bolso",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Complementos pintados a mano",
+    "subtipo": "Bolso",
     "titulo": "Bolso Mariposas Negras",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/bolso-mariposas-negras.webp",
     "imagenes": [],
-    "tipo": "Complementos pintados a mano",
-    "subtipo": "Bolso",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Cari",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/cari.webp",
     "imagenes": [
       "img/cari_1.webp",
       "img/cari_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Carboncillo y grafito",
     "titulo": "Carmen",
-    "tecnica": "Carboncillo y grafito",
+    "subtitulo": "Carboncillo y grafito",
     "imagen": "img/carmen.webp",
     "imagenes": [
       "img/carmen_1.webp",
       "img/carmen_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Eventos",
     "titulo": "Carrasquilla",
-    "tecnica": "Eventos",
+    "subtitulo": "Eventos",
     "imagen": "img/Carrasquilla.webp",
     "imagenes": [
       "img/Carrasquilla_1.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Eventos",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Cazadora Mickey",
-    "tecnica": "Pintura en tela",
-    "imagen": "img/cazador-Mickey.webp",
-    "imagenes": [],
     "tipo": "Complementos pintados a mano",
     "subtipo": "Ropa",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Cazadora Mickey",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/cazador-Mickey.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Complementos pintados a mano",
+    "subtipo": "Hogar",
     "titulo": "Cojín Cuento",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/cojin-cuento.webp",
     "imagenes": [
       "img/cojin-cuento-1.webp",
       "img/cojin-cuento-2.webp",
       "img/cojin-cuento_3.webp"
     ],
-    "tipo": "Complementos pintados a mano",
-    "subtipo": "Hogar",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Complementos pintados a mano",
+    "subtipo": "Hogar",
     "titulo": "Cojín Flores",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/Cojin_flores.webp",
     "imagenes": [
       "img/Cojin_flores_2.webp"
     ],
-    "tipo": "Complementos pintados a mano",
-    "subtipo": "Hogar",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Naturaleza",
     "titulo": "Colibrí y Flores",
-    "tecnica": "Naturaleza",
+    "subtitulo": "Naturaleza",
     "imagen": "img/Colibri_flores.webp",
     "imagenes": [
       "img/Colibri_flores_2.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Naturaleza",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Complementos pintados a mano",
+    "subtipo": "Calzado",
     "titulo": "Converse Mariposa",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/converse-mariposa.webp",
     "imagenes": [
       "img/converse-mariposa_1.webp",
       "img/converse-mariposa_2.webp"
     ],
-    "tipo": "Complementos pintados a mano",
-    "subtipo": "Calzado",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Elena",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Elena.webp",
     "imagenes": [],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Carboncillo y grafito",
     "titulo": "Enrique",
-    "tecnica": "Carboncillo y grafito",
+    "subtitulo": "Carboncillo y grafito",
     "imagen": "img/Enrique.webp",
     "imagenes": [],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Carboncillo y grafito",
     "titulo": "Esperanza Niña",
-    "tecnica": "Grafito y acuarela",
+    "subtitulo": "Grafito y acuarela",
     "imagen": "img/esperanza-nina.webp",
     "imagenes": [],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Eva",
-    "tecnica": "Acuarela papel 100% algodón",
-    "imagen": "img/Eva.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Eva",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Eva.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Complementos pintados a mano",
+    "subtipo": "Ropa",
     "titulo": "Falda Marrón Ramas",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/falda-marron-ramas.webp",
     "imagenes": [],
-    "tipo": "Complementos pintados a mano",
-    "subtipo": "Ropa",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Complementos pintados a mano",
+    "subtipo": "Ropa",
     "titulo": "Falda Negra Garza",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/falda-negra-garza.webp",
     "imagenes": [],
-    "tipo": "Complementos pintados a mano",
-    "subtipo": "Ropa",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Complementos pintados a mano",
+    "subtipo": "Ropa",
     "titulo": "Gabardina Tucán",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/gabardina-tucan.webp",
     "imagenes": [],
-    "tipo": "Complementos pintados a mano",
-    "subtipo": "Ropa",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Naturaleza",
     "titulo": "Garzas y Bambú",
-    "tecnica": "Naturaleza",
+    "subtitulo": "Naturaleza",
     "imagen": "img/Garzas-y-bambu.webp",
     "imagenes": [
       "img/Garzas-y-bambu_1.webp",
       "img/Garzas-y-bambu_2.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Naturaleza",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Naturaleza",
     "titulo": "Golondrina Seda",
-    "tecnica": "Naturaleza",
+    "subtitulo": "Naturaleza",
     "imagen": "img/golondrina-seda.webp",
     "imagenes": [
       "img/golondrina-seda_1.webp",
@@ -477,140 +439,128 @@
       "img/golondrina-seda_4.webp",
       "img/golondrina-seda_5.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Naturaleza",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Naturaleza",
     "titulo": "Golondrinas y Bambú",
-    "tecnica": "Naturaleza",
+    "subtitulo": "Naturaleza",
     "imagen": "img/Golondrinas-y-bambu.webp",
     "imagenes": [
       "img/Golondrinas-y-bambu_1.webp",
       "img/Golondrinas-y-bambu_2.webp",
       "img/Golondrinas-y-bambu_3.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Naturaleza",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Bodas y eventos",
+    "subtipo": "Acuarela",
     "titulo": "Ignacio y Sara",
-    "tecnica": "Acuarela",
+    "subtitulo": "Acuarela",
     "imagen": "img/Ignacio-y-Sara.webp",
     "imagenes": [
       "img/Ignacio-y-Sara_1.webp"
     ],
-    "tipo": "Bodas y eventos",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Bodas y eventos",
+    "subtipo": "Acrílico",
     "titulo": "Iván y Laura",
-    "tecnica": "Acrílico y tinta",
+    "subtitulo": "Acrílico y tinta",
     "imagen": "img/Ivan-y-Laura.webp",
     "imagenes": [],
-    "tipo": "Bodas y eventos",
-    "subtipo": "Acrílico",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "J Antonio y Noa",
-    "tecnica": "Acrílico sobre papel",
-    "imagen": "img/JAntonio-y-Noa.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Acrílico",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "J Antonio y Noa",
+    "subtitulo": "Acrílico sobre papel",
+    "imagen": "img/JAntonio-y-Noa.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Jesús Nazareno",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Jesus-nazareno.webp",
     "imagenes": [
       "img/Jesus-nazareno-1.webp",
       "img/Jesus-nazareno_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Devocional",
     "titulo": "Jesús Nazareno medio",
-    "tecnica": "Devocional",
+    "subtitulo": "Devocional",
     "imagen": "img/Jesus-nazareno-medio.webp",
     "imagenes": [
       "img/Jesus-nazareno-medio_1.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Devocional",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "José Antonio",
-    "tecnica": "Carboncillo y grafito",
-    "imagen": "img/JoseAntonio.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "José Antonio",
+    "subtitulo": "Carboncillo y grafito",
+    "imagen": "img/JoseAntonio.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Juan Esperanza",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Juan-Esperanza.webp",
     "imagenes": [
       "img/Juan-Esperanza_1.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Laura y Ara Lara",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Laura-ara-Lara.webp",
     "imagenes": [
       "img/Laura-ara-Lara_1.webp",
       "img/Laura-ara-Lara_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Laura",
-    "tecnica": "Acrílico y tinta",
-    "imagen": "img/Laura.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Acrílico",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Laura",
+    "subtitulo": "Acrílico y tinta",
+    "imagen": "img/Laura.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
-    "titulo": "Lazo Guille",
-    "tecnica": "Pintura en tela",
-    "imagen": "img/lazo-Guille.webp",
-    "imagenes": [],
     "tipo": "Bodas y eventos",
     "subtipo": "Lazos",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Lazo Guille",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/lazo-Guille.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Bodas y eventos",
+    "subtipo": "Lazos",
     "titulo": "Lazo Marina y Jose",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/lazo-Marina-y-jose.webp",
     "imagenes": [
       "img/lazo-Marina-y-jose_1.webp",
@@ -619,136 +569,125 @@
       "img/lazo-Marina-y-jose_4.webp",
       "img/lazo-Marina-y-jose_5.webp"
     ],
-    "tipo": "Bodas y eventos",
-    "subtipo": "Lazos",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Bodas y eventos",
+    "subtipo": "Lazos",
     "titulo": "Lazo Olga",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/lazo-Olga.webp",
     "imagenes": [
       "img/lazo-Olga_1.webp",
       "img/lazo-Olga_2.webp"
     ],
-    "tipo": "Bodas y eventos",
-    "subtipo": "Lazos",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Limosnera Guille",
-    "tecnica": "Pintura en tela",
-    "imagen": "img/limosnera-guille.webp",
-    "imagenes": [],
     "tipo": "Bodas y eventos",
     "subtipo": "Bolso",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Limosnera Guille",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/limosnera-guille.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Lola Vico",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/lola-Vico.webp",
     "imagenes": [
       "img/lola-Vico_1.webp",
       "img/lola-Vico_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Lucas",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Lucas.webp",
     "imagenes": [
       "img/Lucas_1.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Lucía Esperanza",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/lucia-esperanza.webp",
     "imagenes": [
       "img/lucia-esperanza_1.webp",
       "img/lucia-esperanza_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Lucía",
-    "tecnica": "Acuarela",
+    "subtitulo": "Acuarela",
     "imagen": "img/Lucia.webp",
     "imagenes": [],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Carboncillo y grafito",
     "titulo": "Luismi",
-    "tecnica": "Carboncillo y grafito",
+    "subtitulo": "Carboncillo y grafito",
     "imagen": "img/Luismi.webp",
     "imagenes": [
       "img/Luismi_1.webp",
       "img/Luismi_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Naturaleza",
     "titulo": "Magnolias Seda Oro",
-    "tecnica": "Naturaleza",
+    "subtitulo": "Naturaleza",
     "imagen": "img/Magnolias-seda-oro.webp",
     "imagenes": [
       "img/Magnolias-seda-oro_1.webp",
       "img/Magnolias-seda-oro_2.webp",
       "img/Magnolias-seda-oro_3.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Naturaleza",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Manolo",
-    "tecnica": "Acuarela papel 100% algodón",
-    "imagen": "img/Manolo.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Manolo",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Manolo.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acrílico",
     "titulo": "Mery",
-    "tecnica": " Acrílico y acuarela sobre papel",
+    "subtitulo": " Acrílico y acuarela sobre papel",
     "imagen": "img/Mery.webp",
     "imagenes": [
       "img/Mery_1.webp",
       "img/Mery_2.webp",
       "img/Mery_3.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acrílico",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Obras pictoricas",
+    "subtipo": "",
     "titulo": "Meseros",
-    "tecnica": "Acuarela y tinta papel 100% algodón",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
     "imagen": "img/meseros.webp",
     "imagenes": [
       "img/meseros_1.webp",
@@ -760,191 +699,174 @@
       "img/meseros_7.webp",
       "img/meseros_8.webp"
     ],
-    "tipo": "Obras pictoricas",
-    "subtipo": "",
     "almacen": 1,
-    "precio": 12
+    "precio": "desde 12",
+    "tipo-venta": "Prints"
   },
   {
-    "titulo": "Noa",
-    "tecnica": "Acrílico sobre papel",
-    "imagen": "img/Noa.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Acrílico",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Noa",
+    "subtitulo": "Acrílico sobre papel",
+    "imagen": "img/Noa.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Ilustraciones animadas",
     "titulo": "Olivia",
-    "tecnica": "Ilustraciones animadas",
+    "subtitulo": "Ilustraciones animadas",
     "imagen": "img/Olivia.webp",
     "imagenes": [
       "img/Olivia_1.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Ilustraciones animadas",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Ilustraciones animadas",
     "titulo": "Olivias",
-    "tecnica": "Ilustraciones animadas",
+    "subtitulo": "Ilustraciones animadas",
     "imagen": "img/Olivias.webp",
     "imagenes": [
       "img/Olivias_1.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Ilustraciones animadas",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Abanicos artesanales",
+    "subtipo": "Naturaleza",
     "titulo": "Pajaritos Dorados Flecos",
-    "tecnica": "Naturaleza",
+    "subtitulo": "Naturaleza",
     "imagen": "img/Pajaritos-dorados-flecos.webp",
     "imagenes": [
       "img/Pajaritos-dorados-flecos_1.webp",
       "img/Pajaritos-dorados-flecos_2.webp"
     ],
-    "tipo": "Abanicos artesanales",
-    "subtipo": "Naturaleza",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Pepa",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Pepa.webp",
     "imagenes": [
       "img/Pepa_1.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Perritos",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Perritos.webp",
     "imagenes": [
       "img/Perritos_1.webp",
       "img/Perritos_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Rocío Pareja",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Rocio_pareja.webp",
     "imagenes": [
       "img/Rocio_pareja_1.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Saco Navidad",
-    "tecnica": "Pintura en tela",
-    "imagen": "img/Saco-navidad.webp",
-    "imagenes": [],
     "tipo": "Complementos pintados a mano",
     "subtipo": "Navidad",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Saco Navidad",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Saco-navidad.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
-    "titulo": "Salva",
-    "tecnica": "Carboncillo y grafito",
-    "imagen": "img/salva.webp",
-    "imagenes": [],
     "tipo": "Retratos personalizados",
     "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Salva",
+    "subtitulo": "Carboncillo y grafito",
+    "imagen": "img/salva.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Acuarela",
     "titulo": "Santero Fran",
-    "tecnica": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/santero-fran.webp",
     "imagenes": [
       "img/santero-fran_1.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Acuarela",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Saquito Juan Mari",
-    "tecnica": "Pintura en tela",
-    "imagen": "img/saquito-juan-mari.webp",
-    "imagenes": [],
     "tipo": "Bodas y eventos",
     "subtipo": "Detalles",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Saquito Juan Mari",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/saquito-juan-mari.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Bodas y eventos",
+    "subtipo": "Detalles",
     "titulo": "Saquito Lazo Antonio y Ángela",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/saquito-lazo-Antonio-y-Angela.webp",
     "imagenes": [
       "img/saquito-lazo-Antonio-y-Angela_1.webp",
       "img/saquito-lazo-Antonio-y-Angela_2.webp"
     ],
-    "tipo": "Bodas y eventos",
-    "subtipo": "Detalles",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Bodas y eventos",
+    "subtipo": "Detalles",
     "titulo": "Saquito Guille",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/Saquito_guille.webp",
     "imagenes": [],
-    "tipo": "Bodas y eventos",
-    "subtipo": "Detalles",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
+    "tipo": "Bodas y eventos",
+    "subtipo": "Detalles",
     "titulo": "Saquito Inma",
-    "tecnica": "Pintura en tela",
+    "subtitulo": "Pintura en tela",
     "imagen": "img/saquito_inma.webp",
     "imagenes": [],
-    "tipo": "Bodas y eventos",
-    "subtipo": "Detalles",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   },
   {
-    "titulo": "Virgen Frente",
-    "tecnica": "Devocional",
-    "imagen": "img/virgen_frente.webp",
-    "imagenes": [],
     "tipo": "Abanicos artesanales",
     "subtipo": "Devocional",
-    "almacen": 0,
-    "precio": 0
+    "titulo": "Virgen Frente",
+    "subtitulo": "Devocional",
+    "imagen": "img/virgen_frente.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
+    "tipo": "Retratos personalizados",
+    "subtipo": "Carboncillo y grafito",
     "titulo": "Zorro",
-    "tecnica": "Carboncillo y grafito",
+    "subtitulo": "Carboncillo y grafito",
     "imagen": "img/Zorro.webp",
     "imagenes": [
       "img/Zorro_1.webp",
       "img/Zorro_2.webp"
     ],
-    "tipo": "Retratos personalizados",
-    "subtipo": "Carboncillo y grafito",
-    "almacen": 0,
-    "precio": 0
+    "almacen": 0
   }
 ]
