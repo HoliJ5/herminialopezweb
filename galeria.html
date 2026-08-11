@@ -343,47 +343,36 @@
                     return filtroActual === 'todos' || info.tipo === filtroActual;
                 });
 
+                // 1. Evaluamos si el filtro actual es "todos" (sin filtro)
+                const isTodos = filtroActual === 'todos';
+                
+                // 2. Ajustamos los márgenes del contenedor general:
+                // Si hay un filtro aplicado, reducimos el margen inferior drásticamente 
+                // para que la descripción quede pegada a la cuadrícula de obras.
+                if (isTodos) {
+                    contenedorInfo.className = "mt-4 md:mt-8 flex flex-col gap-12 md:gap-20 empty:hidden border-b border-neutral-200 pb-12 mb-12 md:pb-16 md:mb-16";
+                } else {
+                    contenedorInfo.className = "mt-4 md:mt-8 flex flex-col empty:hidden border-b border-neutral-200 pb-6 mb-6 md:pb-16 md:mb-16";
+                }
+
+                const claseDescripcion = isTodos ? 'hidden md:block' : 'block';
+                const claseCollage = isTodos ? 'grid' : 'hidden md:grid';
+                
+                // 3. Ajustamos dinámicamente el gap y los márgenes internos en móvil:
+                // Si 'isTodos' es true (sin descripción en móvil), quitamos casi todo el margen.
+                const gapClase = isTodos ? 'gap-2' : 'gap-6';
+                const mbTitulo = isTodos ? 'mb-0 md:mb-3' : 'mb-3';
+
                 infoFiltrada.forEach((info, index) => {
                     const direccionFlex = index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse';
 
-                    let collageHtml = '';
-                    if (info.obras && info.obras.length > 0) {
-                        const obrasEncontradas = info.obras.map(tituloObra => {
-                            return obrasData.find(o => o.titulo === tituloObra);
-                        }).filter(Boolean);
-
-                        if (obrasEncontradas.length > 0) {
-                            const gridCols = obrasEncontradas.length === 1 ? 'grid-cols-1' : 'grid-cols-2';
-                            
-                            const collageContenedor = document.createElement('div');
-                            collageContenedor.className = `w-full md:w-1/2 grid ${gridCols} gap-3 sm:gap-4`;
-
-                            obrasEncontradas.forEach(obra => {
-                                const imgWrapper = document.createElement('div');
-                                imgWrapper.className = "overflow-hidden bg-neutral-100 aspect-square rounded-sm cursor-pointer group";
-                                
-                                const imgEl = document.createElement('img');
-                                imgEl.src = obra.imagen;
-                                imgEl.alt = `Ejemplo de ${info.tipo} - ${obra.titulo}`;
-                                imgEl.className = "w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105";
-                                
-                                imgWrapper.addEventListener('click', () => abrirModal(obra));
-                                
-                                imgWrapper.appendChild(imgEl);
-                                collageContenedor.appendChild(imgWrapper);
-                            });
-                            
-                            collageHtml = collageContenedor.outerHTML; 
-                        }
-                    }
-
                     const bloqueInfo = document.createElement('div');
-                    bloqueInfo.className = `flex flex-col ${direccionFlex} gap-6 md:gap-12 items-center w-full`;
+                    bloqueInfo.className = `flex flex-col ${direccionFlex} ${gapClase} md:gap-12 items-center w-full`;
                     
                     bloqueInfo.innerHTML = `
-                        <div class="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left cursor-pointer hover:bg-neutral-50 transition-colors p-2 md:p-4 rounded-sm" id="btn-info-${index}">
-                            <h3 class="font-serif text-2xl sm:text-3xl font-medium mb-3 capitalize text-neutral-800">${info.tipo}</h3>
-                            <p class="text-neutral-600 text-sm sm:text-base leading-relaxed pointer-events-none">${info.descripcion}</p>
+                        <div class="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left cursor-pointer hover:bg-neutral-50 transition-colors p-1 md:p-4 rounded-sm" id="btn-info-${index}">
+                            <h3 class="font-serif text-2xl sm:text-3xl font-medium ${mbTitulo} capitalize text-neutral-800">${info.tipo}</h3>
+                            <p class="text-neutral-600 text-sm sm:text-base leading-relaxed pointer-events-none ${claseDescripcion}">${info.descripcion}</p>
                         </div>
                     `;
                     
@@ -392,7 +381,8 @@
                         if (obrasEncontradas.length > 0) {
                             const gridCols = obrasEncontradas.length === 1 ? 'grid-cols-1' : 'grid-cols-2';
                             const collageContenedor = document.createElement('div');
-                            collageContenedor.className = `w-full md:w-1/2 grid ${gridCols} gap-3 sm:gap-4`;
+                            
+                            collageContenedor.className = `w-full md:w-1/2 ${claseCollage} ${gridCols} gap-3 sm:gap-4`;
 
                             obrasEncontradas.forEach(obra => {
                                 const imgWrapper = document.createElement('div');
