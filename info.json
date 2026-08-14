@@ -1,7 +1,7 @@
 [
   {
     "tipo": "Retratos personalizados",
-    "descripcion": "<strong>Selección de retratos</strong> creados a lo largo de los últimos años. La mayoría de estas piezas ya forman parte de colecciones privadas y espacios particulares, pero sirven como muestra e inspiración para dar vida a tu propio encargo a medida.",
+    "descripcion": "Un rostro transmite mucho más que unas facciones, guarda vivencias y expresiones propias. Mi trabajo se centra en trasladar al soporte esa naturalidad de las personas a través de una pintura que busca capturar la historia que se esconde detrás de cada mirada.",
     "obras": [
       "Angelita",
       "Carmen"
@@ -9,21 +9,21 @@
   },
   {
     "tipo": "Obras pictoricas",
-    "descripcion": "Colección de piezas nacidas de mi propia inspiración y creadas en el taller para su venta directa. Una muestra de mi trabajo personal donde exploro temáticas libres, listas para formar parte de tu hogar.",
+    "descripcion": "Un recorrido por mi pintura y mi forma de mirar, donde reinterpreto la realidad para buscar su propia luz. Esta galería reúne obras que ya habitan en colecciones privadas junto a piezas disponibles en el taller, creadas con la intención de encontrar un nuevo espacio.",
     "obras": [
       "El Carmen"
     ]
   },
   {
     "tipo": "Abanicos artesanales",
-    "descripcion": "Abanicos para diario, fines de semana e invitadas de eventos.Mucho más que un accesorio: un gesto pintado a mano sobre auténtico varillaje certificado AEA. Diseños creados tanto para dar un toque especial a tu día a día como para completar tu vestuario de invitada.",
+    "descripcion": "El abanico concebido desde el oficio y el carácter, pensado para acompañarte en cualquier evento. Utilizando siempre varillaje realizado por artesanos españoles con certificado AEA.",
     "obras": [
       "Abanico Seda Pájaro"
     ]
   },
   {
     "tipo": "Bodas y eventos",
-    "descripcion": "Abanicos de novia, bastidores de alianzas, saquitos y limosneras. El valor de los detalles en tus días más señalados. Diseños minuciosos con pincel y aguja en complementos de ceremonia pensados para formar parte de tu historia.",
+    "descripcion": "Esta galería reúne una selección de piezas textiles y abanicos de alta artesanía creados para acompañar días señalados. Cada proyecto nace de un boceto personalizado y adaptado para la ocasión, con la libertad de dar vida a una idea nueva o de reinterpretar diseños anteriores que hayan inspirado tu elección.",
     "obras": [
       "Bastidor Inma y Juan",
       "Lazo Marina y Jose"
@@ -34,6 +34,41 @@
     "descripcion": "Cojines, ropa y bolsos personalizados. Pinceladas con estilo propio sobre diferentes soportes textiles y artesanales. Una selección de accesorios creados para acompañarte.",
     "obras": [
       "Falda Marrón Ramas"
+    ]
+  },
+  {
+    "subtipo": "Pintado a mano",
+    "descripcion": " Diseños pintados a mano sobre la base firme de un auténtico varillaje certificado AEA, creados no como un simple accesorio",
+    "obras": [
+      "Abanico Bordado"
+    ]
+  }
+  ,{
+    "subtipo": "Abanicos de alta artesania",
+    "descripcion": "Un espacio donde el verdadero sentido nace del oficio y de las manos que lo moldean. El protagonismo aquí late en la paciencia de un deshilachado o en el cuidado con el que tejidos como el lino, el mikado o la imitación seda se asientan sobre el varillaje. Son maderas nobles que sostienen el sello de nuestros artesanos españoles bajo el distintivo AEA; una base limpia donde el trazo del pincel y el detalle del bordado intervienen con la dedicación necesaria para acompañar a un objeto que se ha pensado, desde su origen, para ser puramente artesanal.",
+    "obras": [
+      "Abanico Bordado"
+    ]
+  }
+  ,{
+    "subtipo": "Bastidores y Saquitos",
+    "descripcion": "El diseño comienza partir de tus propios gustos, transformando piezas anteriores del taller o trasladando al tejido la identidad de tus invitaciones de boda, así logramos que todo esté en armonía.",
+    "obras": [
+      "Saquito Inma"
+    ]
+  }
+  ,{
+    "subtipo": "Cintas de ramo",
+    "descripcion": "Un detalle en movimiento que acompaña al ramo en tu ceremonia. El diseño nace de tus propias ideas a través de la pintura: desde plasmar con pincel una frase emocional con significado para ti, hasta adaptar piezas anteriores del taller o inspirarte en tus invitaciones de boda.",
+    "obras": [
+      "Lazo Marina y Jose"
+    ]
+  }
+  ,{
+    "subtipo": "Pañuelos bordados",
+    "descripcion": "Un detalle delicado concebido como regalo para tus familiares más directos. Cada frase o dedicatoria se borda íntegramente a mano en el taller, dándote la libertad de elegir las palabras que guardarán tu propio recuerdo.",
+    "obras": [
+      "Lazo Marina y Jose"
     ]
   }
 ]

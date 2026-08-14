@@ -42,12 +42,8 @@
 
         <div class="relative max-w-4xl max-h-[95vh] w-full px-4 flex flex-col items-center justify-center overflow-y-auto py-6" id="modal-area-deslizable">
             
-            <!-- CONTENEDOR CARRUSEL DE IMÁGENES -->
             <div id="slider-contenedor" class="w-full h-[50vh] sm:h-[60vh] overflow-hidden relative touch-pan-y">
-                <!-- TRACK donde se pondrán todas las fotos lado a lado -->
-                <div id="slider-track" class="flex w-full h-full items-center transition-transform duration-300">
-                    <!-- Las imágenes se insertan aquí vía JS -->
-                </div>
+                <div id="slider-track" class="flex w-full h-full items-center transition-transform duration-300"></div>
             </div>
             
             <div id="modal-miniaturas" class="flex gap-2 sm:gap-3 mt-4 sm:mt-6 overflow-x-auto max-w-full pb-2 scrollbar-none"></div>
@@ -135,13 +131,11 @@
 
                 modalTitulo.textContent = obra.titulo;
                 
-                // Condición para mostrar el precio si está en el almacén
                 modalDetalles.textContent = obra.almacen === 1 && obra.precio !== undefined
-                    ? `${obra.subtitulo} — ${obra.precio}€`
-                    : `${obra.subtitulo}`;
+                    ? `${obra.tecnica} — ${obra.precio}€`
+                    : `${obra.tecnica}`;
                 
                 const numeroWhatsApp = "34644241265";
-                // Opcional: También puedes hacer que el mensaje de WhatsApp cambie si está en venta
                 const textoMensaje = obra.almacen === 1 
                     ? `¡Hola! Me gustaría comprar / pedir información sobre "${obra.titulo}".` 
                     : `¡Hola! Me gustaría solicitar un presupuesto para "${obra.titulo}".`;
@@ -151,7 +145,6 @@
 
                 sliderTrack.innerHTML = '';
                 
-                // Envolvemos la imagen en un div con padding (px-2 en móvil, px-6 en pantallas más grandes)
                 imagenesModalActuales.forEach((imgSrc) => {
                     const slideWrapper = document.createElement('div');
                     slideWrapper.className = 'w-full h-full flex-shrink-0 px-2 sm:px-6 flex items-center justify-center';
@@ -256,11 +249,13 @@
             sliderContenedor.addEventListener('touchmove', arrastrar, { passive: false });
             sliderContenedor.addEventListener('touchend', finalizarArrastre);
 
+            // MODIFICADO: Capacidad para leer Arrays en "tipo"
             function renderizarFiltrosPrincipales() {
                 const contenedorFiltros = document.getElementById('filtros-contenedor');
                 contenedorFiltros.innerHTML = '';
 
-                const tiposUnicos = [...new Set(obrasData.map(o => o.tipo).filter(Boolean))];
+                // Usamos flatMap para desempaquetar Arrays si los hay
+                const tiposUnicos = [...new Set(obrasData.flatMap(o => Array.isArray(o.tipo) ? o.tipo : [o.tipo]).filter(Boolean))];
 
                 const btnTodos = document.createElement('button');
                 btnTodos.textContent = 'Mostrar todos';
@@ -291,6 +286,7 @@
                 });
             }
 
+            // MODIFICADO: Adaptado para chequear contra Arrays
             function renderizerSubfiltros() {
                 const contenedorSub = document.getElementById('subfiltros-contenedor');
                 contenedorSub.innerHTML = '';
@@ -301,7 +297,10 @@
                 }
 
                 const subtipos = [...new Set(obrasData
-                    .filter(o => o.tipo === filtroActual && o.subtipo)
+                    .filter(o => {
+                        const esDelTipo = Array.isArray(o.tipo) ? o.tipo.includes(filtroActual) : o.tipo === filtroActual;
+                        return esDelTipo && o.subtipo;
+                    })
                     .map(o => o.subtipo)
                 )];
 
@@ -340,15 +339,15 @@
                 contenedorInfo.innerHTML = '';
 
                 const infoFiltrada = infoData.filter(info => {
-                    return filtroActual === 'todos' || info.tipo === filtroActual;
+                    if (subfiltroActual !== 'todos') {
+                        return info.subtipo === subfiltroActual;
+                    } else {
+                        return info.tipo && (filtroActual === 'todos' || info.tipo === filtroActual);
+                    }
                 });
 
-                // 1. Evaluamos si el filtro actual es "todos" (sin filtro)
-                const isTodos = filtroActual === 'todos';
+                const isTodos = filtroActual === 'todos' && subfiltroActual === 'todos';
                 
-                // 2. Ajustamos los márgenes del contenedor general:
-                // Si hay un filtro aplicado, reducimos el margen inferior drásticamente 
-                // para que la descripción quede pegada a la cuadrícula de obras.
                 if (isTodos) {
                     contenedorInfo.className = "mt-4 md:mt-8 flex flex-col gap-12 md:gap-20 empty:hidden border-b border-neutral-200 pb-12 mb-12 md:pb-16 md:mb-16";
                 } else {
@@ -357,21 +356,19 @@
 
                 const claseDescripcion = isTodos ? 'hidden md:block' : 'block';
                 const claseCollage = isTodos ? 'grid' : 'hidden md:grid';
-                
-                // 3. Ajustamos dinámicamente el gap y los márgenes internos en móvil:
-                // Si 'isTodos' es true (sin descripción en móvil), quitamos casi todo el margen.
                 const gapClase = isTodos ? 'gap-2' : 'gap-6';
                 const mbTitulo = isTodos ? 'mb-0 md:mb-3' : 'mb-3';
 
                 infoFiltrada.forEach((info, index) => {
                     const direccionFlex = index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse';
+                    const tituloARenderizar = info.tipo ? info.tipo : info.subtipo;
 
                     const bloqueInfo = document.createElement('div');
                     bloqueInfo.className = `flex flex-col ${direccionFlex} ${gapClase} md:gap-12 items-center w-full`;
                     
                     bloqueInfo.innerHTML = `
                         <div class="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left cursor-pointer hover:bg-neutral-50 transition-colors p-1 md:p-4 rounded-sm" id="btn-info-${index}">
-                            <h3 class="font-serif text-2xl sm:text-3xl font-medium ${mbTitulo} capitalize text-neutral-800">${info.tipo}</h3>
+                            <h3 class="font-serif text-2xl sm:text-3xl font-medium ${mbTitulo} capitalize text-neutral-800">${tituloARenderizar}</h3>
                             <p class="text-neutral-600 text-sm sm:text-base leading-relaxed pointer-events-none ${claseDescripcion}">${info.descripcion}</p>
                         </div>
                     `;
@@ -390,7 +387,7 @@
                                 
                                 const imgEl = document.createElement('img');
                                 imgEl.src = obra.imagen;
-                                imgEl.alt = `Ejemplo de ${info.tipo} - ${obra.titulo}`;
+                                imgEl.alt = `Ejemplo de ${tituloARenderizar} - ${obra.titulo}`;
                                 imgEl.className = "w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105";
                                 
                                 imgWrapper.addEventListener('click', () => abrirModal(obra));
@@ -407,8 +404,10 @@
                     const btnInfo = document.getElementById(`btn-info-${index}`);
                     if(btnInfo) {
                         btnInfo.addEventListener('click', () => {
-                            filtroActual = info.tipo;
-                            subfiltroActual = 'todos';
+                            if (info.tipo) {
+                                filtroActual = info.tipo;
+                                subfiltroActual = 'todos';
+                            }
                             renderizarFiltrosPrincipales();
                             renderizerSubfiltros();
                             aplicarFiltro();
@@ -419,11 +418,12 @@
                 });
             }
 
+            // MODIFICADO: Capacidad para filtrar cuando "tipo" es un Array
             function aplicarFiltro() {
                 contenedor.innerHTML = '';
                 
                 const filtradas = obrasData.filter(o => {
-                    const cumpleTipo = filtroActual === 'todos' || o.tipo === filtroActual;
+                    const cumpleTipo = filtroActual === 'todos' || (Array.isArray(o.tipo) ? o.tipo.includes(filtroActual) : o.tipo === filtroActual);
                     const cumpleSubtipo = subfiltroActual === 'todos' || o.subtipo === subfiltroActual;
                     return cumpleTipo && cumpleSubtipo;
                 });
@@ -432,7 +432,6 @@
                     const obraElement = document.createElement('div');
                     obraElement.className = 'group cursor-pointer w-full';
                     
-                    // Condición para la etiqueta de venta si almacen es 1
                     const etiquetaVenta = obra.almacen === 1 
                         ? `<div class="absolute bottom-2 right-2 bg-[#726260]/85 text-white text-[10px] sm:text-[11px] font-medium px-2 py-1 rounded-sm uppercase tracking-wider z-10 pointer-events-none shadow-sm">${obra['texto-venta']}</div>`
                         : '';
