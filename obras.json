@@ -60,7 +60,7 @@
       "img/abanico-cara-virgen_2.webp",
       "img/abanico-cara-virgen_3.webp",
       "img/abanico-cara-virgen_4.webp",
-      "img/abanico-cara virgen 2.jpg"
+      "img/abanico-cara-virgen_5.webp"
     ],
     "almacen": 0
   },
@@ -188,10 +188,9 @@
     "subtipo": "Pintado a mano",
     "titulo": "Anna Flamenca",
     "subtitulo": "Retrato",
-    "imagen": "img/Anna flamenca 1.jpg",
+    "imagen": "img/Anna flamenca 1.webp",
     "imagenes": [
-      "img/Anna flamenca 2.jpg",
-      "img/Anna flamenca 3.jpg"
+      "img/Anna flamenca 2.webp"
     ],
     "almacen": 0
   },
@@ -611,7 +610,9 @@
     "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Lucas.webp",
     "imagenes": [
-      "img/Lucas_1.webp"
+      "img/Lucas_1.webp",
+      "img/Lucas_2.webp",
+      "img/Abril y Lucas.webp"
     ],
     "almacen": 0
   },
@@ -858,6 +859,149 @@
     "imagenes": [
       "img/Zorro_1.webp",
       "img/Zorro_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Meseros",
+    "titulo": "Meseros de ciudades",
+    "subtitulo": "Meseros",
+    "imagen": "img/Mesero Budapest.webp",
+    "imagenes": [
+      "img/Mesero Edimburgo.webp",
+      "img/Mesero kioto.webp",
+      "img/Mesero Madrid.webp",
+      "img/Mesero Oslo.webp",
+      "img/Mesero roma.webp",
+      "img/Mesero san José.webp",
+      "img/Mesero seul.webp",
+      "img/Mesero singapur.webp",
+      "img/Mesero Wellington.webp",
+      "img/Mesero Marrakech.webp",
+      "img/Mesero Londres.webp",
+      "img/Mesero Amsterdam.webp",
+      "img/Mesero New York.webp",
+      "img/Mesero Bruselas.webp",
+      "img/Mesero Bangkok.webp",
+      "img/Mesero Hanoi.webp",
+      "img/Mesero Estambul.webp",
+      "img/Mesero habana.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Abril",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Abril.webp",
+    "imagenes": [
+      "img/Abril y Lucas.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Aras",
+    "subtitulo": "Acrílico sobre lienzo lino",
+    "imagen": "img/Aras 1.webp",
+    "imagenes": [
+      "img/Aras.webp",
+      "img/Aras 2.webp",
+      "img/Aras 3.webp",
+      "img/Aras 4.webp",
+      "img/Aras 5.webp",
+      "img/Aras 6.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Curro Lucena",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Curro Lucena.webp",
+    "imagenes": [
+      "img/Curro Lucena 2.webp",
+      "img/Curro Lucena 3.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Savia",
+    "subtitulo": "Acrílico sobre lienzo lino",
+    "imagen": "img/Savia.webp",
+    "imagenes": [
+      "img/Savia_1.webp",
+      "img/Savia_2.webp",
+      "img/Savia_3.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Valentina",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Retrato valentina.webp",
+    "imagenes": [
+      "img/Retrato valentina_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Album",
+    "titulo": "Album",
+    "subtitulo": "Meseros",
+    "imagen": "img/Album Sonia.webp",
+    "imagenes": [
+      "img/Album Sonia_1.webp",
+      "img/Album Sonia_2.webp",
+      "img/Album Sonia_3.webp",
+      "img/Album Sonia_4.webp",
+      "img/Album Sonia_5.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Capotas y Sombreros",
+    "titulo": "Capota",
+    "subtitulo": "Meseros",
+    "imagen": "img/Capota paje.webp",
+    "imagenes": [
+      "img/Capota paje_1.webp",
+      "img/capota y sombrero paje.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Capotas y Sombreros",
+    "titulo": "Sombrero",
+    "subtitulo": "Meseros",
+    "imagen": "img/Sombrero paje.webp",
+    "imagenes": [
+      "img/Sombrero paje_1.webp",
+      "img/Sombrero paje_2.webp",
+      "img/capota y sombrero paje.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Pamela",
+    "titulo": "Bolso Hojas Granates",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Pamela mari.webp",
+    "imagenes": [
+      "img/Pamela mari_1.webp",
+      "img/Pamela mari_2.webp"
     ],
     "almacen": 0
   }
