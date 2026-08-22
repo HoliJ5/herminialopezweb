@@ -117,7 +117,8 @@
     "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Alvaro.webp",
     "imagenes": [
-      "img/Alvaro_1.webp"
+      "img/Alvaro_1.webp",
+      "img/Retrato Álvaro_2.webp"
     ],
     "almacen": 0
   },
@@ -685,27 +686,6 @@
     "almacen": 0
   },
   {
-    "tipo": ["Obras pictoricas"],
-    "subtipo": "",
-    "titulo": "Meseros",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
-    "imagen": "img/meseros.webp",
-    "imagenes": [
-      "img/meseros_1.webp",
-      "img/meseros_2.webp",
-      "img/meseros_3.webp",
-      "img/meseros_4.webp",
-      "img/meseros_5.webp",
-      "img/meseros_6.webp",
-      "img/meseros_7.webp",
-      "img/meseros_8.webp"
-    ],
-    "almacen": 1,
-    "precio": "desde 12",
-    "tipo-venta": "Prints",
-    "texto-venta": "Disponible en prints"
-  },
-  {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
     "titulo": "Noa",
@@ -864,11 +844,12 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Meseros",
+    "subtipo": "Papeleria",
     "titulo": "Meseros de ciudades",
     "subtitulo": "Meseros",
-    "imagen": "img/Mesero Budapest.webp",
+    "imagen": "img/meseros_3.webp",
     "imagenes": [
+      "img/Mesero Budapest.webp",
       "img/Mesero Edimburgo.webp",
       "img/Mesero kioto.webp",
       "img/Mesero Madrid.webp",
@@ -955,7 +936,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Album",
+    "subtipo": "Papeleria",
     "titulo": "Album",
     "subtitulo": "Meseros",
     "imagen": "img/Album Sonia.webp",
@@ -970,7 +951,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Capotas y Sombreros",
+    "subtipo": "Sombreros",
     "titulo": "Capota",
     "subtitulo": "Meseros",
     "imagen": "img/Capota paje.webp",
@@ -982,7 +963,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Capotas y Sombreros",
+    "subtipo": "Sombreros",
     "titulo": "Sombrero",
     "subtitulo": "Meseros",
     "imagen": "img/Sombrero paje.webp",
@@ -994,8 +975,8 @@
     "almacen": 0
   },
   {
-    "tipo": ["Complementos pintados a mano"],
-    "subtipo": "Pamela",
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Sombreros",
     "titulo": "Bolso Hojas Granates",
     "subtitulo": "Pintura en tela",
     "imagen": "img/Pamela mari.webp",
@@ -1003,6 +984,289 @@
       "img/Pamela mari_1.webp",
       "img/Pamela mari_2.webp"
     ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Papeleria",
+    "titulo": "Meseros tropicales",
+    "subtitulo": "Meseros",
+    "imagen": "img/Meseros tropical.webp",
+    "imagenes": [
+      "img/Mesero tigre.webp",
+      "img/Mesero pajaro.webp",
+      "img/Meseros mono.webp",
+      "img/Mesero palmera.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Wellington.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Bruselas.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Budapest.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Amsterdam.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Edimburgo.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Estambul.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Londres.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Madrid.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Hanoi.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Kioto.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/La Habana.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/París.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Marrakech.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Nueva York.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Oslo.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Roma.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/San José.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Bangkok.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Seul.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Mesero",
+    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "imagen": "img/Singapur.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Navidad",
+    "titulo": "Bolas Navidad",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Bolas navidad.webp",
+    "imagenes": [
+      "img/Navidad bola Lucena.webp",
+      "img/Navidad bola ardilla.webp",
+      "img/Navidad bola feliz navidad.webp",
+      "img/Navidad bola perro_2.webp",
+      "img/Navidad bola cebra.webp",
+      "img/Navidad bola jirafa.webp",
+      "img/Navidad bola globo.webp",
+      "img/Navidad bola circo.webp",
+      "img/Navidad bola perro.webp",
+      "img/Navidad bola flamenco.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Navidad",
+    "titulo": "Bolas Navidad",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Bolas navidad.webp",
+    "imagenes": [],
     "almacen": 0
   }
 ]
