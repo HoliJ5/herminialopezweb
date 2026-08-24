@@ -229,7 +229,8 @@
     "subtitulo": "Bastidor y Saquito",
     "imagen": "img/bastidor-Inma-juan.webp",
     "imagenes": [
-      "img/bastidor-Inma-juan_1.webp"
+      "img/bastidor-Inma-juan_1.webp",
+      "img/bastidor Inma y juan_2.webp"
     ],
     "almacen": 0
   },
@@ -239,7 +240,11 @@
     "titulo": "Bastidor y Saquito Juan y Mari",
     "subtitulo": "Pintado a mano",
     "imagen": "img/bastidor-saquito-juan-mari.webp",
-    "imagenes": ["img/saquito-juan-mari.webp"],
+    "imagenes": [
+      "img/saquito-juan-mari.webp",
+      "img/Juan y Mari 1.webp",
+      "img/Juan y Mari 2.webp"
+    ],
     "almacen": 0
   },
   {
@@ -247,8 +252,10 @@
     "subtipo": "Bolso",
     "titulo": "Bolso Hojas Granates",
     "subtitulo": "Pintura en tela",
-    "imagen": "img/bolso-hojas-granates.webp",
-    "imagenes": [],
+    "imagen": "img/Tote tropical.webp",
+    "imagenes": [
+      "img/Tote tropical 2.webp"
+    ],
     "almacen": 0
   },
   {
@@ -256,8 +263,10 @@
     "subtipo": "Bolso",
     "titulo": "Bolso Mariposas Negras",
     "subtitulo": "Pintura en tela",
-    "imagen": "img/bolso-mariposas-negras.webp",
-    "imagenes": [],
+    "imagen": "img/Tote libélulas.webp",
+    "imagenes": [
+      "img/Tote libélulas_1.webp"
+    ],
     "almacen": 0
   },
   {
@@ -392,8 +401,10 @@
     "subtipo": "Ropa",
     "titulo": "Falda Marrón Ramas",
     "subtitulo": "Pintura en tela",
-    "imagen": "img/falda-marron-ramas.webp",
-    "imagenes": [],
+    "imagen": "img/Falda marrón y granate.webp",
+    "imagenes": [
+      "img/Falda marrón y granate_1.webp"
+    ],
     "almacen": 0
   },
   {
@@ -401,8 +412,10 @@
     "subtipo": "Ropa",
     "titulo": "Falda Negra Garza",
     "subtitulo": "Pintura en tela",
-    "imagen": "img/falda-negra-garza.webp",
-    "imagenes": [],
+    "imagen": "img/Falda negra garza.webp",
+    "imagenes": [
+      "img/Falda negra garza_1.webp"
+    ],
     "almacen": 0
   },
   {
@@ -410,8 +423,23 @@
     "subtipo": "Ropa",
     "titulo": "Gabardina Tucán",
     "subtitulo": "Pintura en tela",
-    "imagen": "img/gabardina-tucan.webp",
-    "imagenes": [],
+    "imagen": "img/Gabardina verde tucán.webp",
+    "imagenes": [
+      "img/Gabardina verde tucán_1.webp",
+      "img/Gabardina verde tucán_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Gabardina hojas",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Gabardina hojas.webp",
+    "imagenes": [
+      "img/Gabardina hojas 1.webp",
+      "img/Gabardina hojas 2.webp"
+    ],
     "almacen": 0
   },
   {
@@ -579,7 +607,9 @@
     "imagen": "img/lazo-Olga.webp",
     "imagenes": [
       "img/lazo-Olga_1.webp",
-      "img/lazo-Olga_2.webp"
+      "img/lazo-Olga_2.webp",
+      "img/Cinta ramo Olga y luis_3.webp",
+      "img/Cinta ramo Olga y luis_4.webp"
     ],
     "almacen": 0
   },
@@ -818,7 +848,9 @@
     "titulo": "Saquito Inma",
     "subtitulo": "Saquito",
     "imagen": "img/saquito_inma.webp",
-    "imagenes": [],
+    "imagenes": [
+      "img/Saquito Inma_1.webp"
+    ],
     "almacen": 0
   },
   {
@@ -1261,12 +1293,208 @@
     "almacen": 0
   },
   {
-    "tipo": ["Complementos pintados a mano"],
-    "subtipo": "Navidad",
-    "titulo": "Bolas Navidad",
-    "subtitulo": "Pintura en tela",
-    "imagen": "img/Bolas navidad.webp",
+    "tipo": ["Abanicos artesanales"],
+    "subtipo": "Pintado a mano",
+    "titulo": "Abanico Almodovar",
+    "subtitulo": "Abstracto",
+    "imagen": "img/Abanico Almodóvar.webp",
+    "imagenes": ["img/Abanico Almodóvar_1.webp"],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Bandana",
+    "titulo": "Bandana",
+    "subtitulo": "Meseros",
+    "imagen": "img/Bandana Whisky.webp",
+    "imagenes": [
+      "img/Bandana Whisky_1.webp",
+      "img/Bandana Whisky_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Cintas de ramo",
+    "titulo": "Lazo Edith",
+    "subtitulo": "Cintas de ramo",
+    "imagen": "img/Cinta ramo edith.webp",
+    "imagenes": [
+      "img/Cinta ramo edith_1.webp",
+      "img/Cinta ramo edith_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Cintas de ramo",
+    "titulo": "Cinta David Araceli",
+    "subtitulo": "Cintas de ramo",
+    "imagen": "img/Cinta ramo David y Araceli.webp",
+    "imagenes": [
+      "img/Cinta ramo David y Araceli_1.webp",
+      "img/Cinta ramo David y Araceli_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Cintas de ramo",
+    "titulo": "Cinta David Araceli",
+    "subtitulo": "Cintas de ramo",
+    "imagen": "img/Cinta ramo Álvaro y gloria.webp",
     "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Cintas de ramo",
+    "titulo": "Cinta Antonio Angela",
+    "subtitulo": "Cintas de ramo",
+    "imagen": "img/Cinta ramo Antonio Angela.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Cintas de ramo",
+    "titulo": "Cinta Margaritas",
+    "subtitulo": "Cintas de ramo",
+    "imagen": "img/Cinta ramo margaritas.webp",
+    "imagenes": [
+      "img/Cinta ramo margaritas_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Cintas de ramo",
+    "titulo": "Cinta Margaritas",
+    "subtitulo": "Cintas de ramo",
+    "imagen": "img/Cinta ramo Pili y fran.webp",
+    "imagenes": [
+      "img/Cinta ramo Pili y fran_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Fajin Gelu",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Fajín Gelu.webp",
+    "imagenes": [
+      "img/Fajín Gelu_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Mari",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Mari.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Nala",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Nala.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Nala",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Noa_madera.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Pañuelos",
+    "titulo": "Pañuelo santero",
+    "subtitulo": "Pañuelos de alta artesania",
+    "imagen": "img/Pañuelo santero.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Retrato dama y virgen",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Retrato dama y virgen.webp",
+    "imagenes": [
+      "img/Retrato dama y virgen_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Retrato eu",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Retrato eu.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Retrato Jesús nazareno",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Retrato Jesús nazareno.webp",
+    "imagenes": [
+      "img/Retrato Jesús nazareno_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Sudadera Doraemon",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Sudadera Doraemon.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Bolso",
+    "titulo": "Tote",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Tote garza.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Vestido ara cabello.webp",
+    "imagenes": [
+      "img/Vestido ara cabello_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido Jelu",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/vestido Jelu amarillo.webp",
+    "imagenes": [
+      "img/vestido Jelu amarillo_1.webp",
+      "img/vestido Jelu amarillo_2.webp",
+      "img/vestido Jelu amarillo_3.webp"
+    ],
     "almacen": 0
   }
 ]
