@@ -132,8 +132,8 @@
                 modalTitulo.textContent = obra.titulo;
                 
                 modalDetalles.textContent = obra.almacen === 1 && obra.precio !== undefined
-                    ? `${obra.tecnica} — ${obra.precio}€`
-                    : `${obra.tecnica}`;
+                    ? `${obra.subtitulo} — ${obra.precio}€`
+                    : `${obra.subtitulo}`;
                 
                 const numeroWhatsApp = "34644241265";
                 const textoMensaje = obra.almacen === 1 
