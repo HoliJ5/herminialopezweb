@@ -83,8 +83,9 @@
 
             let obrasData = [];
             let infoData = [];
-            let filtroActual = 'todos';
-            let subfiltroActual = 'todos';
+            const urlParams = new URLSearchParams(window.location.search);
+            let filtroActual = urlParams.get('filtro') || 'todos';
+            let subfiltroActual = urlParams.get('subfiltro') || 'todos';
 
             let imagenesModalActuales = [];
             let indiceModalActual = 0;

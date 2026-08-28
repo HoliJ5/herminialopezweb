@@ -4,23 +4,94 @@
         .font-montserrat { font-family: 'Montserrat', sans-serif; }
     </style>
 </head>
+
+<!-- Navegación principal -->
 <nav class="sticky top-0 z-40 bg-[#726260]/80 backdrop-blur-md border-b border-[#726260] px-4 sm:px-6 py-3 sm:py-4 w-full">
-    <!-- Cambiado sm:flex-row por md:flex-row y añadido md:gap-8 para separación mínima -->
-    <div class="max-w-8xl mx-auto flex flex-col md:flex-row gap-3 md:gap-8 lg:gap-12 items-center justify-between w-full">
-        
+    <div class="max-w-8xl mx-auto flex items-center justify-between w-full">
+
+        <!-- Logo -->
         <a href="galeria.html" class="font-montserrat text-lg sm:text-xl font-semibold tracking-widest flex-shrink-0 text-[#2b1f28]">
             HERMINIA LÓPEZ
         </a>
-        
-        <!-- Cambiado sm:justify-end a md:justify-end y sm:w-auto a md:w-auto -->
-        <div id="enlaces-menu" class="flex items-center justify-center md:justify-end gap-x-4 md:gap-x-6 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-200 max-w-full overflow-x-auto whitespace-nowrap scrollbar-none w-full md:w-auto">
-             <a href="index.html" class="hover:text-[#4b262a] transition-colors py-1">Inicio</a>
-             <a href="galeria.html" class="hover:text-[#4b262a] transition-colors py-1">Portfolio</a>
-             <a href="almacen.html" class="hover:text-[#4b262a] transition-colors py-1">Stock</a>
-             <a href="sobremi.html" class="hover:text-[#4b262a] transition-colors py-1">Sobre mí</a>
-             <a href="contacto.html" class="hover:text-[#4b262a] transition-colors py-1">Contacto</a>
-             <a href="preguntasFrecuentes.html" class="hover:text-[#4b262a] transition-colors py-1">FAQ'S</a>
+
+        <!-- Botón hamburguesa -->
+        <button id="btn-abrir-menu"
+                class="md:hidden text-[#2b1f28] hover:text-white focus:outline-none p-1 transition-colors relative z-50"
+                aria-label="Abrir menú">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <!-- Menú escritorio -->
+        <div id="menu-escritorio"
+             class="hidden md:flex items-center justify-end gap-x-6 lg:gap-x-8 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-200 w-auto">
+            <a href="index.html" class="hover:text-[#4b262a] transition-colors py-1">Inicio</a>
+            <a href="galeria.html" class="hover:text-[#4b262a] transition-colors py-1">Portfolio</a>
+            <a href="almacen.html" class="hover:text-[#4b262a] transition-colors py-1">Stock</a>
+            <a href="sobremi.html" class="hover:text-[#4b262a] transition-colors py-1">Sobre mí</a>
+            <a href="contacto.html" class="hover:text-[#4b262a] transition-colors py-1">Contacto</a>
+            <a href="preguntasFrecuentes.html" class="hover:text-[#4b262a] transition-colors py-1">FAQ'S</a>
         </div>
 
     </div>
 </nav>
+
+<!-- Overlay -->
+<div id="menu-overlay"
+     class="fixed inset-0 bg-black/60 z-40 hidden opacity-0 transition-opacity duration-300 md:hidden">
+</div>
+
+<!-- Menú lateral móvil -->
+<div id="menu-lateral"
+     class="fixed inset-y-0 right-0 z-50 w-64 bg-[#726260] shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col md:hidden">
+
+    <div class="flex items-center justify-end px-4 py-4 border-b border-[#4b262a]/30 h-[68px]">
+        <button id="btn-cerrar-menu"
+                class="text-white hover:text-[#2b1f28] focus:outline-none p-2"
+                aria-label="Cerrar menú">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Contenedor con scroll para los enlaces -->
+    <div class="flex flex-col px-6 py-8 space-y-6 text-sm font-semibold tracking-widest uppercase text-white w-full h-full overflow-y-auto">
+        <a href="index.html" class="block w-full hover:text-[#2b1f28] transition-colors">Inicio</a>
+        
+        <!-- Acordeón Portfolio -->
+        <div class="w-full border-b border-[#4b262a]/30 pb-4">
+            <button id="btn-acordeon-portfolio" class="w-full flex items-center justify-between hover:text-[#2b1f28] transition-colors focus:outline-none">
+                <span>Portfolio</span>
+                <!-- Icono flecha/más -->
+                <svg id="icono-acordeon-portfolio" class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+            </button>
+            <!-- Contenido desplegable (filtros) -->
+            <div id="contenido-acordeon-portfolio" class="mt-4 pl-4 space-y-3 hidden flex-col font-medium text-xs tracking-wider text-neutral-300">
+                <!-- Se rellena dinámicamente desde JS si estamos en galeria.html, sino se muestra enlace normal -->
+                <a href="galeria.html" class="block hover:text-white transition-colors">Ver todo el portfolio</a>
+            </div>
+        </div>
+
+        <!-- Acordeón Stock -->
+        <div class="w-full border-b border-[#4b262a]/30 pb-4">
+            <button id="btn-acordeon-stock" class="w-full flex items-center justify-between hover:text-[#2b1f28] transition-colors focus:outline-none">
+                <span>Stock</span>
+                <svg id="icono-acordeon-stock" class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+            </button>
+            <div id="contenido-acordeon-stock" class="mt-4 pl-4 space-y-3 hidden flex-col font-medium text-xs tracking-wider text-neutral-300">
+                <!-- Se rellena dinámicamente -->
+                <a href="almacen.html" class="block hover:text-white transition-colors">Ver todo el stock</a>
+            </div>
+        </div>
+
+        <a href="sobremi.html" class="block w-full hover:text-[#2b1f28] transition-colors">Sobre mí</a>
+        <a href="contacto.html" class="block w-full hover:text-[#2b1f28] transition-colors">Contacto</a>
+        <a href="preguntasFrecuentes.html" class="block w-full hover:text-[#2b1f28] transition-colors">FAQ'S</a>
+    </div>
+</div>

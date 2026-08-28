@@ -83,7 +83,8 @@
             const btnNext = document.getElementById('modal-next');
 
             let obrasData = [];
-            let filtroActual = 'todos';
+            const urlParams = new URLSearchParams(window.location.search);
+            let filtroActual = urlParams.get('filtro') || 'todos';
 
             // Variables de estado para el carrusel y arrastre
             let imagenesModalActuales = [];
