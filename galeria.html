@@ -22,9 +22,11 @@
         
         <h2 class="font-serif titulo-fluido font-normal mb-6 text-center">Portfolio</h2>
         
-        <div id="filtros-contenedor" class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-4"></div>
-
-        <div id="subfiltros-contenedor" class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[11px] sm:text-xs font-medium tracking-wide uppercase text-neutral-400 mb-8 hidden"></div>
+        <!-- Envolvemos los filtros para ocultarlos en móvil (hidden) y mostrarlos en escritorio (md:block) -->
+        <div class="hidden md:block">
+            <div id="filtros-contenedor" class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-4"></div>
+            <div id="subfiltros-contenedor" class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[11px] sm:text-xs font-medium tracking-wide uppercase text-neutral-400 mb-8 hidden"></div>
+        </div>
 
         <div id="info-subtipos-contenedor" class="mt-4 md:mt-8 flex flex-col gap-12 md:gap-20 empty:hidden border-b border-neutral-200 pb-12 mb-12 md:pb-16 md:mb-16"></div>
 
