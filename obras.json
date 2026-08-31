@@ -44,7 +44,6 @@
     "subtitulo": "Abanicos de alta artesania",
     "imagen": "img/abanico bordado.webp",
     "imagenes": [
-      "img/abanico bordado_1.webp",
       "img/abanico bordado_2.webp",
       "img/abanico bordado_3.webp",
       "img/abanico bordado_4.webp"
@@ -311,8 +310,10 @@
     "subtipo": "Ropa",
     "titulo": "Cazadora Mickey",
     "subtitulo": "Pintura en tela",
-    "imagen": "img/cazador-Mickey.webp",
-    "imagenes": [],
+    "imagen": "img/Chaqueta Mickey_1.webp",
+    "imagenes": [
+      "img/cazador-Mickey.webp"
+    ],
     "almacen": 0
   },
   {
@@ -333,9 +334,11 @@
     "subtipo": "Hogar",
     "titulo": "Cojín Flores",
     "subtitulo": "Pintura en tela",
-    "imagen": "img/Cojin_flores.webp",
+    "imagen": "img/Cojin_flores_1.webp",
     "imagenes": [
-      "img/Cojin_flores_2.webp"
+      "img/Cojin_flores_2.webp",
+      "img/Cojin_flores.webp",
+      "img/Cojin_flores_3.webp"
     ],
     "almacen": 0
   },
@@ -1310,8 +1313,10 @@
     "subtipo": "Bandana",
     "titulo": "Bandana",
     "subtitulo": "Meseros",
-    "imagen": "img/Bandana Whisky.webp",
+    "imagen": "img/Bandana Whisky_4.webp",
     "imagenes": [
+      "img/Bandana Whisky_3.webp",
+      "img/Bandana Whisky.webp",
       "img/Bandana Whisky_1.webp",
       "img/Bandana Whisky_2.webp"
     ],
@@ -1844,7 +1849,9 @@
     "imagen": "img/Abanico Virgen ref 2 marfil.webp",
     "imagenes": [
       "img/Abanico Virgen ref 2 marfil_1.webp",
-      "img/Abanico Virgen ref 2 marfil_2.webp"
+      "img/Abanico Virgen ref 2 marfil_2.webp",
+      "img/Abanico Virgen ref 2_3.webp",
+      "img/Abanico Virgen ref 2_4.webp"
     ],
     "almacen": 0
   },
@@ -1935,6 +1942,182 @@
       "img/Abanico Virgen ref 8_4.webp",
       "img/Abanico Virgen ref 8_5.webp",
       "img/Abanico Virgen ref 8_6.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Calzado",
+    "titulo": "Zapas ara hidalgo",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Zapas ara hidalgo.webp",
+    "imagenes": [
+      "img/Zapas ara hidalgo_1.webp",
+      "img/Zapas ara hidalgo_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Abanicos artesanales"],
+    "subtipo": "Pintado a mano",
+    "titulo": "Abanico virgen ref 8",
+    "subtitulo": "Abstracto",
+    "imagen": "img/Abanico sampedro.webp",
+    "imagenes": [
+      "img/Abanico sampedro_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Vestido psico.webp",
+    "imagenes": [
+      "img/Vestido psico_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Calzado",
+    "titulo": "Zapas ara hidalgo",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Zapas abejas.webp",
+    "imagenes": [
+      "img/Zapas abejas_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Mari",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/Retrato mari.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Papeleria",
+    "titulo": "Album",
+    "subtitulo": "Meseros",
+    "imagen": "img/Minuta boda.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Pantalón carmen.webp",
+    "imagenes": [
+      "img/Pantalón carmen_1.webp",
+      "img/Pantalón carmen_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Vestido hna gelu.webp",
+    "imagenes": [
+      "img/Vestido hna gelu_1.webp",
+      "img/Vestido hna gelu_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Vestido libélulas.webp",
+    "imagenes": [
+      "img/Vestido libélulas_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Vestido mceli.webp",
+    "imagenes": [
+      "img/Vestido mceli_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Vestido negro flor.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Falda gelu.webp",
+    "imagenes": [
+      "img/Falda gelu_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Vestido",
+    "subtitulo": "Pintura en tela",
+    "imagen": "img/Falda mia.webp",
+    "imagenes": [
+      "img/Falda mia_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Abanicos artesanales"],
+    "subtipo": "Pintado a mano",
+    "titulo": "Abanico virgen ref 8",
+    "subtitulo": "Abstracto",
+    "imagen": "img/Abanico Virgen amargura.webp",
+    "imagenes": [
+      "img/Abanico Virgen amargura_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Abanicos artesanales"],
+    "subtipo": "Pintado a mano",
+    "titulo": "Abanico virgen ref 8",
+    "subtitulo": "Abstracto",
+    "imagen": "img/Abanico Virgen Rosario.webp",
+    "imagenes": [
+      "img/Abanico Virgen Rosario_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico Bordado",
+    "subtitulo": "Abanicos de alta artesania",
+    "imagen": "img/Abanico marina.webp",
+    "imagenes": [
+      "img/Abanico marina_1.webp",
+      "img/Abanico marina_2.webp",
+      "img/Abanico marina_3.webp",
+      "img/Abanico marina_4.webp"
     ],
     "almacen": 0
   }
