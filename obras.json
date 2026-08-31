@@ -2,8 +2,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Amalia y Juan Carlos",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Amalia-Juan-Carlos.webp",
     "imagenes": [
       "img/Amalia-Juan-Carlos_1.webp",
@@ -14,15 +14,26 @@
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
+    "titulo": "Iglesia El Carmen",
+    "subtitulo": "Acuarela papel 100% algodón",
+    "imagen": "img/ElCarmen_1.webp",
+    "imagenes": [
+      "img/ElCarmen_5.webp"
+    ],
+    "almacen": 1,
+    "precio": "Prints desde 12",
+    "tipo-venta": "Prints",
+    "texto-venta": "Disponible en prints"
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Papeleria",
     "titulo": "El Carmen",
     "subtitulo": "Acuarela papel 100% algodón",
-    "imagen": "img/ElCarmen.webp",
+    "imagen": "img/ElCarmen_4.webp",
     "imagenes": [
-      "img/ElCarmen_1.webp",
       "img/ElCarmen_2.webp",
-      "img/ElCarmen_3.webp",
-      "img/ElCarmen_4.webp",
-      "img/ElCarmen_5.webp"
+      "img/ElCarmen_3.webp"
     ],
     "almacen": 0
   },
@@ -114,8 +125,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Álvaro",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Alvaro.webp",
     "imagenes": [
       "img/Alvaro_1.webp",
@@ -126,7 +137,7 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
-    "titulo": "Ana Ciudad",
+    "titulo": "Zona centro",
     "subtitulo": "Acrílico sobre lienzo",
     "imagen": "img/ana-ciudad_1.webp",
     "imagenes": [
@@ -138,8 +149,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Ana Esperanza",
-    "subtitulo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Sobre papel",
     "imagen": "img/Ana-esperanza.webp",
     "imagenes": [],
     "almacen": 0
@@ -147,8 +158,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Ana",
-    "subtitulo": "Acuarela",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Ana.webp",
     "imagenes": [],
     "almacen": 0
@@ -156,8 +167,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
-    "titulo": "Ana Cara",
-    "subtitulo": "Acrílico y acuarela",
+    "titulo": "Acrílico y acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/AnaCara.webp",
     "imagenes": [],
     "almacen": 0
@@ -165,8 +176,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Ana y Laura",
-    "subtitulo": "Grafito",
+    "titulo": "Grafito",
+    "subtitulo": "Sobre papel",
     "imagen": "img/AnaYLaura.webp",
     "imagenes": [],
     "almacen": 0
@@ -174,8 +185,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
-    "titulo": "Angelita",
-    "subtitulo": "Acrílico sobre lienzo lino",
+    "titulo": "Acrílico",
+    "subtitulo": "Sobre lienzo lino",
     "imagen": "img/angelita.webp",
     "imagenes": [
       "img/angelita_1.webp",
@@ -199,8 +210,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Antonio",
-    "subtitulo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Sketch",
     "imagen": "img/Antonio.webp",
     "imagenes": [],
     "almacen": 0
@@ -208,8 +219,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Araceli",
-    "subtitulo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Sketch",
     "imagen": "img/Araceli.webp",
     "imagenes": [],
     "almacen": 0
@@ -217,8 +228,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
-    "titulo": "Aroa",
-    "subtitulo": "Acrílico sobre papel",
+    "titulo": "Acrílico",
+    "subtitulo": "Sobre papel",
     "imagen": "img/Aroa.webp",
     "imagenes": [],
     "almacen": 0
@@ -273,8 +284,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Cari",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/cari.webp",
     "imagenes": [
       "img/cari_1.webp",
@@ -285,8 +296,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Carmen",
-    "subtitulo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Sobre papel",
     "imagen": "img/carmen.webp",
     "imagenes": [
       "img/carmen_1.webp",
@@ -370,8 +381,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Elena",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Elena.webp",
     "imagenes": [],
     "almacen": 0
@@ -379,8 +390,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Enrique",
-    "subtitulo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Enrique.webp",
     "imagenes": [],
     "almacen": 0
@@ -388,8 +399,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Esperanza Niña",
-    "subtitulo": "Grafito y acuarela",
+    "titulo": "Grafito y acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/esperanza-nina.webp",
     "imagenes": [],
     "almacen": 0
@@ -397,8 +408,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Eva",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Eva.webp",
     "imagenes": [],
     "almacen": 0
@@ -512,8 +523,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
-    "titulo": "J Antonio y Noa",
-    "subtitulo": "Acrílico sobre papel",
+    "titulo": "Acrílico",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/JAntonio-y-Noa.webp",
     "imagenes": [],
     "almacen": 0
@@ -544,8 +555,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "José Antonio",
-    "subtitulo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Sobre papel",
     "imagen": "img/JoseAntonio.webp",
     "imagenes": [],
     "almacen": 0
@@ -553,19 +564,19 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Juan Esperanza",
-    "subtitulo": "Acuarela papel 100% algodón",
-    "imagen": "img/Juan-Esperanza.webp",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
+    "imagen": "img/Juan-Esperanza_1.webp",
     "imagenes": [
-      "img/Juan-Esperanza_1.webp"
+      "img/Juan-Esperanza.webp"
     ],
     "almacen": 0
   },
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Laura y Ara Lara",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Laura-ara-Lara.webp",
     "imagenes": [
       "img/Laura-ara-Lara_1.webp",
@@ -576,8 +587,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
-    "titulo": "Laura",
-    "subtitulo": "Acrílico y tinta",
+    "titulo": "Acrílico y tinta",
+    "subtitulo": "Sobre papel",
     "imagen": "img/Laura.webp",
     "imagenes": [],
     "almacen": 0
@@ -632,11 +643,10 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Lola Vico",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/lola-Vico.webp",
     "imagenes": [
-      "img/lola-Vico_1.webp",
       "img/lola-Vico_2.webp"
     ],
     "almacen": 0
@@ -644,8 +654,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Lucas",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Lucas.webp",
     "imagenes": [
       "img/Lucas_1.webp",
@@ -657,8 +667,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Lucía Esperanza",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/esperanzas.webp",
     "imagenes": [
       "img/esperanzas_1.webp",
@@ -669,8 +679,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Lucía",
-    "subtitulo": "Acuarela",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Lucia.webp",
     "imagenes": [],
     "almacen": 0
@@ -678,11 +688,10 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Luismi",
-    "subtitulo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Sobre papel",
     "imagen": "img/Luismi.webp",
     "imagenes": [
-      "img/Luismi_1.webp",
       "img/Luismi_2.webp"
     ],
     "almacen": 0
@@ -703,8 +712,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Manolo",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Manolo.webp",
     "imagenes": [],
     "almacen": 0
@@ -712,8 +721,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
-    "titulo": "Mery",
-    "subtitulo": " Acrílico y acuarela sobre papel",
+    "titulo": "Acrílico y acuarela",
+    "subtitulo": "Sobre papel",
     "imagen": "img/Mery.webp",
     "imagenes": [
       "img/Mery_1.webp",
@@ -725,8 +734,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
-    "titulo": "Noa",
-    "subtitulo": "Acrílico sobre papel",
+    "titulo": "Acrílico",
+    "subtitulo": "Sobre papel",
     "imagen": "img/Noa.webp",
     "imagenes": [],
     "almacen": 0
@@ -768,8 +777,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Pepa",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Pepa.webp",
     "imagenes": [
       "img/Pepa_1.webp"
@@ -779,8 +788,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Perritos",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Perritos.webp",
     "imagenes": [
       "img/Perritos_1.webp",
@@ -791,8 +800,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Rocío Pareja",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Rocio_pareja.webp",
     "imagenes": [
       "img/Rocio_pareja_1.webp"
@@ -811,8 +820,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Salva",
-    "subtitulo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/salva.webp",
     "imagenes": [],
     "almacen": 0
@@ -820,8 +829,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Santero Fran",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/santero-fran.webp",
     "imagenes": [
       "img/santero-fran_1.webp"
@@ -872,8 +881,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
-    "titulo": "Zorro",
-    "subtitulo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Sobre papel",
     "imagen": "img/Zorro.webp",
     "imagenes": [
       "img/Zorro_1.webp",
@@ -913,8 +922,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Abril",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Abril.webp",
     "imagenes": [
       "img/Abril y Lucas.webp"
@@ -925,7 +934,7 @@
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
     "titulo": "Aras",
-    "subtitulo": "Acrílico sobre lienzo lino",
+    "subtitulo": "Acrílico y acuarela sobre lienzo lino 70x100 cm",
     "imagen": "img/Aras.webp",
     "imagenes": [
       "img/Aras 1.webp",
@@ -953,7 +962,7 @@
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
     "titulo": "Savia",
-    "subtitulo": "Acrílico sobre lienzo lino",
+    "subtitulo": "Acrílico sobre lienzo lino 70x100 cm",
     "imagen": "img/Savia.webp",
     "imagenes": [
       "img/Savia_1.webp",
@@ -965,8 +974,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Valentina",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Retrato valentina.webp",
     "imagenes": [
       "img/Retrato valentina_1.webp"
@@ -1042,240 +1051,240 @@
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Wellington",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Wellington.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Bruselas",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Bruselas.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Budapest",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Budapest.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Amsterdam",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Amsterdam.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Edimburgo",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Edimburgo.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Estambul",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Estambul.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Londres",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Londres.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Madrid",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Madrid.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Hanoi",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Hanoi.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Kioto",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Kioto.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "La Habana",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/La Habana.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "París",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/París.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Marrakech",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Marrakech.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Nueva York",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Nueva York.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Oslo",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Oslo.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Roma",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Roma.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "San José",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/San José.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Bangkok",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Bangkok.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Seul",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Seul.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
   {
     "tipo": ["Obras pictoricas"],
     "subtipo": "",
-    "titulo": "Mesero",
-    "subtitulo": "Acuarela y tinta papel 100% algodón",
+    "titulo": "Singapur",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Singapur.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "desde 12",
+    "precio": "Prints desde 12",
     "tipo-venta": "Prints",
     "texto-venta": "Disponible en prints"
   },
@@ -1400,8 +1409,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Mari",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Mari.webp",
     "imagenes": [],
     "almacen": 0
@@ -1409,17 +1418,17 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Nala",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acrílico",
+    "subtitulo": "Rodaja de madera",
     "imagen": "img/Nala.webp",
     "imagenes": [],
     "almacen": 0
   },
   {
     "tipo": ["Retratos personalizados"],
-    "subtipo": "Acuarela",
-    "titulo": "Nala",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "subtipo": "Acrílico",
+    "titulo": "Acrílico",
+    "subtitulo": "Rodaja de madera",
     "imagen": "img/Noa_madera.webp",
     "imagenes": [],
     "almacen": 0
@@ -1436,7 +1445,7 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Retrato dama y virgen",
+    "titulo": "Virgen de Araceli y dama",
     "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/Retrato dama y virgen.webp",
     "imagenes": [
@@ -1447,8 +1456,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Retrato eu",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% artesanal filo rústico",
     "imagen": "img/Retrato eu.webp",
     "imagenes": [],
     "almacen": 0
@@ -1993,8 +2002,8 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
-    "titulo": "Mari",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "titulo": "Acrílico, acuarela y tinta",
+    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Retrato mari.webp",
     "imagenes": [],
     "almacen": 0
