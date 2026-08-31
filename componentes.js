@@ -194,15 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error("Error al cargar JSON para el menú móvil:", err));
 
 
-        // --- LÓGICA DE OCULTAR ENLACES EN PÁGINA INICIO ---
-        if (document.body.id === 'pagina-inicio') {
-            const menuEscritorio = document.getElementById('menu-escritorio');
-            if (btnAbrir) btnAbrir.classList.add('hidden');
-            if (menuEscritorio) {
-                menuEscritorio.classList.remove('md:flex');
-                menuEscritorio.classList.add('hidden');
-            }
-        }
+        // NOTA: Se ha eliminado el código que ocultaba el menú de escritorio en la página de inicio.
         
         document.body.classList.remove('opacity-0');
     });
