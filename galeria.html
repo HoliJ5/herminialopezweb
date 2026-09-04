@@ -134,7 +134,7 @@
 
                 modalTitulo.textContent = obra.titulo;
                 
-                // MODIFICADO: Generar HTML con dos divs en lugar de usar template literals con "—"
+                // Generar HTML con dos divs
                 modalDetalles.innerHTML = obra.almacen === 1 && obra.precio !== undefined
                     ? `<div>${obra.subtitulo}</div>
                        <div>${obra.precio}€</div>`
@@ -376,30 +376,31 @@
                         </div>
                     `;
                     
-                    if (info.obras && info.obras.length > 0) {
-                        const obrasEncontradas = info.obras.map(t => obrasData.find(o => o.titulo === t)).filter(Boolean);
-                        if (obrasEncontradas.length > 0) {
-                            const gridCols = obrasEncontradas.length === 1 ? 'grid-cols-1' : 'grid-cols-2';
-                            const collageContenedor = document.createElement('div');
-                            
-                            collageContenedor.className = `w-full md:w-1/2 ${claseCollage} ${gridCols} gap-3 sm:gap-4`;
+                    if (info.imagenes && info.imagenes.length > 0) {
+                        const gridCols = info.imagenes.length === 1 ? 'grid-cols-1' : 'grid-cols-2';
+                        const collageContenedor = document.createElement('div');
+                        
+                        collageContenedor.className = `w-full md:w-1/2 ${claseCollage} ${gridCols} gap-3 sm:gap-4`;
 
-                            obrasEncontradas.forEach(obra => {
-                                const imgWrapper = document.createElement('div');
-                                imgWrapper.className = "overflow-hidden bg-neutral-100 aspect-square rounded-sm cursor-pointer group";
-                                
-                                const imgEl = document.createElement('img');
-                                imgEl.src = obra.imagen;
-                                imgEl.alt = `Ejemplo de ${tituloARenderizar} - ${obra.titulo}`;
-                                imgEl.className = "w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105";
-                                
-                                imgWrapper.addEventListener('click', () => abrirModal(obra));
-                                
-                                imgWrapper.appendChild(imgEl);
-                                collageContenedor.appendChild(imgWrapper);
-                            });
-                            bloqueInfo.appendChild(collageContenedor);
-                        }
+                        info.imagenes.forEach(rutaImagen => {
+                            const obraVinculada = obrasData.find(o => o.imagen === rutaImagen);
+
+                            const imgWrapper = document.createElement('div');
+                            imgWrapper.className = `overflow-hidden bg-neutral-100 aspect-square rounded-sm ${obraVinculada ? 'cursor-pointer' : ''} group`;
+                            
+                            const imgEl = document.createElement('img');
+                            imgEl.src = rutaImagen;
+                            imgEl.alt = `Ejemplo de ${tituloARenderizar}`;
+                            imgEl.className = "w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105";
+                            
+                            if (obraVinculada) {
+                                imgWrapper.addEventListener('click', () => abrirModal(obraVinculada));
+                            }
+                            
+                            imgWrapper.appendChild(imgEl);
+                            collageContenedor.appendChild(imgWrapper);
+                        });
+                        bloqueInfo.appendChild(collageContenedor);
                     }
                     
                     contenedorInfo.appendChild(bloqueInfo);
