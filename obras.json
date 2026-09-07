@@ -41,7 +41,7 @@
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico Ara",
-    "subtitulo": "Abstracto",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm, tela de seda",
     "imagen": "img/Abanico-Ara.webp",
     "imagenes": [
       "img/Abanico-Ara_1.webp"
@@ -51,8 +51,8 @@
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico Bordado",
-    "subtitulo": "Abanicos de alta artesania",
+    "titulo": "Abanico Bordado Estrellas",
+    "subtitulo": "Madera de kotibe, medida cerrado 25cm, tela lino natural, deshilachado a mano",
     "imagen": "img/abanico bordado.webp",
     "imagenes": [
       "img/abanico bordado_2.webp",
@@ -64,23 +64,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Cara Virgen",
-    "subtitulo": "Devocional",
-    "imagen": "img/abanico-cara-virgen.webp",
-    "imagenes": [
-      "img/abanico-cara-virgen_1.webp",
-      "img/abanico-cara-virgen_2.webp",
-      "img/abanico-cara-virgen_3.webp",
-      "img/abanico-cara-virgen_4.webp",
-      "img/abanico-cara-virgen_5.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
     "titulo": "Abanico Jesús Nazareno",
-    "subtitulo": "Devocional",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico-Jesus-nazareno.webp",
     "imagenes": [
       "img/Abanico-Jesus-nazareno_1.webp",
@@ -90,10 +75,10 @@
     "almacen": 0
   },
   {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico Seda Pájaro",
-    "subtitulo": "Naturaleza",
+    "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico floral chino",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela de seda",
     "imagen": "img/abanico-seda-pajaro.webp",
     "imagenes": [
       "img/abanico-seda-pajaro_1.webp",
@@ -104,22 +89,13 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen Pastora Verde",
-    "subtitulo": "Devocional",
-    "imagen": "img/Abanico-Virgen-pastora-verde.webp",
+    "titulo": "Abanico Virgen de Araceli Pastora",
+    "subtitulo": "Madera de abedul calado, medida cerrado 24cm, tela de algodón",
+    "imagen": "img/Abanico-Virgen-pastora-verde_2.webp",
     "imagenes": [
       "img/Abanico-Virgen-pastora-verde_1.webp",
-      "img/Abanico-Virgen-pastora-verde_2.webp"
+      "img/Abanico-Virgen-pastora-verde.webp"
     ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico Feria",
-    "subtitulo": "Naturaleza",
-    "imagen": "img/abanico_feria.webp",
-    "imagenes": [],
     "almacen": 0
   },
   {
@@ -199,8 +175,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Anna Flamenca",
-    "subtitulo": "Retrato",
+    "titulo": "Abanico Flamenca",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Anna flamenca 1.webp",
     "imagenes": [
       "img/Anna flamenca 2.webp"
@@ -308,8 +284,8 @@
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
-    "titulo": "Carrasquilla",
-    "subtitulo": "Abanicos de alta artesania",
+    "titulo": "Abanico aves en plata",
+    "subtitulo": "Madera de kotibe, medida cerrado 30cm, tela lino natural, deshilachado a mano",
     "imagen": "img/Carrasquilla.webp",
     "imagenes": [
       "img/Carrasquilla_1.webp"
@@ -356,8 +332,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Colibrí y Flores",
-    "subtitulo": "Naturaleza",
+    "titulo": "Abanico Colibrí y Flores",
+    "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Colibri_flores.webp",
     "imagenes": [
       "img/Colibri_flores_1.webp",
@@ -463,20 +439,20 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Garzas y Bambú",
-    "subtitulo": "Naturaleza",
-    "imagen": "img/Garzas-y-bambu.webp",
+    "titulo": "Abanico Garzas y Bambú",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
+    "imagen": "img/Garzas-y-bambu_2.webp",
     "imagenes": [
       "img/Garzas-y-bambu_1.webp",
-      "img/Garzas-y-bambu_2.webp"
+      "img/Garzas-y-bambu.webp"
     ],
     "almacen": 0
   },
   {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Golondrina Seda",
-    "subtitulo": "Naturaleza",
+    "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico Golondrinas",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela seda",
     "imagen": "img/golondrina-seda.webp",
     "imagenes": [
       "img/golondrina-seda_1.webp",
@@ -490,8 +466,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Golondrinas y Bambú",
-    "subtitulo": "Naturaleza",
+    "titulo": "Abanico Golondrinas y Bambú",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Golondrinas-y-bambu.webp",
     "imagenes": [
       "img/Golondrinas-y-bambu_1.webp",
@@ -544,8 +520,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Jesús Nazareno medio",
-    "subtitulo": "Devocional",
+    "titulo": "Abanico Nuestro Padre Jesús Nazareno",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Jesus-nazareno-medio.webp",
     "imagenes": [
       "img/Jesus-nazareno-medio_1.webp"
@@ -697,10 +673,10 @@
     "almacen": 0
   },
   {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Magnolias Seda Oro",
-    "subtitulo": "Naturaleza",
+     "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico Magnolias",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela mikado",
     "imagen": "img/Magnolias-seda-oro.webp",
     "imagenes": [
       "img/Magnolias-seda-oro_1.webp",
@@ -743,8 +719,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Olivia",
-    "subtitulo": "Ilustraciones animadas",
+    "titulo": "Abanico Olivia",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Olivia.webp",
     "imagenes": [
       "img/Olivia_1.webp"
@@ -754,8 +730,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Olivias",
-    "subtitulo": "Ilustraciones animadas",
+    "titulo": "Abanico Olivias",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Olivias.webp",
     "imagenes": [
       "img/Olivias_1.webp"
@@ -765,8 +741,8 @@
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
-    "titulo": "Pajaritos Dorados Flecos",
-    "subtitulo": "Naturaleza",
+    "titulo": "Abanico aves Dorados",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela de lino natural, deshilachado a mano",
     "imagen": "img/Pajaritos-dorados-flecos.webp",
     "imagenes": [
       "img/Pajaritos-dorados-flecos_1.webp",
@@ -867,15 +843,6 @@
     "imagenes": [
       "img/Saquito Inma_1.webp"
     ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Virgen Frente",
-    "subtitulo": "Devocional",
-    "imagen": "img/virgen_frente.webp",
-    "imagenes": [],
     "almacen": 0
   },
   {
@@ -1311,10 +1278,10 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Almodovar",
-    "subtitulo": "Abstracto",
-    "imagen": "img/Abanico Almodóvar.webp",
-    "imagenes": ["img/Abanico Almodóvar_1.webp"],
+    "titulo": "Abanico Castillo De Almodovar",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
+    "imagen": "img/Abanico Almodóvar_1.webp",
+    "imagenes": ["img/Abanico Almodóvar.webp"],
     "almacen": 0
   },
   {
@@ -1505,10 +1472,10 @@
     "almacen": 0
   },
   {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico aceitunas seda verde",
-    "subtitulo": "Abstracto",
+     "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico Ramas De Olivo",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela seda",
     "imagen": "img/Abanico aceitunas seda verde.webp",
     "imagenes": [
       "img/Abanico aceitunas seda verde_1.webp",
@@ -1519,8 +1486,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico pajaro la coral",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Abubilla Con Ramas De Olivo",
+    "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Aceitunas pájaro la coral.webp",
     "imagenes": [
       "img/Aceitunas pájaro la coral_1.webp",
@@ -1530,10 +1497,10 @@
     "almacen": 0
   },
   {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico garzas rosa",
-    "subtitulo": "Abstracto",
+     "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico Garzas",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela lino brillo rosado",
     "imagen": "img/Abanico garzas lino rosa.webp",
     "imagenes": [
       "img/Abanico garzas lino rosa_1.webp"
@@ -1651,7 +1618,9 @@
     "titulo": "Abanico feria",
     "subtitulo": "Abstracto",
     "imagen": "img/abanico feria.webp",
-    "imagenes": [],
+    "imagenes": [
+      "img/abanico_feria.webp"
+    ],
     "almacen": 0
   },
   {
@@ -1921,7 +1890,8 @@
     "imagenes": [
       "img/abanico Virgen frente_1.webp",
       "img/abanico Virgen frente_2.webp",
-      "img/abanico Virgen frente_3.webp"
+      "img/abanico Virgen frente_3.webp",
+      "img/virgen_frente.webp"
     ],
     "almacen": 0
   },
