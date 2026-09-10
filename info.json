@@ -16,14 +16,14 @@
   },
   {
     "tipo": "Abanicos artesanales",
-    "descripcion": "El abanico concebido desde el oficio y el carácter, pensado para acompañarte en cualquier evento. Utilizando siempre varillaje realizado por artesanos españoles con certificado AEA.",
+    "descripcion": "Aquí el secreto está en la paciencia: desde el deshilachado hasta el cuidado con el que colocamos telas como el lino, el mikado o efecto seda sobre cada varilla. Es un lienzo donde las pinceladas y los bordados tienen cabida, todo pensado desde el primer día para ser 100% auténtica y hecha a mano. Trabajamos con maderas nobles que llevan el sello de creadores españoles bajo el distintivo AEA.",
     "imagenes": [
       "img/abanico-seda-pajaro.webp"
     ]
   },
   {
     "tipo": "Bodas y eventos",
-    "descripcion": "Esta galería reúne una selección de piezas textiles y abanicos de alta artesanía creados para acompañar días señalados. Cada proyecto nace de un boceto personalizado y adaptado para la ocasión, con la libertad de dar vida a una idea nueva o de reinterpretar diseños anteriores que hayan inspirado tu elección.",
+    "descripcion": "Esta galería reúne una selección de piezas textiles, abanicos de alta artesanía y papelería creados para acompañar días señalados. Cada proyecto nace de un boceto personalizado y adaptado para la ocasión, con la libertad de dar vida a una idea nueva o de reinterpretar diseños anteriores que hayan inspirado tu elección.",
     "imagenes": [
       "img/Bandana Whisky_4.webp",
       "img/Cinta ramo edith.webp"
@@ -59,7 +59,7 @@
   }
   ,{
     "subtipo": "Cintas de ramo",
-    "descripcion": "Un detalle en movimiento que acompaña al ramo en tu ceremonia. El diseño nace de tus propias ideas a través de la pintura: desde plasmar con pincel una frase emocional con significado para ti, hasta adaptar piezas anteriores del taller o inspirarte en tus invitaciones de boda.",
+    "descripcion": "El diseño nace de tus propias ideas a través de la pintura: desde plasmar con pincel una frase emocional con significado para ti, hasta adaptar piezas anteriores del taller o inspirarte en tus invitaciones de boda.",
     "imagenes": [
       "img/Ivan-y-Laura.webp"
     ]
