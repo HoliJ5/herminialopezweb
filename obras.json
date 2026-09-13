@@ -51,7 +51,7 @@
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico Bordado Estrellas",
-    "subtitulo": "Madera de kotibe, medida cerrado 25cm, tela lino natural, deshilachado a mano",
+    "subtitulo": "Madera de kotibe, medida cerrado 25cm, tela lino natural, desflecado a mano",
     "imagen": "img/abanico bordado.webp",
     "imagenes": [
       "img/abanico bordado_2.webp",
@@ -284,7 +284,7 @@
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico aves en plata",
-    "subtitulo": "Madera de kotibe, medida cerrado 30cm, tela lino natural, deshilachado a mano",
+    "subtitulo": "Madera de kotibe, medida cerrado 30cm, tela lino natural, desflecado a mano",
     "imagen": "img/Carrasquilla.webp",
     "imagenes": [
       "img/Carrasquilla_1.webp"
@@ -742,7 +742,7 @@
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico aves Dorados",
-    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela de lino natural, deshilachado a mano",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela de lino natural, desflecado a mano",
     "imagen": "img/Pajaritos-dorados-flecos.webp",
     "imagenes": [
       "img/Pajaritos-dorados-flecos_1.webp",
@@ -1629,17 +1629,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico eva",
-    "subtitulo": "Abstracto",
-    "imagen": "img/abanico-eva-espejo.webp",
-    "imagenes": [],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico virgen ref 2 granate gitana",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico flamenca",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen ref 2 granate gitana.webp",
     "imagenes": [
       "img/Abanico Virgen ref 2 granate gitana_1.webp"
@@ -1649,8 +1640,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico principito",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Principito",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Principito.webp",
     "imagenes": [
       "img/Principito_1.webp",
@@ -1661,8 +1652,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico florecitas",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico flores silvestres",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela algodón",
     "imagen": "img/Abanico florecitas.webp",
     "imagenes": [
       "img/Abanico florecitas_1.webp"
@@ -1672,8 +1663,8 @@
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico florecitas",
-    "subtitulo": "Abanicos de alta artesania",
+    "titulo": "Abanico flores silvestres",
+    "subtitulo": "Madera de kotibe, medida cerrado 28cm, tela de lino natural, desflecado a mano",
     "imagen": "img/Abanico florecitas lino flecos.webp",
     "imagenes": [
       "img/Abanico florecitas lino flecos_1.webp",
@@ -1684,8 +1675,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico cyan",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli Pastora",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Virgen Araceli pastora cyan.webp",
     "imagenes": [
       "img/Virgen Araceli pastora cyan_1.webp"
@@ -1695,8 +1686,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico cyan",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli para damas",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen pastora azul dama.webp",
     "imagenes": [
       "img/Abanico Virgen pastora azul dama_1.webp",
@@ -1707,8 +1698,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico dama granate",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli para dama",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen pastora granate damas.webp",
     "imagenes": [
       "img/Abanico Virgen pastora granate damas_1.webp",
@@ -1719,8 +1710,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico verde calado",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli",
+    "subtitulo": "Madera de abedul calado, medida cerrado 24cm, tela de algodón",
     "imagen": "img/Abanico Virgen pastora verde calado.webp",
     "imagenes": [
       "img/Abanico Virgen pastora verde calado_1.webp",
@@ -1731,8 +1722,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico azul arita",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli Pastora",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen pastora azul arita.webp",
     "imagenes": [
       "img/Abanico Virgen pastora azul arita_1.webp",
@@ -1744,8 +1735,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico bajada",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli bajada",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/abanico Virgen bajada.webp",
     "imagenes": [
       "img/abanico Virgen bajada_1.webp"
@@ -1755,8 +1746,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico red 8 calado",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli ref 8",
+    "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Abanico Virgen ref 8 calado.webp",
     "imagenes": [
       "img/Abanico Virgen ref 8 calado_1.webp",
@@ -1767,8 +1758,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico red 1",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli ref 1",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen ref 1.webp",
     "imagenes": [
       "img/Abanico Virgen ref 1_1.webp",
@@ -1781,8 +1772,8 @@
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico lino flecos",
-    "subtitulo": "Abanicos de alta artesania",
+    "titulo": "Abanico Mimi",
+    "subtitulo": "Madera de kotibe, medida cerrado 31cm, tela lino natural, desflecado a mano",
     "imagen": "img/Abanico lino flecos.webp",
     "imagenes": [],
     "almacen": 0
@@ -1790,13 +1781,13 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico red 2",
-    "subtitulo": "Abstracto",
-    "imagen": "img/Abanico Virgen ref 2 marfil.webp",
+    "titulo": "Abanico Virgen de Araceli ref 2",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
+    "imagen": "img/Abanico Virgen ref 2_3.webp",
     "imagenes": [
       "img/Abanico Virgen ref 2 marfil_1.webp",
       "img/Abanico Virgen ref 2 marfil_2.webp",
-      "img/Abanico Virgen ref 2_3.webp",
+      "img/Abanico Virgen ref 2 marfil.webp",
       "img/Abanico Virgen ref 2_4.webp"
     ],
     "almacen": 0
@@ -1804,8 +1795,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico m",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico M de Maria",
+    "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/abanico m María.webp",
     "imagenes": [
       "img/abanico m María_1.webp",
@@ -1816,8 +1807,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico virgen con niño",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli ref 2",
+    "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Virgen de Araceli con niño.webp",
     "imagenes": [
       "img/Virgen de Araceli con niño_1.webp",
@@ -1828,8 +1819,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico rocio",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen del Rocio",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Virgen Rocío.webp",
     "imagenes": [
       "img/Virgen Rocío_1.webp",
@@ -1840,8 +1831,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico ermita calado",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen del Rocio con niño",
+    "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Rocío ermita calado.webp",
     "imagenes": [
       "img/Rocío ermita calado_1.webp",
@@ -1852,8 +1843,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico virgen frente",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/abanico Virgen frente.webp",
     "imagenes": [
       "img/abanico Virgen frente_1.webp",
@@ -1866,8 +1857,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico virgen jesus",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli y Nuestro Padre Jesús",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen jesús.webp",
     "imagenes": [
       "img/Abanico Virgen jesús_1.webp",
@@ -1879,8 +1870,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico virgen ref 8",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen  de Araceli ref 8",
+    "subtitulo": "Madera frutal, medida cerrado 23cm, tela algodón",
     "imagen": "img/Abanico virgen ref 8.webp",
     "imagenes": [
       "img/Abanico Virgen ref 8_1.webp",
@@ -1907,8 +1898,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico virgen ref 8",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico retrato",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico sampedro.webp",
     "imagenes": [
       "img/Abanico sampedro_1.webp"
@@ -2035,8 +2026,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico virgen ref 8",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de la Amargura",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen amargura.webp",
     "imagenes": [
       "img/Abanico Virgen amargura_1.webp"
@@ -2046,8 +2037,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico virgen ref 8",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen del Rosario",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen Rosario.webp",
     "imagenes": [
       "img/Abanico Virgen Rosario_1.webp"
@@ -2057,8 +2048,8 @@
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico Bordado",
-    "subtitulo": "Abanicos de alta artesania",
+    "titulo": "Abanico Marina",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela lino natural, desflecado a mano",
     "imagen": "img/Abanico marina.webp",
     "imagenes": [
       "img/Abanico marina_1.webp",
