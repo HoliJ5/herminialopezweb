@@ -31,7 +31,6 @@
 
     <div id="footer-placeholder" class="mt-auto"></div>
 
-    <!-- Modal copiado de la galería -->
     <div id="modal-obra" class="fixed inset-0 bg-black/95 z-50 flex items-center justify-center hidden" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
         <button id="modal-cerrar" class="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/80 hover:text-white text-3xl sm:text-4xl font-light leading-none transition-colors z-50" aria-label="Cerrar vista completa">&times;</button>
         
@@ -40,11 +39,8 @@
 
         <div class="relative max-w-4xl max-h-[95vh] w-full px-4 flex flex-col items-center justify-center overflow-y-auto py-6" id="modal-area-deslizable">
             
-            <!-- CONTENEDOR CARRUSEL DE IMÁGENES -->
             <div id="slider-contenedor" class="w-full h-[50vh] sm:h-[60vh] overflow-hidden relative touch-pan-y">
-                <!-- TRACK donde se pondrán todas las fotos lado a lado -->
                 <div id="slider-track" class="flex w-full h-full items-center transition-transform duration-300">
-                    <!-- Las imágenes se insertan aquí vía JS -->
                 </div>
             </div>
             
@@ -87,7 +83,6 @@
             const urlParams = new URLSearchParams(window.location.search);
             let filtroActual = urlParams.get('filtro') || 'todos';
 
-            // Variables de estado para el carrusel y arrastre
             let imagenesModalActuales = [];
             let indiceModalActual = 0;
             let isDragging = false;
@@ -132,7 +127,6 @@
 
                 modalTitulo.textContent = obra.titulo;
                 
-                // Mantenemos el nombre de la técnica o subtítulo seguido del precio
                 const textoDescriptivo = obra.subtitulo || obra.tecnica || '';
                 modalDetalles.textContent = textoDescriptivo ? `${textoDescriptivo} — ${obra.precio}€` : `${obra.precio}€`;
                 
@@ -205,7 +199,6 @@
                 cambiarImagenModal(1);
             });
 
-            // Funciones de arrastre táctil copiadas de la galería
             function iniciarArrastre(e) {
                 if (imagenesModalActuales.length <= 1) return;
                 isDragging = true;
@@ -247,12 +240,10 @@
             sliderContenedor.addEventListener('touchmove', arrastrar, { passive: false });
             sliderContenedor.addEventListener('touchend', finalizarArrastre);
 
-            // Logica de filtros aplicados únicamente al atributo "tipo-venta"
             function renderizarFiltrosPrincipales() {
                 const contenedorFiltros = document.getElementById('filtros-contenedor');
                 contenedorFiltros.innerHTML = '';
 
-                // Obtenemos los valores únicos de "tipo-venta" ignorando vacíos o nulos
                 const tiposVentaUnicos = [...new Set(obrasData.map(o => o['tipo-venta']).filter(Boolean))];
 
                 const btnTodos = document.createElement('button');
@@ -291,12 +282,8 @@
                     const obraElement = document.createElement('div');
                     obraElement.className = 'group cursor-pointer w-full';
                     
-                    // Condición para la etiqueta de venta copiada de la galería
-                    const etiquetaVenta = obra.almacen === 1 
-                        ? `<div class="absolute bottom-2 right-2 bg-[#726260]/85 text-white text-[10px] sm:text-[11px] font-medium px-2 py-1 rounded-sm uppercase tracking-wider z-10 pointer-events-none shadow-sm">${obra['texto-venta']}</div>`
-                        : '';
+                    const etiquetaVenta = '';
 
-                    // Inyección de la etiquetaVenta en el contenedor de la imagen
                     obraElement.innerHTML = `
                         <div class="overflow-hidden bg-neutral-100 aspect-[4/5] relative mb-3 rounded-sm">
                             <img src="${obra.imagen}" alt="${obra.titulo}" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
@@ -310,7 +297,6 @@
                 });
             }
 
-            // Petición inicial para rellenar los datos filtrando únicamente los del almacén
             fetch('obras.json')
                 .then(res => res.json())
                 .then(obras => {
@@ -320,7 +306,6 @@
                     document.body.classList.remove('opacity-0');
                 }).catch(err => console.error("Error al cargar almacén:", err));
 
-            // Eventos del modal
             modalCerrar.addEventListener('click', cerrarModal);
             modal.addEventListener('click', (e) => {
                 if (e.target === modal || e.target.id === 'modal-area-deslizable') cerrarModal();
