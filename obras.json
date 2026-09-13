@@ -40,7 +40,7 @@
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico Ara",
-    "subtitulo": "Madera de abedul, medida cerrado 23cm, tela de seda",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm, efecto seda",
     "imagen": "img/Abanico-Ara.webp",
     "imagenes": [
       "img/Abanico-Ara_1.webp"
@@ -77,7 +77,7 @@
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico floral chino",
-    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela de seda",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, efecto seda",
     "imagen": "img/abanico-seda-pajaro.webp",
     "imagenes": [
       "img/abanico-seda-pajaro_1.webp",
@@ -335,9 +335,10 @@
     "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Colibri_flores.webp",
     "imagenes": [
-      "img/Colibri_flores_1.webp",
       "img/Colibri_flores_2.webp",
-      "img/Colibri_flores_3.webp"
+      "img/Colibri_flores_3.webp",
+      "img/Abanico retrato Jesús y Lourdes.webp",
+      "img/Abanico retrato Jesús y Lourdes_1.webp"
     ],
     "almacen": 0
   },
@@ -451,7 +452,7 @@
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico Golondrinas",
-    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela seda",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, efecto seda",
     "imagen": "img/golondrina-seda.webp",
     "imagenes": [
       "img/golondrina-seda_1.webp",
@@ -1454,7 +1455,7 @@
      "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico Ramas De Olivo",
-    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela seda",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, efecto seda",
     "imagen": "img/Abanico aceitunas seda verde.webp",
     "imagenes": [
       "img/Abanico aceitunas seda verde_1.webp",
@@ -1489,8 +1490,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico garzas bambu",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico garzas",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico garzas bambú.webp",
     "imagenes": [
       "img/Abanico garzas bambú_1.webp"
@@ -1500,8 +1501,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico golondrinas seda verde",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico golondrinas",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, efecto seda",
     "imagen": "img/Abanico golondrinas seda verde.webp",
     "imagenes": [
       "img/Abanico golondrinas seda verde_1.webp",
@@ -1514,7 +1515,7 @@
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico hada",
-    "subtitulo": "Abstracto",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela lino",
     "imagen": "img/Abanico hada.webp",
     "imagenes": [
       "img/Abanico hada_1.webp",
@@ -1525,8 +1526,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico hada",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico lavanda",
+    "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Abanico lavanda.webp",
     "imagenes": [
       "img/Abanico lavanda_1.webp"
@@ -1537,7 +1538,7 @@
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico marino",
-    "subtitulo": "Abstracto",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm, tela algodón",
     "imagen": "img/Abanico marino.webp",
     "imagenes": [
       "img/Abanico marino_1.webp"
@@ -1547,8 +1548,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico retrato Ara hidalgo",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Hasta Calar",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico retrato Ara hidalgo.webp",
     "imagenes": [
       "img/Abanico retrato Ara hidalgo_1.webp"
@@ -1558,8 +1559,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico magnolias libeluas",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico libeluas",
+    "subtitulo": "Madera de abedul calado, medida cerrado 24cm, tela de algodón",
     "imagen": "img/Magnolias libélulas la coral.webp",
     "imagenes": [
       "img/Magnolias libélulas la coral_1.webp",
@@ -1570,8 +1571,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico mangnolias mikado",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico magnolias mikado",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela mikado",
     "imagen": "img/Abanico magnolias mikado.webp",
     "imagenes": [
       "img/Abanico magnolias mikado_1.webp",
@@ -1582,8 +1583,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico mangnolias",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico magnolias",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm, tela algodón",
     "imagen": "img/Magnolias.webp",
     "imagenes": [
       "img/Magnolias_1.webp",
@@ -1595,7 +1596,7 @@
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico feria",
-    "subtitulo": "Abstracto",
+    "subtitulo": "Madera frutal, medida cerrado 19cm, tela algodón",
     "imagen": "img/abanico feria.webp",
     "imagenes": [
       "img/abanico_feria.webp"
@@ -1605,19 +1606,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Jesus y lourdes",
-    "subtitulo": "Abstracto",
-    "imagen": "img/Abanico retrato Jesús y Lourdes.webp",
-    "imagenes": [
-      "img/Abanico retrato Jesús y Lourdes_1.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico La o",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico Virgen de Araceli",
+    "subtitulo": "La o ???",
     "imagen": "img/Abanico La o virgen.webp",
     "imagenes": [
       "img/Abanico La o virgen_1.webp",
@@ -1628,11 +1618,10 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Laura",
-    "subtitulo": "Abstracto",
+    "titulo": "Abanico retrato",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico retrato laura.webp",
     "imagenes": [
-      "img/Abanico retrato laura_1.webp",
       "img/Abanico retrato laura_2.webp"
     ],
     "almacen": 0
