@@ -27,7 +27,7 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Papeleria",
-    "titulo": "El Carmen",
+    "titulo": "Invitación de boda",
     "subtitulo": "Acuarela papel 100% algodón",
     "imagen": "img/ElCarmen_4.webp",
     "imagenes": [
@@ -212,8 +212,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Bastidores y Saquitos",
-    "titulo": "Bastidor Inma y Juan",
-    "subtitulo": "Bastidor y Saquito",
+    "titulo": "Bastidor 'Inma y Juan'",
+    "subtitulo": "Tela algodón 22cm pintado y bordado a mano",
     "imagen": "img/bastidor-Inma-juan.webp",
     "imagenes": [
       "img/bastidor-Inma-juan_1.webp",
@@ -224,8 +224,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Bastidores y Saquitos",
-    "titulo": "Bastidor y Saquito Juan y Mari",
-    "subtitulo": "Pintado a mano",
+    "titulo": "Bastidor y Saquito 'Juan y Mari'",
+    "subtitulo": "Tela algodón pintado y bordado a mano",
     "imagen": "img/bastidor-saquito-juan-mari.webp",
     "imagenes": [
       "img/saquito-juan-mari.webp",
@@ -479,8 +479,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Bastidores y Saquitos",
-    "titulo": "Ignacio y Sara",
-    "subtitulo": "Bastidor",
+    "titulo": "Bastidor 'Ignacio y Sara'",
+    "subtitulo": "Tela algodón 22cm pintado y bordado a mano",
     "imagen": "img/Ignacio-y-Sara.webp",
     "imagenes": [
       "img/Ignacio-y-Sara_1.webp"
@@ -490,8 +490,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Iván y Laura",
-    "subtitulo": "Cintas de ramo",
+    "titulo": "Cintas de ramo 'Iván y Laura'",
+    "subtitulo": "Tela lino beige pintado y desflecado a mano",
     "imagen": "img/Ivan-y-Laura.webp",
     "imagenes": [],
     "almacen": 0
@@ -572,8 +572,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Lazo Guille",
-    "subtitulo": "Cintas de ramo",
+    "titulo": "Cintas de ramo ' Ainhoa y Guille'",
+    "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/lazo-Guille.webp",
     "imagenes": [],
     "almacen": 0
@@ -581,8 +581,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Lazo Marina y Jose",
-    "subtitulo": "Cintas de ramo",
+    "titulo": "Cintas de ramo 'Marina y Jose'",
+    "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/lazo-Marina-y-jose.webp",
     "imagenes": [
       "img/lazo-Marina-y-jose_1.webp",
@@ -596,22 +596,21 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Lazo Olga",
-    "subtitulo": "Cintas de ramo",
+    "titulo": "Cintas de ramo 'Olga y Luis",
+    "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/lazo-Olga.webp",
     "imagenes": [
-      "img/lazo-Olga_1.webp",
+      "img/Cinta ramo Olga y luis_4.webp",
       "img/lazo-Olga_2.webp",
-      "img/Cinta ramo Olga y luis_3.webp",
-      "img/Cinta ramo Olga y luis_4.webp"
+      "img/Cinta ramo Olga y luis_3.webp"
     ],
     "almacen": 0
   },
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Bastidores y Saquitos",
-    "titulo": "Limosnera Guille",
-    "subtitulo": "Limosnera",
+    "titulo": "Limosnera 'Ainhoa y Guille'",
+    "subtitulo": "Tela algodón pintado a mano",
     "imagen": "img/limosnera-guille.webp",
     "imagenes": [],
     "almacen": 0
@@ -816,8 +815,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Bastidores y Saquitos",
-    "titulo": "Saquito Lazo Antonio y Ángela",
-    "subtitulo": "Saquito",
+    "titulo": "Saquito y Cinta de ramo 'Antonio y Ángela'",
+    "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/saquito-lazo-Antonio-y-Angela.webp",
     "imagenes": [
       "img/saquito-lazo-Antonio-y-Angela_1.webp",
@@ -828,8 +827,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Bastidores y Saquitos",
-    "titulo": "Saquito Guille",
-    "subtitulo": "Bastidor y saquito",
+    "titulo": "Bastidor y Saquito 'Ainhoa y Guille'",
+    "subtitulo": "Tela algodón pintado y bordado a mano",
     "imagen": "img/Saquito_guille.webp",
     "imagenes": [],
     "almacen": 0
@@ -837,8 +836,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Bastidores y Saquitos",
-    "titulo": "Saquito Inma",
-    "subtitulo": "Saquito",
+    "titulo": "Saquito 'Inma y Juan'",
+    "subtitulo": "Tela algodón con cinta de terciopelo, pintado y bordado a mano",
     "imagen": "img/saquito_inma.webp",
     "imagenes": [
       "img/Saquito Inma_1.webp"
@@ -861,7 +860,7 @@
     "tipo": ["Bodas y eventos"],
     "subtipo": "Papeleria",
     "titulo": "Meseros de ciudades",
-    "subtitulo": "Meseros",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/meseros_3.webp",
     "imagenes": [
       "img/Mesero Budapest.webp",
@@ -952,23 +951,22 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Papeleria",
-    "titulo": "Album",
-    "subtitulo": "Meseros",
+    "titulo": "Album de fotos 'Enrique y Sonia'",
+    "subtitulo": "Tela lino beige 30x31 cm 60 páginas pintado a mano",
     "imagen": "img/Album Sonia.webp",
     "imagenes": [
       "img/Album Sonia_1.webp",
       "img/Album Sonia_2.webp",
       "img/Album Sonia_3.webp",
-      "img/Album Sonia_4.webp",
-      "img/Album Sonia_5.webp"
+      "img/Album Sonia_4.webp"
     ],
     "almacen": 0
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Sombreros",
-    "titulo": "Capota",
-    "subtitulo": "Meseros",
+    "subtipo": "Sombreros y pañuelos",
+    "titulo": "Capota niña",
+    "subtitulo": "Paja trenzada color natural pintada a mano",
     "imagen": "img/Capota paje.webp",
     "imagenes": [
       "img/Capota paje_1.webp",
@@ -978,12 +976,11 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Sombreros",
-    "titulo": "Sombrero",
-    "subtitulo": "Meseros",
+    "subtipo": "Sombreros y pañuelos",
+    "titulo": "Canotier niño",
+    "subtitulo": "Paja trenzada color natural pintada a mano",
     "imagen": "img/Sombrero paje.webp",
     "imagenes": [
-      "img/Sombrero paje_1.webp",
       "img/Sombrero paje_2.webp",
       "img/capota y sombrero paje.webp"
     ],
@@ -991,9 +988,9 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Sombreros",
-    "titulo": "Bolso Hojas Granates",
-    "subtitulo": "Pintura en tela",
+    "subtipo": "Sombreros y pañuelos",
+    "titulo": "Pamela 'Carmen'",
+    "subtitulo": "Paja trenzada pintada a mano",
     "imagen": "img/Pamela mari.webp",
     "imagenes": [
       "img/Pamela mari_1.webp",
@@ -1005,7 +1002,7 @@
     "tipo": ["Bodas y eventos"],
     "subtipo": "Papeleria",
     "titulo": "Meseros tropicales",
-    "subtitulo": "Meseros",
+    "subtitulo": "Acuarela papel 100% algodón filo artesano 15x21 cm",
     "imagen": "img/Meseros tropical.webp",
     "imagenes": [
       "img/Mesero tigre.webp",
@@ -1266,9 +1263,9 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Bandana",
-    "titulo": "Bandana",
-    "subtitulo": "Meseros",
+    "subtipo": "Sombreros y pañuelos",
+    "titulo": "Bandana 'Whisky'",
+    "subtitulo": "Tela lino blanco bordado y desflecado a mano",
     "imagen": "img/Bandana Whisky_4.webp",
     "imagenes": [
       "img/Bandana Whisky_3.webp",
@@ -1281,8 +1278,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Lazo Edith",
-    "subtitulo": "Cintas de ramo",
+    "titulo": "Cintas de ramo 'Pablo y Edith'",
+    "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/Cinta ramo edith.webp",
     "imagenes": [
       "img/Cinta ramo edith_1.webp",
@@ -1293,8 +1290,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Cinta David Araceli",
-    "subtitulo": "Cintas de ramo",
+    "titulo": "Cinta de ramo 'David y Araceli'",
+    "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/Cinta ramo David y Araceli.webp",
     "imagenes": [
       "img/Cinta ramo David y Araceli_1.webp",
@@ -1305,41 +1302,10 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Cinta David Araceli",
-    "subtitulo": "Cintas de ramo",
+    "titulo": "Cinta de ramo 'Álvaro y gloria'",
+    "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/Cinta ramo Álvaro y gloria.webp",
     "imagenes": [],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Bodas y eventos"],
-    "subtipo": "Cintas de ramo",
-    "titulo": "Cinta Antonio Angela",
-    "subtitulo": "Cintas de ramo",
-    "imagen": "img/Cinta ramo Antonio Angela.webp",
-    "imagenes": [],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Bodas y eventos"],
-    "subtipo": "Cintas de ramo",
-    "titulo": "Cinta Margaritas",
-    "subtitulo": "Cintas de ramo",
-    "imagen": "img/Cinta ramo margaritas.webp",
-    "imagenes": [
-      "img/Cinta ramo margaritas_1.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Bodas y eventos"],
-    "subtipo": "Cintas de ramo",
-    "titulo": "Cinta Margaritas",
-    "subtitulo": "Cintas de ramo",
-    "imagen": "img/Cinta ramo Pili y fran.webp",
-    "imagenes": [
-      "img/Cinta ramo Pili y fran_1.webp"
-    ],
     "almacen": 0
   },
   {
@@ -1382,9 +1348,9 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Pañuelos bordados",
-    "titulo": "Pañuelo santero",
-    "subtitulo": "Pañuelos de alta artesania",
+    "subtipo": "Sombreros y pañuelos",
+    "titulo": "Pañuelo de santero",
+    "subtitulo": "Tela algodón retrato pintado a mano",
     "imagen": "img/Pañuelo santero.webp",
     "imagenes": [],
     "almacen": 0
@@ -1940,8 +1906,8 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Papeleria",
-    "titulo": "Album",
-    "subtitulo": "Meseros",
+    "titulo": "Minuta",
+    "subtitulo": "Acuarela papel 100% algodón filo artesano",
     "imagen": "img/Minuta boda.webp",
     "imagenes": [],
     "almacen": 0
@@ -2056,6 +2022,28 @@
       "img/Abanico marina_2.webp",
       "img/Abanico marina_3.webp",
       "img/Abanico marina_4.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Cintas de ramo",
+    "titulo": "Cinta de ramo 'Miguel Ángel y Mº Carmen'",
+    "subtitulo": "Tela lino blanco pintado y desflecado a mano",
+    "imagen": "img/Cinta ramo margaritas.webp",
+    "imagenes": [
+      "img/Cinta ramo margaritas_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Cintas de ramo",
+    "titulo": "Cinta de ramo 'Pili y Fran'",
+    "subtitulo": "Tela lino blanco pintado y desflecado a mano",
+    "imagen": "img/Cinta ramo Pili y fran.webp",
+    "imagenes": [
+      "img/Cinta ramo Pili y fran_1.webp"
     ],
     "almacen": 0
   }
