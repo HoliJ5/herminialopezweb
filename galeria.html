@@ -20,7 +20,7 @@
 
     <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12 w-full">
         
-        <h2 class="font-serif titulo-fluido font-normal mb-6 text-center">Portfolio</h2>
+        <h2 class="hidden md:block font-serif titulo-fluido font-normal mb-6 text-center">Portfolio</h2>
         
         <div class="hidden md:block">
             <div id="filtros-contenedor" class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-4"></div>
@@ -369,7 +369,7 @@
                     
                     bloqueInfo.innerHTML = `
                         <div class="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left cursor-pointer hover:bg-neutral-50 transition-colors p-1 md:p-4 rounded-sm" id="btn-info-${index}">
-                            <h3 class="font-serif text-2xl sm:text-3xl font-medium ${mbTitulo} capitalize text-neutral-800">${tituloARenderizar}</h3>
+                            <h3 class="font-serif text-2xl sm:text-3xl font-medium ${mbTitulo} text-neutral-800">${tituloARenderizar}</h3>
                             <p class="text-neutral-600 text-sm sm:text-base leading-relaxed pointer-events-none ${claseDescripcion}">${info.descripcion}</p>
                         </div>
                     `;

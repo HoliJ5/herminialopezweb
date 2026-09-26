@@ -20,7 +20,8 @@
     <div id="nav-placeholder"></div>
 
     <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12 w-full">
-        <h2 class="font-serif titulo-fluido font-normal mb-8 text-center">Textillo para vender</h2>
+        <!-- Se ha añadido el id "titulo-pagina" -->
+        <h2 id="titulo-pagina" class="font-serif titulo-fluido font-normal mb-8 text-center">Listo para llevar</h2>
         
         <div class="hidden md:block">
             <div id="filtros-contenedor" class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-8 md:mb-12"></div>
@@ -273,6 +274,21 @@
 
             function aplicarFiltro() {
                 contenedor.innerHTML = '';
+                
+                // Actualiza el título dinámicamente
+                const tituloPagina = document.getElementById('titulo-pagina');
+                if (tituloPagina) {
+                    if (filtroActual === 'todos') {
+                        tituloPagina.textContent = 'Listo para llevar';
+                    } else if (filtroActual === 'Prints') {
+                        tituloPagina.textContent = 'Arte listo para llevar';
+                    } else if (filtroActual === 'Ropa') {
+                        tituloPagina.textContent = 'Prendas listas para llevar';
+                    } else {
+                        // Por si añades más tipos en el futuro
+                        tituloPagina.textContent = filtroActual.charAt(0).toUpperCase() + filtroActual.slice(1) + ' listo para llevar';
+                    }
+                }
                 
                 const filtradas = obrasData.filter(o => {
                     return filtroActual === 'todos' || o['tipo-venta'] === filtroActual;
