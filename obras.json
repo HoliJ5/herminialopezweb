@@ -28,7 +28,7 @@
     "tipo": ["Bodas y eventos"],
     "subtipo": "Papeleria",
     "titulo": "Invitación de boda",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón arena 25x27 cm",
     "imagen": "img/ElCarmen_4.webp",
     "imagenes": [
       "img/ElCarmen_2.webp",
@@ -88,12 +88,13 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli Pastora",
+    "titulo": "Abanico Virgen de Araceli Pastora ref 11",
     "subtitulo": "Madera de abedul calado, medida cerrado 24cm, tela de algodón",
     "imagen": "img/Abanico-Virgen-pastora-verde_2.webp",
     "imagenes": [
       "img/Abanico-Virgen-pastora-verde_1.webp",
-      "img/Abanico-Virgen-pastora-verde.webp"
+      "img/Abanico-Virgen-pastora-verde.webp",
+      "img/Abanico Virgen pastora verde calado_2.webp"
     ],
     "almacen": 0
   },
@@ -860,7 +861,7 @@
     "tipo": ["Bodas y eventos"],
     "subtipo": "Papeleria",
     "titulo": "Meseros de ciudades",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón arena filo artesano 15x20 cm",
     "imagen": "img/meseros_3.webp",
     "imagenes": [
       "img/Mesero Budapest.webp",
@@ -1572,8 +1573,8 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli",
-    "subtitulo": "La o ???",
+    "titulo": "Abanico Virgen de Araceli ref 9",
+    "subtitulo": "La o ??? tela de lino natural",
     "imagen": "img/Abanico La o virgen.webp",
     "imagenes": [
       "img/Abanico La o virgen_1.webp",
@@ -1595,7 +1596,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico flamenca",
+    "titulo": "Abanico flamenca ref 2",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen ref 2 granate gitana.webp",
     "imagenes": [
@@ -1641,7 +1642,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli Pastora",
+    "titulo": "Abanico Virgen de Araceli Pastora ref 6",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Virgen Araceli pastora cyan.webp",
     "imagenes": [
@@ -1652,7 +1653,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli para damas",
+    "titulo": "Abanico Virgen de Araceli para damas ref 10",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen pastora azul dama.webp",
     "imagenes": [
@@ -1664,7 +1665,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli para dama",
+    "titulo": "Abanico Virgen de Araceli para dama ref 13",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen pastora granate damas.webp",
     "imagenes": [
@@ -1676,19 +1677,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli",
-    "subtitulo": "Madera de abedul calado, medida cerrado 24cm, tela de algodón",
-    "imagen": "img/Abanico Virgen pastora verde calado.webp",
-    "imagenes": [
-      "img/Abanico Virgen pastora verde calado_1.webp",
-      "img/Abanico Virgen pastora verde calado_2.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli Pastora",
+    "titulo": "Abanico Virgen de Araceli Pastora ref 7",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen pastora azul arita.webp",
     "imagenes": [
@@ -1701,7 +1690,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli bajada",
+    "titulo": "Abanico Virgen de Araceli bajada ref 5",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/abanico Virgen bajada.webp",
     "imagenes": [
@@ -1713,7 +1702,7 @@
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico Virgen de Araceli ref 8",
-    "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
+    "subtitulo": "Madera de kotibe calada / abedul, medida cerrado 24cm, tela algodón",
     "imagen": "img/Abanico Virgen ref 8 calado.webp",
     "imagenes": [
       "img/Abanico Virgen ref 8 calado_1.webp",
@@ -1785,7 +1774,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen del Rocio",
+    "titulo": "Abanico Virgen del Rocio ref 1",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Virgen Rocío.webp",
     "imagenes": [
@@ -1797,7 +1786,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen del Rocio con niño",
+    "titulo": "Abanico Virgen del Rocio ref 2",
     "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Rocío ermita calado.webp",
     "imagenes": [
@@ -1809,7 +1798,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli",
+    "titulo": "Abanico Virgen de Araceli ref 4",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/abanico Virgen frente.webp",
     "imagenes": [
@@ -1837,7 +1826,7 @@
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico Virgen  de Araceli ref 8",
-    "subtitulo": "Madera frutal, medida cerrado 23cm, tela algodón",
+    "subtitulo": "Madera frutal / abedul, medida cerrado 23cm, tela algodón",
     "imagen": "img/Abanico virgen ref 8.webp",
     "imagenes": [
       "img/Abanico Virgen ref 8_1.webp",
@@ -1907,7 +1896,7 @@
     "tipo": ["Bodas y eventos"],
     "subtipo": "Papeleria",
     "titulo": "Minuta",
-    "subtitulo": "Acuarela papel 100% algodón filo artesano",
+    "subtitulo": "Acuarela papel 100% algodón arena filo artesano 11x21 cm",
     "imagen": "img/Minuta boda.webp",
     "imagenes": [],
     "almacen": 0
