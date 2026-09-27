@@ -237,25 +237,29 @@
   },
   {
     "tipo": ["Complementos pintados a mano"],
-    "subtipo": "Bolso",
-    "titulo": "Bolso Hojas Granates",
-    "subtitulo": "Pintura en tela",
+    "subtipo": "Bolsos",
+    "titulo": "Bolso Tropical",
+    "subtitulo": "Tote bag loneta beige",
     "imagen": "img/Tote tropical.webp",
     "imagenes": [
       "img/Tote tropical 2.webp"
     ],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "precio",
+    "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Complementos pintados a mano"],
-    "subtipo": "Bolso",
-    "titulo": "Bolso Mariposas Negras",
-    "subtitulo": "Pintura en tela",
+    "subtipo": "Bolsos",
+    "titulo": "Bolso libélulas",
+    "subtitulo": "Tote bag loneta beige",
     "imagen": "img/Tote libélulas.webp",
     "imagenes": [
       "img/Tote libélulas_1.webp"
     ],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "precio",
+    "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Retratos personalizados"],
@@ -296,12 +300,14 @@
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
     "titulo": "Cazadora Mickey",
-    "subtitulo": "Pintura en tela",
+    "subtitulo": "Cazadora vaquera pintada a mano, talla S",
     "imagen": "img/Chaqueta Mickey_1.webp",
     "imagenes": [
       "img/cazador-Mickey.webp"
     ],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "precio",
+    "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Complementos pintados a mano"],
@@ -400,7 +406,9 @@
     "imagenes": [
       "img/Falda marrón y granate_1.webp"
     ],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "precio",
+    "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Complementos pintados a mano"],
@@ -411,7 +419,9 @@
     "imagenes": [
       "img/Falda negra garza_1.webp"
     ],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "precio",
+    "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Complementos pintados a mano"],
@@ -748,7 +758,9 @@
       "img/Pajaritos-dorados-flecos_1.webp",
       "img/Pajaritos-dorados-flecos_2.webp"
     ],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "precio",
+    "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Retratos personalizados"],
@@ -791,7 +803,9 @@
     "subtitulo": "Pintura en tela",
     "imagen": "img/Saco-navidad.webp",
     "imagenes": [],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "precio",
+    "tipo-venta": "Navidad"
   },
   {
     "tipo": ["Retratos personalizados"],
@@ -936,7 +950,9 @@
       "img/Savia_2.webp",
       "img/Savia_3.webp"
     ],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "350",
+    "tipo-venta": "Obras originales"
   },
   {
     "tipo": ["Retratos personalizados"],
@@ -1251,7 +1267,9 @@
       "img/Navidad bola perro.webp",
       "img/Navidad bola flamenco.webp"
     ],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "precio",
+    "tipo-venta": "Navidad"
   },
   {
     "tipo": ["Abanicos artesanales"],
@@ -1387,9 +1405,9 @@
   },
   {
     "tipo": ["Complementos pintados a mano"],
-    "subtipo": "Bolso",
-    "titulo": "Tote",
-    "subtitulo": "Pintura en tela",
+    "subtipo": "Bolsos",
+    "titulo": "Bolso Garza",
+    "subtitulo": "Tote bag loneta beige",
     "imagen": "img/Tote garza.webp",
     "imagenes": [],
     "almacen": 0
@@ -1452,7 +1470,9 @@
     "imagenes": [
       "img/Abanico garzas lino rosa_1.webp"
     ],
-    "almacen": 0
+    "almacen": 1,
+    "precio": "precio",
+    "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Abanicos artesanales"],
@@ -1466,8 +1486,8 @@
     "almacen": 0
   },
   {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
+     "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico golondrinas",
     "subtitulo": "Madera de kotibe, medida cerrado 24cm, efecto seda",
     "imagen": "img/Abanico golondrinas seda verde.webp",
@@ -1479,8 +1499,8 @@
     "almacen": 0
   },
   {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
+     "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico hada",
     "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela lino",
     "imagen": "img/Abanico hada.webp",
@@ -1532,18 +1552,6 @@
     "imagenes": [
       "img/Magnolias libélulas la coral_1.webp",
       "img/Magnolias libélulas la coral_2.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico magnolias mikado",
-    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela mikado",
-    "imagen": "img/Abanico magnolias mikado.webp",
-    "imagenes": [
-      "img/Abanico magnolias mikado_1.webp",
-      "img/Abanico magnolias mikado_2.webp"
     ],
     "almacen": 0
   },
