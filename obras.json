@@ -1581,18 +1581,6 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen de Araceli ref 9",
-    "subtitulo": "La o ??? tela de lino natural",
-    "imagen": "img/Abanico La o virgen.webp",
-    "imagenes": [
-      "img/Abanico La o virgen_1.webp",
-      "img/Abanico La o virgen_2.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
     "titulo": "Abanico retrato",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico retrato laura.webp",
