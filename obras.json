@@ -245,7 +245,7 @@
       "img/Tote tropical 2.webp"
     ],
     "almacen": 1,
-    "precio": "precio",
+    "precio": "30",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -258,7 +258,7 @@
       "img/Tote libélulas_1.webp"
     ],
     "almacen": 1,
-    "precio": "precio",
+    "precio": "30",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -288,7 +288,7 @@
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico aves en plata",
+    "titulo": "Abanico Aves - Plateados",
     "subtitulo": "Madera de kotibe, medida cerrado 30cm, tela lino natural, desflecado a mano",
     "imagen": "img/Carrasquilla.webp",
     "imagenes": [
@@ -306,14 +306,14 @@
       "img/cazador-Mickey.webp"
     ],
     "almacen": 1,
-    "precio": "precio",
+    "precio": "Oferta: 70",
     "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Hogar",
-    "titulo": "Cojín Cuento",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Cojín cuento de Hadas",
+    "subtitulo": "Cojín pintado a mano con escena de cuento",
     "imagen": "img/cojin-cuento.webp",
     "imagenes": [
       "img/cojin-cuento-1.webp",
@@ -325,8 +325,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Hogar",
-    "titulo": "Cojín Flores",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Cojín flora",
+    "subtitulo": "Cojín pintado a mano con una composición botánica",
     "imagen": "img/Cojin_flores_1.webp",
     "imagenes": [
       "img/Cojin_flores_2.webp",
@@ -352,8 +352,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Calzado",
-    "titulo": "Converse Mariposa",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Zapatillas Mariposa Real",
+    "subtitulo": "Zapatillas caña alta pintadas a mano personalizadas",
     "imagen": "img/converse-mariposa.webp",
     "imagenes": [
       "img/converse-mariposa_1.webp",
@@ -400,34 +400,34 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Falda Marrón Ramas",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Falda Sumie",
+    "subtitulo": "Falda larga pintada a mano con pintura clásica oriental, talla L",
     "imagen": "img/Falda marrón y granate.webp",
     "imagenes": [
       "img/Falda marrón y granate_1.webp"
     ],
     "almacen": 1,
-    "precio": "precio",
+    "precio": "85",
     "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Falda Negra Garza",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Falda Garza",
+    "subtitulo": "Falda midi pintada a mano, talla M",
     "imagen": "img/Falda negra garza.webp",
     "imagenes": [
       "img/Falda negra garza_1.webp"
     ],
     "almacen": 1,
-    "precio": "precio",
+    "precio": "50",
     "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
     "titulo": "Gabardina Tucán",
-    "subtitulo": "Pintura en tela",
+    "subtitulo": "Gabardina pintada a mano, Talla M",
     "imagen": "img/Gabardina verde tucán.webp",
     "imagenes": [
       "img/Gabardina verde tucán_1.webp",
@@ -438,8 +438,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Gabardina hojas",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Gabardina otoño",
+    "subtitulo": "Gabardina corta pintada a mano",
     "imagen": "img/Gabardina hojas.webp",
     "imagenes": [
       "img/Gabardina hojas 1.webp",
@@ -751,7 +751,7 @@
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico aves Dorados",
+    "titulo": "Abanico Aves - Dorados",
     "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela de lino natural, desflecado a mano",
     "imagen": "img/Pajaritos-dorados-flecos.webp",
     "imagenes": [
@@ -759,7 +759,7 @@
       "img/Pajaritos-dorados-flecos_2.webp"
     ],
     "almacen": 1,
-    "precio": "precio",
+    "precio": "90",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -799,8 +799,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Navidad",
-    "titulo": "Saco Navidad",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Saco Polo Norte",
+    "subtitulo": "Saco navideño para regalos",
     "imagen": "img/Saco-navidad.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1252,8 +1252,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Navidad",
-    "titulo": "Bolas Navidad",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Adornos colgantes de Navidad",
+    "subtitulo": "Adornos textiles pintados a mano con diferentes temáticas navideñas",
     "imagen": "img/Bolas navidad.webp",
     "imagenes": [
       "img/Navidad bola Lucena.webp",
@@ -1268,7 +1268,7 @@
       "img/Navidad bola flamenco.webp"
     ],
     "almacen": 1,
-    "precio": "precio",
+    "precio": "A partir de 7",
     "tipo-venta": "Navidad"
   },
   {
@@ -1330,8 +1330,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Fajin Gelu",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Fajín Obi",
+    "subtitulo": "Fajín pintado a mano con estampado de flores silvestres",
     "imagen": "img/Fajín Gelu.webp",
     "imagenes": [
       "img/Fajín Gelu_1.webp"
@@ -1398,7 +1398,7 @@
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
     "titulo": "Sudadera Doraemon",
-    "subtitulo": "Pintura en tela",
+    "subtitulo": "Sudadera personalizada con personaje de Doraemon",
     "imagen": "img/Sudadera Doraemon.webp",
     "imagenes": [],
     "almacen": 0
@@ -1415,8 +1415,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Vestido Nara",
+    "subtitulo": "Vestido midi estilo oriental",
     "imagen": "img/Vestido ara cabello.webp",
     "imagenes": [
       "img/Vestido ara cabello_1.webp"
@@ -1426,8 +1426,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido Jelu",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Vestido lotus",
+    "subtitulo": "Vestido pintado a mano con flores silvestres",
     "imagen": "img/vestido Jelu amarillo.webp",
     "imagenes": [
       "img/vestido Jelu amarillo_1.webp",
@@ -1471,7 +1471,7 @@
       "img/Abanico garzas lino rosa_1.webp"
     ],
     "almacen": 1,
-    "precio": "precio",
+    "precio": "95",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -1837,8 +1837,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Calzado",
-    "titulo": "Zapas ara hidalgo",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Zapatillas Bailaora",
+    "subtitulo": "Zapatillas caña alta pintadas a mano personalizadas",
     "imagen": "img/Zapas ara hidalgo.webp",
     "imagenes": [
       "img/Zapas ara hidalgo_1.webp",
@@ -1860,19 +1860,19 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Vestido folk red",
+    "subtitulo": "Vestido midi con estilo bohemio",
     "imagen": "img/Vestido psico.webp",
     "imagenes": [
-      "img/Vestido psico_1.webp"
+      "img/Vestido psico_2.webp"
     ],
     "almacen": 0
   },
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Calzado",
-    "titulo": "Zapas ara hidalgo",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Alpargatas Abejas",
+    "subtitulo": "Alpargatas pintadas a mano con detalles de abejas y hojas verdes",
     "imagen": "img/Zapas abejas.webp",
     "imagenes": [
       "img/Zapas abejas_1.webp"
@@ -1900,8 +1900,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Pantalón Camelia",
+    "subtitulo": "Pantalón estilo palazzo pintado a mano con flores silvestres",
     "imagen": "img/Pantalón carmen.webp",
     "imagenes": [
       "img/Pantalón carmen_1.webp",
@@ -1912,8 +1912,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Vestido loto",
+    "subtitulo": "Vestido cruzado asimétrico pintado con tulipanes",
     "imagen": "img/Vestido hna gelu.webp",
     "imagenes": [
       "img/Vestido hna gelu_1.webp",
@@ -1924,8 +1924,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Vestido libélula",
+    "subtitulo": "Vestido pintado a mano con libélulas",
     "imagen": "img/Vestido libélulas.webp",
     "imagenes": [
       "img/Vestido libélulas_1.webp"
@@ -1935,8 +1935,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Vestido Eden",
+    "subtitulo": "Vestido invitada alta costura pintado a mano con flores silvestres",
     "imagen": "img/Vestido mceli.webp",
     "imagenes": [
       "img/Vestido mceli_1.webp"
@@ -1946,8 +1946,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Vestido lirio",
+    "subtitulo": "Vestido pintado a mano con motivo central",
     "imagen": "img/Vestido negro flor.webp",
     "imagenes": [],
     "almacen": 0
@@ -1955,8 +1955,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Falda orbita",
+    "subtitulo": "Falda pintada a mano con motivos circulares",
     "imagen": "img/Falda gelu.webp",
     "imagenes": [
       "img/Falda gelu_1.webp"
@@ -1966,8 +1966,8 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido",
-    "subtitulo": "Pintura en tela",
+    "titulo": "Falda Kabuki",
+    "subtitulo": "Falda midi pintada a mano con flores rojo carmín estilo japonés",
     "imagen": "img/Falda mia.webp",
     "imagenes": [
       "img/Falda mia_1.webp"
