@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería | Herminia López</title>
+    <title>Stock | Herminia López</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
         .font-serif { font-family: 'Playfair Display', serif; }
         .font-sans { font-family: 'Inter', sans-serif; }
+        
         .titulo-fluido {
             font-size: clamp(1.75rem, 4vw, 3rem);
         }
@@ -19,18 +20,14 @@
     <div id="nav-placeholder"></div>
 
     <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12 w-full">
-        
-        <h2 class="hidden md:block font-serif titulo-fluido font-normal mb-6 text-center">Portfolio</h2>
+        <!-- Se ha añadido el id "titulo-pagina" -->
+        <h2 id="titulo-pagina" class="font-serif titulo-fluido font-normal mb-8 text-center">Listo para llevar</h2>
         
         <div class="hidden md:block">
-            <div id="filtros-contenedor" class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-4"></div>
-            <div id="subfiltros-contenedor" class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[11px] sm:text-xs font-medium tracking-wide uppercase text-neutral-400 mb-8 hidden"></div>
+            <div id="filtros-contenedor" class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-medium tracking-wide uppercase text-neutral-500 mb-8 md:mb-12"></div>
         </div>
 
-        <div id="info-subtipos-contenedor" class="mt-4 md:mt-8 flex flex-col gap-12 md:gap-20 empty:hidden border-b border-neutral-200 pb-12 mb-12 md:pb-16 md:mb-16"></div>
-
-        <div id="galeria-contenedor" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"></div>
-        
+        <div id="almacen-contenedor" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"></div>
     </main>
 
     <div id="footer-placeholder" class="mt-auto"></div>
@@ -44,20 +41,21 @@
         <div class="relative max-w-4xl max-h-[95vh] w-full px-4 flex flex-col items-center justify-center overflow-y-auto py-6" id="modal-area-deslizable">
             
             <div id="slider-contenedor" class="w-full h-[50vh] sm:h-[60vh] overflow-hidden relative touch-pan-y">
-                <div id="slider-track" class="flex w-full h-full items-center transition-transform duration-300"></div>
+                <div id="slider-track" class="flex w-full h-full items-center transition-transform duration-300">
+                </div>
             </div>
             
             <div id="modal-miniaturas" class="flex gap-2 sm:gap-3 mt-4 sm:mt-6 overflow-x-auto max-w-full pb-2 scrollbar-none"></div>
 
             <div id="modal-info" class="text-center text-white mt-4 max-w-xl px-2 flex flex-col items-center">
                 <h3 id="modal-titulo" class="font-serif text-xl sm:text-2xl font-medium"></h3>
-                <div id="modal-detalles" class="text-xs sm:text-sm text-neutral-300 mt-1 flex flex-col gap-1"></div>
+                <p id="modal-detalles" class="text-xs sm:text-sm text-neutral-300 mt-1"></p>
                 
                 <a id="modal-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-4 text-xs sm:text-sm font-medium text-white hover:text-[#25D366] bg-white/10 hover:bg-white/20 px-5 py-2 rounded-full transition-all duration-300 border border-white/20 hover:border-[#25D366]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
                     </svg>
-                    Solicitar presupuesto
+                    Comprar / Solicitar información
                 </a>
             </div>
             
@@ -67,7 +65,7 @@
     <script src="componentes.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const contenedor = document.getElementById('galeria-contenedor');
+            const contenedor = document.getElementById('almacen-contenedor');
             const modal = document.getElementById('modal-obra');
             
             const sliderContenedor = document.getElementById('slider-contenedor');
@@ -83,14 +81,11 @@
             const btnNext = document.getElementById('modal-next');
 
             let obrasData = [];
-            let infoData = [];
             const urlParams = new URLSearchParams(window.location.search);
             let filtroActual = urlParams.get('filtro') || 'todos';
-            let subfiltroActual = urlParams.get('subfiltro') || 'todos';
 
             let imagenesModalActuales = [];
             let indiceModalActual = 0;
-            
             let isDragging = false;
             let startX = 0;
             let currentX = 0;
@@ -133,17 +128,11 @@
 
                 modalTitulo.textContent = obra.titulo;
                 
-                modalDetalles.innerHTML = obra.almacen === 1 && obra.precio !== undefined
-                    ? `<div>${obra.subtitulo}</div>
-                       <div>${obra.precio}€</div>`
-                    : `<div>${obra.subtitulo}</div>`;
+                const textoDescriptivo = obra.subtitulo || obra.tecnica || '';
+                modalDetalles.textContent = textoDescriptivo ? `${textoDescriptivo} — ${obra.precio}€` : `${obra.precio}€`;
                 
                 const numeroWhatsApp = "34644241265";
-                const textoMensaje = obra.almacen === 1 
-                    ? `¡Hola! Me gustaría comprar / pedir información sobre "${obra.titulo}".` 
-                    : `¡Hola! Me gustaría solicitar un presupuesto para "${obra.titulo}".`;
-                const mensaje = encodeURIComponent(textoMensaje);
-                
+                const mensaje = encodeURIComponent(`¡Hola! Me gustaría comprar / pedir información sobre "${obra.titulo}".`);
                 modalWhatsapp.href = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
 
                 sliderTrack.innerHTML = '';
@@ -250,37 +239,32 @@
 
             sliderContenedor.addEventListener('touchstart', iniciarArrastre, { passive: true });
             sliderContenedor.addEventListener('touchmove', arrastrar, { passive: false });
-            sliderContenedor.addEventListener('touchmove', arrastrar, { passive: false });
             sliderContenedor.addEventListener('touchend', finalizarArrastre);
 
             function renderizarFiltrosPrincipales() {
                 const contenedorFiltros = document.getElementById('filtros-contenedor');
                 contenedorFiltros.innerHTML = '';
 
-                const tiposUnicos = [...new Set(obrasData.flatMap(o => Array.isArray(o.tipo) ? o.tipo : [o.tipo]).filter(Boolean))];
+                const tiposVentaUnicos = [...new Set(obrasData.map(o => o['tipo-venta']).filter(Boolean))];
 
                 const btnTodos = document.createElement('button');
                 btnTodos.textContent = 'Mostrar todos';
                 btnTodos.className = `bg-transparent hover:text-[#4b262a] transition-colors py-1 ${filtroActual === 'todos' ? 'text-black font-semibold' : ''}`;
                 btnTodos.addEventListener('click', () => {
                     filtroActual = 'todos';
-                    subfiltroActual = 'todos';
                     renderizarFiltrosPrincipales(); 
-                    renderizerSubfiltros();
                     aplicarFiltro();
                 });
                 contenedorFiltros.appendChild(btnTodos);
 
-                tiposUnicos.forEach(tipo => {
+                tiposVentaUnicos.forEach(tipo => {
                     const btn = document.createElement('button');
                     btn.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
                     btn.className = `bg-transparent hover:text-[#4b262a] transition-colors py-1 ${filtroActual === tipo ? 'text-black font-semibold' : ''}`;
                     
                     btn.addEventListener('click', () => {
                         filtroActual = tipo;
-                        subfiltroActual = 'todos';
                         renderizarFiltrosPrincipales(); 
-                        renderizerSubfiltros();
                         aplicarFiltro();
                     });
                     
@@ -288,145 +272,26 @@
                 });
             }
 
-            function renderizerSubfiltros() {
-                const contenedorSub = document.getElementById('subfiltros-contenedor');
-                contenedorSub.innerHTML = '';
-
-                if (filtroActual === 'todos') {
-                    contenedorSub.classList.add('hidden');
-                    return;
-                }
-
-                const subtipos = [...new Set(obrasData
-                    .filter(o => {
-                        const esDelTipo = Array.isArray(o.tipo) ? o.tipo.includes(filtroActual) : o.tipo === filtroActual;
-                        return esDelTipo && o.subtipo;
-                    })
-                    .map(o => o.subtipo)
-                )];
-
-                if (subtipos.length === 0) {
-                    contenedorSub.classList.add('hidden');
-                    return;
-                }
-
-                contenedorSub.classList.remove('hidden');
-
-                const btnTodosSub = document.createElement('button');
-                btnTodosSub.textContent = 'Todos';
-                btnTodosSub.className = `bg-transparent hover:text-[#4b262a] transition-colors py-1 ${subfiltroActual === 'todos' ? 'text-black font-semibold' : ''}`;
-                btnTodosSub.addEventListener('click', () => {
-                    subfiltroActual = 'todos';
-                    aplicarFiltro();
-                    renderizerSubfiltros();
-                });
-                contenedorSub.appendChild(btnTodosSub);
-
-                subtipos.forEach(sub => {
-                    const btn = document.createElement('button');
-                    btn.textContent = sub;
-                    btn.className = `bg-transparent hover:text-[#4b262a] transition-colors py-1 ${subfiltroActual === sub ? 'text-black font-semibold' : ''}`;
-                    btn.addEventListener('click', () => {
-                        subfiltroActual = sub;
-                        aplicarFiltro();
-                        renderizerSubfiltros();
-                    });
-                    contenedorSub.appendChild(btn);
-                });
-            }
-
-            function renderizarInfoSubtipos() {
-                const contenedorInfo = document.getElementById('info-subtipos-contenedor');
-                contenedorInfo.innerHTML = '';
-
-                const infoFiltrada = infoData.filter(info => {
-                    if (subfiltroActual !== 'todos') {
-                        return info.subtipo === subfiltroActual;
-                    } else {
-                        return info.tipo && (filtroActual === 'todos' || info.tipo === filtroActual);
-                    }
-                });
-
-                const isTodos = filtroActual === 'todos' && subfiltroActual === 'todos';
-                
-                if (isTodos) {
-                    contenedorInfo.className = "mt-4 md:mt-8 flex flex-col gap-12 md:gap-20 empty:hidden border-b border-neutral-200 pb-12 mb-12 md:pb-16 md:mb-16";
-                } else {
-                    contenedorInfo.className = "mt-4 md:mt-8 flex flex-col empty:hidden border-b border-neutral-200 pb-6 mb-6 md:pb-16 md:mb-16";
-                }
-
-                const claseDescripcion = isTodos ? 'hidden md:block' : 'block';
-                const claseCollage = isTodos ? 'grid' : 'hidden md:grid';
-                const gapClase = isTodos ? 'gap-2' : 'gap-6';
-                const mbTitulo = isTodos ? 'mb-0 md:mb-3' : 'mb-3';
-
-                infoFiltrada.forEach((info, index) => {
-                    const direccionFlex = index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse';
-                    const tituloARenderizar = info.tipo ? info.tipo : info.subtipo;
-
-                    const bloqueInfo = document.createElement('div');
-                    bloqueInfo.className = `flex flex-col ${direccionFlex} ${gapClase} md:gap-12 items-center w-full`;
-                    
-                    bloqueInfo.innerHTML = `
-                        <div class="w-full md:w-1/2 flex flex-col justify-center text-left md:text-left cursor-pointer hover:bg-neutral-50 transition-colors p-1 md:p-4 rounded-sm" id="btn-info-${index}">
-                            <h3 class="font-serif text-2xl sm:text-3xl font-medium ${mbTitulo} text-neutral-800">${tituloARenderizar}</h3>
-                            <p class="text-neutral-600 text-sm sm:text-base leading-relaxed pointer-events-none ${claseDescripcion}">${info.descripcion}</p>
-                        </div>
-                    `;
-                    
-                    if (info.imagenes && info.imagenes.length > 0) {
-                        const gridCols = info.imagenes.length === 1 ? 'grid-cols-1' : 'grid-cols-2';
-                        const collageContenedor = document.createElement('div');
-                        
-                        collageContenedor.className = `w-full md:w-1/2 ${claseCollage} ${gridCols} gap-3 sm:gap-4`;
-
-                        info.imagenes.forEach(rutaImagen => {
-                            const obraVinculada = obrasData.find(o => o.imagen === rutaImagen);
-
-                            const imgWrapper = document.createElement('div');
-                            imgWrapper.className = `overflow-hidden bg-neutral-100 aspect-square rounded-sm ${obraVinculada ? 'cursor-pointer' : ''} group`;
-                            
-                            const imgEl = document.createElement('img');
-                            imgEl.src = rutaImagen;
-                            imgEl.alt = `Ejemplo de ${tituloARenderizar}`;
-                            imgEl.className = "w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105";
-                            
-                            if (obraVinculada) {
-                                imgWrapper.addEventListener('click', () => abrirModal(obraVinculada));
-                            }
-                            
-                            imgWrapper.appendChild(imgEl);
-                            collageContenedor.appendChild(imgWrapper);
-                        });
-                        bloqueInfo.appendChild(collageContenedor);
-                    }
-                    
-                    contenedorInfo.appendChild(bloqueInfo);
-
-                    const btnInfo = document.getElementById(`btn-info-${index}`);
-                    if(btnInfo) {
-                        btnInfo.addEventListener('click', () => {
-                            if (info.tipo) {
-                                filtroActual = info.tipo;
-                                subfiltroActual = 'todos';
-                            }
-                            renderizarFiltrosPrincipales();
-                            renderizerSubfiltros();
-                            aplicarFiltro();
-                            
-                            document.getElementById('filtros-contenedor').scrollIntoView({ behavior: 'smooth' });
-                        });
-                    }
-                });
-            }
-
             function aplicarFiltro() {
                 contenedor.innerHTML = '';
                 
+                // Actualiza el título dinámicamente
+                const tituloPagina = document.getElementById('titulo-pagina');
+                if (tituloPagina) {
+                    if (filtroActual === 'todos') {
+                        tituloPagina.textContent = 'Listo para llevar';
+                    } else if (filtroActual === 'Prints') {
+                        tituloPagina.textContent = 'Arte listo para llevar';
+                    } else if (filtroActual === 'Ropa y complementos') {
+                        tituloPagina.textContent = 'Prendas listas para llevar';
+                    } else {
+                        // Por si añades más tipos en el futuro
+                        tituloPagina.textContent = filtroActual.charAt(0).toUpperCase() + filtroActual.slice(1) + ' listo para llevar';
+                    }
+                }
+                
                 const filtradas = obrasData.filter(o => {
-                    const cumpleTipo = filtroActual === 'todos' || (Array.isArray(o.tipo) ? o.tipo.includes(filtroActual) : o.tipo === filtroActual);
-                    const cumpleSubtipo = subfiltroActual === 'todos' || o.subtipo === subfiltroActual;
-                    return cumpleTipo && cumpleSubtipo;
+                    return filtroActual === 'todos' || o['tipo-venta'] === filtroActual;
                 });
 
                 filtradas.forEach(obra => {
@@ -436,37 +301,31 @@
                     const etiquetaVenta = '';
 
                     obraElement.innerHTML = `
-                        <div class="overflow-hidden bg-neutral-100 aspect-[4/5] relative rounded-sm">
+                        <div class="overflow-hidden bg-neutral-100 aspect-[4/5] relative mb-3 rounded-sm">
                             <img src="${obra.imagen}" alt="${obra.titulo}" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
                             ${etiquetaVenta}
                         </div>
+                        <h3 class="font-serif text-base sm:text-lg font-medium text-neutral-800">${obra.titulo}</h3>
+                        <p class="text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-0.5">${obra.precio}€</p>
                     `;
                     obraElement.addEventListener('click', () => abrirModal(obra));
                     contenedor.appendChild(obraElement);
                 });
-                
-                renderizarInfoSubtipos();
             }
 
-            Promise.all([
-                fetch('obras.json').then(res => res.json()),
-                fetch('info.json').then(res => res.json())
-            ]).then(([obras, info]) => {
-                obrasData = obras;
-                infoData = info;
-                renderizarFiltrosPrincipales(); 
-                renderizerSubfiltros();
-                aplicarFiltro();
-                
-                document.body.classList.remove('opacity-0');
-            }).catch(err => console.error("Error cargando los datos de la galería:", err));
+            fetch('obras.json')
+                .then(res => res.json())
+                .then(obras => {
+                    obrasData = obras.filter(obra => obra.almacen === 1);
+                    renderizarFiltrosPrincipales();
+                    aplicarFiltro();
+                    document.body.classList.remove('opacity-0');
+                }).catch(err => console.error("Error al cargar almacén:", err));
 
             modalCerrar.addEventListener('click', cerrarModal);
-            
             modal.addEventListener('click', (e) => {
                 if (e.target === modal || e.target.id === 'modal-area-deslizable') cerrarModal();
             });
-            
             document.addEventListener('keydown', (e) => {
                 if (!modal.classList.contains('hidden')) {
                     if (e.key === 'Escape') cerrarModal();

@@ -83,13 +83,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     contPortfolio.innerHTML = ''; 
                     
                     const btnTodosPort = document.createElement('a');
-                    btnTodosPort.href = "galeria.html";
+                    btnTodosPort.href = "portfolio.html";
                     btnTodosPort.textContent = "Mostrar todos";
                     btnTodosPort.className = "block w-full hover:text-white transition-colors py-1 truncate text-[13px]";
                     
                     // Si ya estamos en galería, simulamos el click para no recargar la página entera
                     btnTodosPort.addEventListener('click', (e) => {
-                        if (window.location.pathname.includes('galeria')) {
+                        if (window.location.pathname.includes('portfolio')) {
                             e.preventDefault();
                             const btnOriginal = Array.from(document.querySelectorAll('#filtros-contenedor button')).find(b => b.textContent.toLowerCase() === 'mostrar todos');
                             if (btnOriginal) btnOriginal.click();
@@ -104,12 +104,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     tiposPortfolio.forEach(tipo => {
                         // Construir el enlace principal del TIPO
                         const btnTipo = document.createElement('a');
-                        btnTipo.href = `galeria.html?filtro=${encodeURIComponent(tipo)}`;
+                        btnTipo.href = `portfolio.html?filtro=${encodeURIComponent(tipo)}`;
                         btnTipo.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
                         btnTipo.className = "block w-full hover:text-white transition-colors py-1 mt-2 truncate text-[13px]";
                         
                         btnTipo.addEventListener('click', (e) => {
-                            if (window.location.pathname.includes('galeria')) {
+                            if (window.location.pathname.includes('portfolio')) {
                                 e.preventDefault();
                                 const btnOriginal = Array.from(document.querySelectorAll('#filtros-contenedor button')).find(b => b.textContent.toLowerCase() === tipo.toLowerCase());
                                 if (btnOriginal) btnOriginal.click();
@@ -127,12 +127,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         if (subtipos.length > 0) {
                             subtipos.forEach(sub => {
                                 const btnSub = document.createElement('a');
-                                btnSub.href = `galeria.html?filtro=${encodeURIComponent(tipo)}&subfiltro=${encodeURIComponent(sub)}`;
+                                btnSub.href = `portfolio.html?filtro=${encodeURIComponent(tipo)}&subfiltro=${encodeURIComponent(sub)}`;
                                 btnSub.textContent = "- " + sub;
                                 btnSub.className = "block w-full hover:text-white text-neutral-400 transition-colors py-1 truncate pl-3 text-[11px]";
                                 
                                 btnSub.addEventListener('click', (e) => {
-                                    if (window.location.pathname.includes('galeria')) {
+                                    if (window.location.pathname.includes('portfolio')) {
                                         e.preventDefault();
                                         // Clicamos el tipo y esperamos unos milisegundos a que aparezcan los subtipos para clicar el correcto
                                         const btnT = Array.from(document.querySelectorAll('#filtros-contenedor button')).find(b => b.textContent.toLowerCase() === tipo.toLowerCase());
@@ -157,11 +157,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     contStock.innerHTML = '';
                     
                     const btnTodosStock = document.createElement('a');
-                    btnTodosStock.href = "almacen.html";
+                    btnTodosStock.href = "stock.html";
                     btnTodosStock.textContent = "Mostrar todos";
                     btnTodosStock.className = "block w-full hover:text-white transition-colors py-1 truncate text-[13px]";
                     btnTodosStock.addEventListener('click', (e) => {
-                        if (window.location.pathname.includes('almacen')) {
+                        if (window.location.pathname.includes('stock')) {
                             e.preventDefault();
                             const btnOriginal = Array.from(document.querySelectorAll('#filtros-contenedor button')).find(b => b.textContent.toLowerCase() === 'mostrar todos');
                             if (btnOriginal) btnOriginal.click();
@@ -175,12 +175,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     tiposStock.forEach(tipo => {
                         const btnTipo = document.createElement('a');
-                        btnTipo.href = `almacen.html?filtro=${encodeURIComponent(tipo)}`;
+                        btnTipo.href = `stock.html?filtro=${encodeURIComponent(tipo)}`;
                         btnTipo.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
                         btnTipo.className = "block w-full hover:text-white transition-colors py-1 mt-2 truncate text-[13px]";
                         
                         btnTipo.addEventListener('click', (e) => {
-                            if (window.location.pathname.includes('almacen')) {
+                            if (window.location.pathname.includes('stock')) {
                                 e.preventDefault();
                                 const btnOriginal = Array.from(document.querySelectorAll('#filtros-contenedor button')).find(b => b.textContent.toLowerCase() === tipo.toLowerCase());
                                 if (btnOriginal) btnOriginal.click();
