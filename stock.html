@@ -102,9 +102,36 @@
                 });
             }
 
+            // Asigna el src real solo a la imagen actual y a sus vecinas
+            // (la navegación es circular, por eso se usa el módulo).
+            function precargarSlides(centro) {
+                const total = imagenesModalActuales.length;
+                [centro, centro + 1, centro - 1].forEach(i => {
+                    const slide = sliderTrack.children[(i + total) % total];
+                    const img = slide && slide.firstElementChild;
+                    if (img && !img.src) img.src = img.dataset.src;
+                });
+            }
+
+            // Las miniaturas de la tira solo se descargan cuando entran en pantalla.
+            let observadorMiniaturas = null;
+
+            function activarCargaMiniaturas() {
+                if (observadorMiniaturas) observadorMiniaturas.disconnect();
+                observadorMiniaturas = new IntersectionObserver((entradas, obs) => {
+                    entradas.forEach(entrada => {
+                        if (!entrada.isIntersecting) return;
+                        entrada.target.src = entrada.target.dataset.src;
+                        obs.unobserve(entrada.target);
+                    });
+                }, { root: modalMiniaturas, rootMargin: '0px 150px' });
+                modalMiniaturas.querySelectorAll('img[data-src]').forEach(t => observadorMiniaturas.observe(t));
+            }
+
             function actualizarVistaModal() {
                 sliderTrack.style.transition = 'transform 0.3s ease-out';
                 sliderTrack.style.transform = `translateX(-${indiceModalActual * 100}%)`;
+                precargarSlides(indiceModalActual);
                 actualizarMiniaturas();
             }
 
@@ -142,9 +169,9 @@
                     slideWrapper.className = 'w-full h-full flex-shrink-0 px-2 sm:px-6 flex items-center justify-center';
                     
                     const img = document.createElement('img');
-                    img.src = imgSrc;
+                    img.dataset.src = imgSrc;
                     img.alt = obra.titulo;
-                    img.className = 'max-w-full max-h-full object-contain select-none pointer-events-none';
+                    img.className = 'max-w-full max-h-full object-contain select-none pointer-events-none text-transparent';
                     
                     slideWrapper.appendChild(img);
                     sliderTrack.appendChild(slideWrapper);
@@ -163,9 +190,10 @@
                 if (imagenesModalActuales.length > 1) {
                     imagenesModalActuales.forEach((imgSrc, index) => {
                         const thumb = document.createElement('img');
-                        thumb.src = imgSrc;
+                        thumb.dataset.src = imgSrc;
+                        thumb.decoding = 'async';
                         thumb.alt = `Vista ${index + 1} de ${obra.titulo}`;
-                        thumb.className = 'w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 object-cover cursor-pointer border-2 transition-all duration-200';
+                        thumb.className = 'w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 object-cover cursor-pointer border-2 transition-all duration-200 bg-white/10 text-transparent';
                         
                         thumb.addEventListener('click', () => {
                             indiceModalActual = index;
@@ -178,13 +206,16 @@
 
                 sliderTrack.style.transition = 'none';
                 sliderTrack.style.transform = `translateX(0%)`;
+                precargarSlides(0);
                 actualizarMiniaturas();
 
                 modal.classList.remove('hidden');
                 document.body.style.overflow = 'hidden';
+                activarCargaMiniaturas();
             }
 
             function cerrarModal() {
+                if (observadorMiniaturas) observadorMiniaturas.disconnect();
                 modal.classList.add('hidden');
                 sliderTrack.innerHTML = '';
                 modalMiniaturas.innerHTML = '';
@@ -302,7 +333,7 @@
 
                     obraElement.innerHTML = `
                         <div class="overflow-hidden bg-neutral-100 aspect-[4/5] relative mb-3 rounded-sm">
-                            <img src="${obra.imagen}" alt="${obra.titulo}" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                            <img src="${obra.imagen}" alt="${obra.titulo}" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
                             ${etiquetaVenta}
                         </div>
                         <h3 class="font-serif text-base sm:text-lg font-medium text-neutral-800">${obra.titulo}</h3>
