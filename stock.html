@@ -308,18 +308,7 @@
                 
                 // Actualiza el título dinámicamente
                 const tituloPagina = document.getElementById('titulo-pagina');
-                if (tituloPagina) {
-                    if (filtroActual === 'todos') {
-                        tituloPagina.textContent = 'Listo para llevar';
-                    } else if (filtroActual === 'Prints') {
-                        tituloPagina.textContent = 'Arte listo para llevar';
-                    } else if (filtroActual === 'Ropa y complementos') {
-                        tituloPagina.textContent = 'Prendas listas para llevar';
-                    } else {
-                        // Por si añades más tipos en el futuro
-                        tituloPagina.textContent = filtroActual.charAt(0).toUpperCase() + filtroActual.slice(1) + ' listo para llevar';
-                    }
-                }
+                tituloPagina.textContent = 'Listo para llevar';
                 
                 const filtradas = obrasData.filter(o => {
                     return filtroActual === 'todos' || o['tipo-venta'] === filtroActual;
