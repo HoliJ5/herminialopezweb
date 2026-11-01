@@ -21,8 +21,21 @@
       "img/ElCarmen_5.webp"
     ],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 18",
     "tipo-venta": "Prints"
+  },
+  {
+    "tipo": ["Obras pictoricas"],
+    "subtipo": "",
+    "titulo": "Caballo",
+    "subtitulo": "Acrílico sobre lienzo lino 70x100 cm",
+    "imagen": "img/Retrato caballo 1.webp",
+    "imagenes": [
+      "img/Retrato caballo 2.webp",
+      "img/Retrato caballo 3.webp",
+      "img/Retrato caballo 4.webp"
+    ],
+    "almacen": 0
   },
   {
     "tipo": ["Bodas y eventos"],
@@ -44,6 +57,18 @@
     "imagen": "img/Abanico-Ara.webp",
     "imagenes": [
       "img/Abanico-Ara_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Abanicos artesanales"],
+    "subtipo": "Pintado a mano",
+    "titulo": "Abanico Alba",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm, tela de algodón",
+    "imagen": "img/Abanico alba 1.webp",
+    "imagenes": [
+      "img/Abanico alba 2.webp",
+      "img/Abanico alba 3.webp"
     ],
     "almacen": 0
   },
@@ -107,6 +132,17 @@
     "imagenes": [
       "img/Alvaro_1.webp",
       "img/Retrato Álvaro_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acrílico",
+    "titulo": "Acrílico",
+    "subtitulo": "SObre lienzo lino",
+    "imagen": "img/Retrato Pilar con virgen 1.webp",
+    "imagenes": [
+      "img/Retrato Pilar con virgen 2.webp"
     ],
     "almacen": 0
   },
@@ -799,12 +835,28 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Navidad",
-    "titulo": "Saco Polo Norte",
-    "subtitulo": "Saco navideño para regalos",
-    "imagen": "img/Saco-navidad.webp",
-    "imagenes": [],
+    "titulo": "Saco navideño Polo Norte verde",
+    "subtitulo": "Pack 3 unidades (28x45, 37x54, 55x64)",
+    "imagen": "img/Saco navidad 1.webp",
+    "imagenes": [
+      "img/Saco-navidad.webp"
+    ],
     "almacen": 1,
-    "precio": "precio",
+    "precio": "OFERTA: 50",
+    "tipo-venta": "Navidad"
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Navidad",
+    "titulo": "Saco navideño Polo Norte granate",
+    "subtitulo": "Pack 3 unidades (28x45, 37x54, 55x64)",
+    "imagen": "img/Saco navidad 4.webp",
+    "imagenes": [
+      "img/Saco navidad 2.webp",
+      "img/Saco navidad 3.webp"
+    ],
+    "almacen": 1,
+    "precio": "OFERTA: 50",
     "tipo-venta": "Navidad"
   },
   {
@@ -1037,7 +1089,7 @@
     "imagen": "img/Wellington.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1048,7 +1100,7 @@
     "imagen": "img/Bruselas.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1059,7 +1111,7 @@
     "imagen": "img/Budapest.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1070,7 +1122,7 @@
     "imagen": "img/Amsterdam.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1081,7 +1133,7 @@
     "imagen": "img/Edimburgo.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1092,7 +1144,7 @@
     "imagen": "img/Estambul.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1103,7 +1155,7 @@
     "imagen": "img/Londres.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1114,7 +1166,7 @@
     "imagen": "img/Madrid.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1125,7 +1177,7 @@
     "imagen": "img/Hanoi.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1136,7 +1188,7 @@
     "imagen": "img/Kioto.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1147,7 +1199,7 @@
     "imagen": "img/La Habana.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1158,7 +1210,7 @@
     "imagen": "img/París.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1169,7 +1221,7 @@
     "imagen": "img/Marrakech.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1180,7 +1232,7 @@
     "imagen": "img/Nueva York.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1191,7 +1243,7 @@
     "imagen": "img/Oslo.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1202,7 +1254,7 @@
     "imagen": "img/Roma.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1213,7 +1265,7 @@
     "imagen": "img/San José.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1224,7 +1276,7 @@
     "imagen": "img/Bangkok.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1235,7 +1287,7 @@
     "imagen": "img/Seul.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1246,7 +1298,7 @@
     "imagen": "img/Singapur.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 12",
+    "precio": "Prints desde 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1268,7 +1320,7 @@
       "img/Navidad bola flamenco.webp"
     ],
     "almacen": 1,
-    "precio": "A partir de 7",
+    "precio": "Desde 7",
     "tipo-venta": "Navidad"
   },
   {
@@ -1724,9 +1776,33 @@
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico Mimi",
-    "subtitulo": "Madera de kotibe, medida cerrado 31cm, tela lino natural, desflecado a mano",
+    "subtitulo": "Madera de kotibe, medida cerrado 25-31cm, tela lino natural, desflecado a mano",
     "imagen": "img/Abanico lino flecos.webp",
+    "imagenes": [
+      "img/Abanico lino flecos 1.webp",
+      "img/Abanico lino flecos 2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico Mimi",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela lino beig, desflecado a mano",
+    "imagen": "img/Mari Abanico flecos beig.webp",
     "imagenes": [],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico Claveles",
+    "subtitulo": "Madera de kotibe, medida cerrado 25cm, tela lino natural, desflecado y bordado a mano",
+    "imagen": "img/Abanico Sonia 2.webp",
+    "imagenes": [
+      "img/Abanico Sonia 1.webp",
+      "img/Abanico Sonia 3.webp"
+    ],
     "almacen": 0
   },
   {
@@ -1865,6 +1941,17 @@
     "imagen": "img/Vestido psico.webp",
     "imagenes": [
       "img/Vestido psico_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Chaqueta Cristiano Ronaldo",
+    "subtitulo": "Chaqueta personalizada",
+    "imagen": "img/Chaqueta Javier 1.webp",
+    "imagenes": [
+      "img/Chaqueta Javier 2.webp"
     ],
     "almacen": 0
   },

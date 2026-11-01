@@ -4,7 +4,7 @@
     "descripcion": "Un rostro transmite mucho más que unas facciones, guarda vivencias y expresiones propias. Mi trabajo se centra en trasladar al soporte esa naturalidad de las personas a través de una pintura que busca capturar la historia que se esconde detrás de cada mirada.",
     "imagenes": [
       "img/angelita.webp",
-      "img/carmen.webp"
+      "img/Ana-esperanza.webp"
     ]
   },
   {
@@ -18,7 +18,8 @@
     "tipo": "Abanicos artesanales",
     "descripcion": "Aquí el secreto está en la paciencia: desde el deshilachado hasta el cuidado con el que colocamos telas como el lino, el mikado o efecto seda sobre cada varilla. Es un lienzo donde las pinceladas y los bordados tienen cabida, todo pensado desde el primer día para ser 100% auténtica y hecha a mano. Trabajamos con maderas nobles que llevan el sello de creadores españoles bajo el distintivo AEA.",
     "imagenes": [
-      "img/abanico-seda-pajaro.webp"
+      "img/abanico-seda-pajaro.webp",
+      "img/Abanico marina_3.webp"
     ]
   },
   {
@@ -26,14 +27,17 @@
     "descripcion": "Esta galería reúne una selección de piezas textiles, abanicos de alta artesanía y papelería creados para acompañar días señalados. Cada proyecto nace de un boceto personalizado y adaptado para la ocasión, con la libertad de dar vida a una idea nueva o de reinterpretar diseños anteriores que hayan inspirado tu elección.",
     "imagenes": [
       "img/Bandana Whisky_4.webp",
-      "img/Cinta ramo edith.webp"
+      "img/Cinta ramo edith.webp",
+      "img/bastidor-Inma-juan.webp",
+      "img/saquito_inma.webp"
     ]
   },
   {
     "tipo": "Complementos pintados a mano",
     "descripcion": "Cojines, ropa y bolsos personalizados. Pinceladas con estilo propio sobre diferentes soportes textiles y artesanales. Una selección de accesorios creados para acompañarte.",
     "imagenes": [
-      "img/Cojin_flores_1.webp"
+      "img/Cojin_flores_1.webp",
+      "img/Vestido mceli_1.webp"
     ]
   },
   {
@@ -47,7 +51,7 @@
     "subtipo": "Abanicos de alta artesania",
     "descripcion": "Un espacio donde el verdadero sentido nace del oficio y de las manos que lo moldean. El protagonismo aquí late en la paciencia de un deshilachado o en el cuidado con el que tejidos como el lino, el mikado o la imitación seda se asientan sobre el varillaje. Son maderas nobles que sostienen el sello de nuestros artesanos españoles bajo el distintivo AEA; una base limpia donde el trazo del pincel y el detalle del bordado intervienen con la dedicación necesaria para acompañar a un objeto que se ha pensado, desde su origen, para ser puramente artesanal.",
     "imagenes": [
-      "img/Carrasquilla.webp"
+      "img/Mari Abanico flecos beig.webp"
     ]
   }
   ,{
@@ -61,7 +65,7 @@
     "subtipo": "Cintas de ramo",
     "descripcion": "El diseño nace de tus propias ideas a través de la pintura: desde plasmar con pincel una frase emocional con significado para ti, hasta adaptar piezas anteriores del taller o inspirarte en tus invitaciones de boda.",
     "imagenes": [
-      "img/Ivan-y-Laura.webp"
+      "img/lazo-Marina-y-jose_4.webp"
     ]
   }
   ,{
