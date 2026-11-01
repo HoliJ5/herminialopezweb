@@ -61,18 +61,6 @@
     "almacen": 0
   },
   {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico Alba",
-    "subtitulo": "Madera de abedul, medida cerrado 23cm, tela de algodón",
-    "imagen": "img/Abanico alba 1.webp",
-    "imagenes": [
-      "img/Abanico alba 2.webp",
-      "img/Abanico alba 3.webp"
-    ],
-    "almacen": 0
-  },
-  {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico Bordado Estrellas",
@@ -132,17 +120,6 @@
     "imagenes": [
       "img/Alvaro_1.webp",
       "img/Retrato Álvaro_2.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Retratos personalizados"],
-    "subtipo": "Acrílico",
-    "titulo": "Acrílico",
-    "subtitulo": "SObre lienzo lino",
-    "imagen": "img/Retrato Pilar con virgen 1.webp",
-    "imagenes": [
-      "img/Retrato Pilar con virgen 2.webp"
     ],
     "almacen": 0
   },
@@ -220,6 +197,18 @@
     "almacen": 0
   },
   {
+    "tipo": ["Abanicos artesanales"],
+    "subtipo": "Pintado a mano",
+    "titulo": "Abanico Alba",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm, tela de algodón",
+    "imagen": "img/Abanico alba 1.webp",
+    "imagenes": [
+      "img/Abanico alba 2.webp",
+      "img/Abanico alba 3.webp"
+    ],
+    "almacen": 0
+  },
+  {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Carboncillo y grafito",
     "titulo": "Carboncillo y grafito",
@@ -272,32 +261,6 @@
     "almacen": 0
   },
   {
-    "tipo": ["Complementos pintados a mano"],
-    "subtipo": "Bolsos",
-    "titulo": "Bolso Tropical",
-    "subtitulo": "Tote bag loneta beige",
-    "imagen": "img/Tote tropical.webp",
-    "imagenes": [
-      "img/Tote tropical 2.webp"
-    ],
-    "almacen": 1,
-    "precio": "30",
-    "tipo-venta": "Ropa y complementos"
-  },
-  {
-    "tipo": ["Complementos pintados a mano"],
-    "subtipo": "Bolsos",
-    "titulo": "Bolso libélulas",
-    "subtitulo": "Tote bag loneta beige",
-    "imagen": "img/Tote libélulas.webp",
-    "imagenes": [
-      "img/Tote libélulas_1.webp"
-    ],
-    "almacen": 1,
-    "precio": "30",
-    "tipo-venta": "Ropa y complementos"
-  },
-  {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acuarela",
     "titulo": "Acuarela",
@@ -322,6 +285,19 @@
     "almacen": 0
   },
   {
+     "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico Garzas",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela lino brillo rosado",
+    "imagen": "img/Abanico garzas lino rosa.webp",
+    "imagenes": [
+      "img/Abanico garzas lino rosa_1.webp"
+    ],
+    "almacen": 1,
+    "precio": "95",
+    "tipo-venta": "Ropa y complementos"
+  },
+  {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesania",
     "titulo": "Abanico Aves - Plateados",
@@ -335,15 +311,13 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Cazadora Mickey",
-    "subtitulo": "Cazadora vaquera pintada a mano, talla S",
-    "imagen": "img/Chaqueta Mickey_1.webp",
+    "titulo": "Vestido libélula",
+    "subtitulo": "Vestido pintado a mano con libélulas",
+    "imagen": "img/Vestido libélulas.webp",
     "imagenes": [
-      "img/cazador-Mickey.webp"
+      "img/Vestido libélulas_1.webp"
     ],
-    "almacen": 1,
-    "precio": "Oferta: 70",
-    "tipo-venta": "Ropa y complementos"
+    "almacen": 0
   },
   {
     "tipo": ["Complementos pintados a mano"],
@@ -506,7 +480,7 @@
       "img/golondrina-seda_2.webp",
       "img/golondrina-seda_3.webp",
       "img/golondrina-seda_4.webp",
-      "img/golondrina-seda_5.webp"
+      "img/Abanico golondrinas seda verde.webp"
     ],
     "almacen": 0
   },
@@ -569,9 +543,9 @@
     "subtipo": "Pintado a mano",
     "titulo": "Abanico Nuestro Padre Jesús Nazareno",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
-    "imagen": "img/Jesus-nazareno-medio.webp",
+    "imagen": "img/Jesus-nazareno-medio_1.webp",
     "imagenes": [
-      "img/Jesus-nazareno-medio_1.webp"
+      "img/Jesus-nazareno-medio.webp"
     ],
     "almacen": 0
   },
@@ -1514,19 +1488,6 @@
     "almacen": 0
   },
   {
-     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico Garzas",
-    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela lino brillo rosado",
-    "imagen": "img/Abanico garzas lino rosa.webp",
-    "imagenes": [
-      "img/Abanico garzas lino rosa_1.webp"
-    ],
-    "almacen": 1,
-    "precio": "95",
-    "tipo-venta": "Ropa y complementos"
-  },
-  {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico garzas",
@@ -1534,31 +1495,6 @@
     "imagen": "img/Abanico garzas bambú.webp",
     "imagenes": [
       "img/Abanico garzas bambú_1.webp"
-    ],
-    "almacen": 0
-  },
-  {
-     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico golondrinas",
-    "subtitulo": "Madera de kotibe, medida cerrado 24cm, efecto seda",
-    "imagen": "img/Abanico golondrinas seda verde.webp",
-    "imagenes": [
-      "img/Abanico golondrinas seda verde_1.webp",
-      "img/Abanico golondrinas seda verde_2.webp",
-      "img/Abanico golondrinas seda verde_3.webp"
-    ],
-    "almacen": 0
-  },
-  {
-     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico hada",
-    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela lino",
-    "imagen": "img/Abanico hada.webp",
-    "imagenes": [
-      "img/Abanico hada_1.webp",
-      "img/Abanico hada_2.webp"
     ],
     "almacen": 0
   },
@@ -1688,6 +1624,18 @@
     "almacen": 0
   },
   {
+    "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico hada",
+    "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela lino",
+    "imagen": "img/Abanico hada.webp",
+    "imagenes": [
+      "img/Abanico hada_1.webp",
+      "img/Abanico hada_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico Virgen de Araceli Pastora ref 6",
@@ -1736,6 +1684,32 @@
     "almacen": 0
   },
   {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Bolsos",
+    "titulo": "Bolso Tropical",
+    "subtitulo": "Tote bag loneta beige",
+    "imagen": "img/Tote tropical.webp",
+    "imagenes": [
+      "img/Tote tropical 2.webp"
+    ],
+    "almacen": 1,
+    "precio": "30",
+    "tipo-venta": "Ropa y complementos"
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Bolsos",
+    "titulo": "Bolso libélulas",
+    "subtitulo": "Tote bag loneta beige",
+    "imagen": "img/Tote libélulas.webp",
+    "imagenes": [
+      "img/Tote libélulas_1.webp"
+    ],
+    "almacen": 1,
+    "precio": "30",
+    "tipo-venta": "Ropa y complementos"
+  },
+  {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico Virgen de Araceli bajada ref 5",
@@ -1743,6 +1717,17 @@
     "imagen": "img/abanico Virgen bajada.webp",
     "imagenes": [
       "img/abanico Virgen bajada_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acrílico",
+    "titulo": "Acrílico",
+    "subtitulo": "Sobre lienzo lino",
+    "imagen": "img/Retrato Pilar con virgen 1.webp",
+    "imagenes": [
+      "img/Retrato Pilar con virgen 2.webp"
     ],
     "almacen": 0
   },
@@ -1771,6 +1756,19 @@
       "img/Abanico Virgen ref 1_4.webp"
     ],
     "almacen": 0
+  },
+  {
+    "tipo": ["Complementos pintados a mano"],
+    "subtipo": "Ropa",
+    "titulo": "Cazadora Mickey",
+    "subtitulo": "Cazadora vaquera pintada a mano, talla S",
+    "imagen": "img/Chaqueta Mickey_1.webp",
+    "imagenes": [
+      "img/cazador-Mickey.webp"
+    ],
+    "almacen": 1,
+    "precio": "Oferta: 70",
+    "tipo-venta": "Ropa y complementos"
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
@@ -2005,17 +2003,6 @@
     "imagenes": [
       "img/Vestido hna gelu_1.webp",
       "img/Vestido hna gelu_2.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Complementos pintados a mano"],
-    "subtipo": "Ropa",
-    "titulo": "Vestido libélula",
-    "subtitulo": "Vestido pintado a mano con libélulas",
-    "imagen": "img/Vestido libélulas.webp",
-    "imagenes": [
-      "img/Vestido libélulas_1.webp"
     ],
     "almacen": 0
   },
