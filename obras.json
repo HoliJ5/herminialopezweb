@@ -50,6 +50,15 @@
     "almacen": 0
   },
   {
+    "tipo": ["Abanicos artesanales","Bodas y eventos"],
+    "subtipo": "Abanicos de alta artesania",
+    "titulo": "Abanico Mimi",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela lino beig, desflecado a mano",
+    "imagen": "img/Mari Abanico flecos beig.webp",
+    "imagenes": [],
+    "almacen": 0
+  },
+  {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
     "titulo": "Abanico Ara",
@@ -1780,15 +1789,6 @@
       "img/Abanico lino flecos 1.webp",
       "img/Abanico lino flecos 2.webp"
     ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico Mimi",
-    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela lino beig, desflecado a mano",
-    "imagen": "img/Mari Abanico flecos beig.webp",
-    "imagenes": [],
     "almacen": 0
   },
   {
