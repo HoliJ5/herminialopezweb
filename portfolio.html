@@ -470,6 +470,33 @@
                 });
             }
 
+            function getColumnasGaleria() {
+                if (window.innerWidth >= 1024) return 4;
+                if (window.innerWidth >= 640) return 3;
+                return 2;
+            }
+
+            function crearBloqueDescripcionPrecio(texto) {
+                const bloque = document.createElement('div');
+                bloque.className = 'col-span-full py-2 sm:py-3 px-4 text-center flex flex-col items-center justify-center';
+                bloque.style.gridColumn = '1 / -1';
+
+                let html = '';
+                if (Array.isArray(texto)) {
+                    html = texto.map((p, i) => `<p class="text-neutral-600 font-light text-sm sm:text-base md:text-lg leading-relaxed ${i > 0 ? 'mt-2' : ''}">${p}</p>`).join('');
+                } else {
+                    const parrafos = String(texto).split(/\n\n+/);
+                    html = parrafos.map((p, i) => `<p class="text-neutral-600 font-light text-sm sm:text-base md:text-lg leading-relaxed ${i > 0 ? 'mt-2' : ''}">${p.replace(/\n/g, '<br>')}</p>`).join('');
+                }
+
+                bloque.innerHTML = `
+                    <div class="max-w-2xl mx-auto">
+                        ${html}
+                    </div>
+                `;
+                return bloque;
+            }
+
             function aplicarFiltro() {
                 contenedor.innerHTML = '';
                 
@@ -479,7 +506,21 @@
                     return cumpleTipo && cumpleSubtipo;
                 });
 
-                filtradas.forEach(obra => {
+                // Solo se muestra descripcion-precio si está seleccionado exclusivamente el tipo principal (no 'todos', y subtipo es 'todos')
+                const infoTipo = infoData.find(i => i.tipo && i.tipo === filtroActual);
+                const textoPrecio = (filtroActual !== 'todos' && subfiltroActual === 'todos' && infoTipo && infoTipo['descripcion-precio'])
+                    ? infoTipo['descripcion-precio']
+                    : null;
+                const tienePrecio = textoPrecio && (typeof textoPrecio === 'string' ? textoPrecio.trim() !== '' : textoPrecio.length > 0);
+
+                const columnas = getColumnasGaleria();
+                const indicePrecio = tienePrecio ? Math.min(columnas * 3, filtradas.length) : -1;
+
+                filtradas.forEach((obra, index) => {
+                    if (tienePrecio && index === indicePrecio) {
+                        contenedor.appendChild(crearBloqueDescripcionPrecio(textoPrecio));
+                    }
+
                     const obraElement = document.createElement('div');
                     obraElement.className = 'group cursor-pointer w-full';
                     
@@ -494,9 +535,22 @@
                     obraElement.addEventListener('click', () => abrirModal(obra));
                     contenedor.appendChild(obraElement);
                 });
+
+                if (tienePrecio && indicePrecio === filtradas.length) {
+                    contenedor.appendChild(crearBloqueDescripcionPrecio(textoPrecio));
+                }
                 
                 renderizarInfoSubtipos();
             }
+
+            let ultimasColumnas = getColumnasGaleria();
+            window.addEventListener('resize', () => {
+                const cols = getColumnasGaleria();
+                if (cols !== ultimasColumnas) {
+                    ultimasColumnas = cols;
+                    aplicarFiltro();
+                }
+            });
 
             Promise.all([
                 fetch('obras.json').then(res => res.json()),
