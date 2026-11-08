@@ -168,7 +168,7 @@
                 const numeroWhatsApp = "34644241265";
                 const textoMensaje = obra.almacen === 1 
                     ? `¡Hola! Me gustaría comprar / pedir información sobre "${obra.titulo}".` 
-                    : `¡Hola! Me gustaría solicitar un presupuesto para "${obra.titulo}".`;
+                    : `¡Hola! Me gustaría solicitar información sobre "${obra.tipo}", "${obra.subtipo}".`;
                 const mensaje = encodeURIComponent(textoMensaje);
                 
                 modalWhatsapp.href = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
