@@ -122,26 +122,11 @@
   },
   {
     "tipo": ["Retratos personalizados"],
-    "subtipo": "Acuarela",
-    "titulo": "Acuarela",
-    "subtitulo": "Papel 100% algodón",
-    "imagen": "img/Alvaro.webp",
-    "imagenes": [
-      "img/Alvaro_1.webp",
-      "img/Retrato Álvaro_2.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Retratos personalizados"],
-    "subtipo": "Acrílico",
-    "titulo": "Zona centro",
-    "subtitulo": "Acrílico sobre lienzo",
-    "imagen": "img/ana-ciudad_1.webp",
-    "imagenes": [
-      "img/ana-ciudad.webp",
-      "img/ana-ciudad_2.webp"
-    ],
+    "subtipo": "Carboncillo y grafito",
+    "titulo": "Carboncillo y grafito",
+    "subtitulo": "Sobre papel",
+    "imagen": "img/Ana-esperanza.webp",
+    "imagenes": [],
     "almacen": 0
   },
   {
@@ -149,8 +134,22 @@
     "subtipo": "Carboncillo y grafito",
     "titulo": "Carboncillo y grafito",
     "subtitulo": "Sobre papel",
-    "imagen": "img/Ana-esperanza.webp",
-    "imagenes": [],
+    "imagen": "img/Luismi.webp",
+    "imagenes": [
+      "img/Luismi_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
+    "imagen": "img/esperanzas.webp",
+    "imagenes": [
+      "img/esperanzas_1.webp",
+      "img/esperanzas_2.webp"
+    ],
     "almacen": 0
   },
   {
@@ -164,19 +163,19 @@
   },
   {
     "tipo": ["Retratos personalizados"],
-    "subtipo": "Acrílico",
-    "titulo": "Acrílico y acuarela",
+    "subtipo": "Acuarela",
+    "titulo": "Acrílico, acuarela y tinta",
     "subtitulo": "Papel 100% algodón",
-    "imagen": "img/AnaCara.webp",
+    "imagen": "img/Retrato mari.webp",
     "imagenes": [],
     "almacen": 0
   },
   {
     "tipo": ["Retratos personalizados"],
-    "subtipo": "Carboncillo y grafito",
-    "titulo": "Grafito",
-    "subtitulo": "Sobre papel",
-    "imagen": "img/AnaYLaura.webp",
+    "subtipo": "Acrílico",
+    "titulo": "Acrílico y acuarela",
+    "subtitulo": "Papel 100% algodón",
+    "imagen": "img/AnaCara.webp",
     "imagenes": [],
     "almacen": 0
   },
@@ -674,31 +673,8 @@
     "subtipo": "Acuarela",
     "titulo": "Acuarela",
     "subtitulo": "Papel 100% algodón",
-    "imagen": "img/esperanzas.webp",
-    "imagenes": [
-      "img/esperanzas_1.webp",
-      "img/esperanzas_2.webp"
-    ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Retratos personalizados"],
-    "subtipo": "Acuarela",
-    "titulo": "Acuarela",
-    "subtitulo": "Papel 100% algodón",
     "imagen": "img/Lucia.webp",
     "imagenes": [],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Retratos personalizados"],
-    "subtipo": "Carboncillo y grafito",
-    "titulo": "Carboncillo y grafito",
-    "subtitulo": "Sobre papel",
-    "imagen": "img/Luismi.webp",
-    "imagenes": [
-      "img/Luismi_2.webp"
-    ],
     "almacen": 0
   },
   {
@@ -1027,6 +1003,18 @@
     "almacen": 0
   },
   {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acuarela",
+    "titulo": "Acuarela",
+    "subtitulo": "Papel 100% algodón",
+    "imagen": "img/Alvaro.webp",
+    "imagenes": [
+      "img/Alvaro_1.webp",
+      "img/Retrato Álvaro_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Sombreros y pañuelos",
     "titulo": "Canotier niño",
@@ -1283,6 +1271,15 @@
     "almacen": 1,
     "precio": "Prints desde 15",
     "tipo-venta": "Prints"
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Carboncillo y grafito",
+    "titulo": "Grafito",
+    "subtitulo": "Sobre papel",
+    "imagen": "img/AnaYLaura.webp",
+    "imagenes": [],
+    "almacen": 0
   },
   {
     "tipo": ["Complementos pintados a mano"],
@@ -1732,6 +1729,18 @@
   {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
+    "titulo": "Zona centro",
+    "subtitulo": "Acrílico sobre lienzo",
+    "imagen": "img/ana-ciudad_1.webp",
+    "imagenes": [
+      "img/ana-ciudad.webp",
+      "img/ana-ciudad_2.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Retratos personalizados"],
+    "subtipo": "Acrílico",
     "titulo": "Acrílico",
     "subtitulo": "Sobre lienzo lino",
     "imagen": "img/Retrato Pilar con virgen 1.webp",
@@ -1962,15 +1971,6 @@
     "imagenes": [
       "img/Zapas abejas_1.webp"
     ],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Retratos personalizados"],
-    "subtipo": "Acuarela",
-    "titulo": "Acrílico, acuarela y tinta",
-    "subtitulo": "Papel 100% algodón",
-    "imagen": "img/Retrato mari.webp",
-    "imagenes": [],
     "almacen": 0
   },
   {
