@@ -38,14 +38,25 @@
     "almacen": 0
   },
   {
-    "tipo": ["Bodas y eventos"],
-    "subtipo": "Papeleria",
-    "titulo": "Invitación de boda",
-    "subtitulo": "Acuarela papel 100% algodón arena 25x27 cm",
-    "imagen": "img/ElCarmen_4.webp",
+    "tipo": ["Abanicos artesanales"],
+    "subtipo": "Pintado a mano",
+    "titulo": "Abanico Ara",
+    "subtitulo": "Madera de abedul, medida cerrado 23cm, efecto seda",
+    "imagen": "img/Abanico-Ara.webp",
     "imagenes": [
-      "img/ElCarmen_2.webp",
-      "img/ElCarmen_3.webp"
+      "img/Abanico-Ara_1.webp"
+    ],
+    "almacen": 0
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Bastidores y Saquitos",
+    "titulo": "Bastidor 'Inma y Juan'",
+    "subtitulo": "Tela algodón 22cm pintado y bordado a mano",
+    "imagen": "img/bastidor-Inma-juan.webp",
+    "imagenes": [
+      "img/bastidor-Inma-juan_1.webp",
+      "img/bastidor Inma y juan_2.webp"
     ],
     "almacen": 0
   },
@@ -56,17 +67,6 @@
     "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela lino beig, desflecado a mano",
     "imagen": "img/Mari Abanico flecos beig.webp",
     "imagenes": [],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Abanicos artesanales"],
-    "subtipo": "Pintado a mano",
-    "titulo": "Abanico Ara",
-    "subtitulo": "Madera de abedul, medida cerrado 23cm, efecto seda",
-    "imagen": "img/Abanico-Ara.webp",
-    "imagenes": [
-      "img/Abanico-Ara_1.webp"
-    ],
     "almacen": 0
   },
   {
@@ -241,18 +241,6 @@
     "subtitulo": "Sobre papel",
     "imagen": "img/Aroa.webp",
     "imagenes": [],
-    "almacen": 0
-  },
-  {
-    "tipo": ["Bodas y eventos"],
-    "subtipo": "Bastidores y Saquitos",
-    "titulo": "Bastidor 'Inma y Juan'",
-    "subtitulo": "Tela algodón 22cm pintado y bordado a mano",
-    "imagen": "img/bastidor-Inma-juan.webp",
-    "imagenes": [
-      "img/bastidor-Inma-juan_1.webp",
-      "img/bastidor Inma y juan_2.webp"
-    ],
     "almacen": 0
   },
   {
@@ -1227,6 +1215,18 @@
     "almacen": 1,
     "precio": "Prints desde 15",
     "tipo-venta": "Prints"
+  },
+  {
+    "tipo": ["Bodas y eventos"],
+    "subtipo": "Papeleria",
+    "titulo": "Invitación de boda",
+    "subtitulo": "Acuarela papel 100% algodón arena 25x27 cm",
+    "imagen": "img/ElCarmen_4.webp",
+    "imagenes": [
+      "img/ElCarmen_2.webp",
+      "img/ElCarmen_3.webp"
+    ],
+    "almacen": 0
   },
   {
     "tipo": ["Obras pictoricas"],
