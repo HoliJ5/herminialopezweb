@@ -199,9 +199,35 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.remove('opacity-0');
     });
 
-    // 2. Lógica para el Footer
+    // 2. Lógica para el Footer y ocultar WhatsApp al llegar al final
+    let observadorFooter = null;
+    const iniciarObservadorFooter = () => {
+        const btnWa = document.getElementById('btn-whatsapp');
+        const footer = document.querySelector('footer') || document.getElementById('footer-placeholder');
+
+        if (!btnWa || !footer) return;
+
+        if (observadorFooter) observadorFooter.disconnect();
+
+        observadorFooter = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    btnWa.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                    btnWa.classList.remove('opacity-100', 'translate-y-0');
+                } else {
+                    btnWa.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+                    btnWa.classList.add('opacity-100', 'translate-y-0');
+                }
+            });
+        }, {
+            threshold: 0
+        });
+
+        observadorFooter.observe(footer);
+    };
+
     if (document.body.id !== 'pagina-inicio') {
-        cargarComponente('footer-placeholder', 'footer.html');
+        cargarComponente('footer-placeholder', 'footer.html', iniciarObservadorFooter);
     } else {
         const footerPlaceholder = document.getElementById('footer-placeholder');
         if (footerPlaceholder) footerPlaceholder.remove();
@@ -212,6 +238,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const waContainer = document.createElement('div');
         waContainer.id = 'whatsapp-placeholder';
         document.body.appendChild(waContainer);
-        cargarComponente('whatsapp-placeholder', './btnWhatsapp.html');
+        cargarComponente('whatsapp-placeholder', './btnWhatsapp.html', iniciarObservadorFooter);
     }
 });
