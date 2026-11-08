@@ -395,6 +395,20 @@
                     const direccionFlex = index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse';
                     const tituloARenderizar = info.tipo ? info.tipo : info.subtipo;
 
+                    const activarFiltro = () => {
+                        if (info.tipo) {
+                            filtroActual = info.tipo;
+                            subfiltroActual = 'todos';
+                        } else if (info.subtipo) {
+                            subfiltroActual = info.subtipo;
+                        }
+                        renderizarFiltrosPrincipales();
+                        renderizerSubfiltros();
+                        aplicarFiltro();
+                        
+                        document.getElementById('filtros-contenedor').scrollIntoView({ behavior: 'smooth' });
+                    };
+
                     const bloqueInfo = document.createElement('div');
                     bloqueInfo.className = `flex flex-col ${direccionFlex} ${gapClase} md:gap-12 items-center w-full`;
                     
@@ -415,7 +429,7 @@
                             const obraVinculada = obrasData.find(o => o.imagen === rutaImagen);
 
                             const imgWrapper = document.createElement('div');
-                            imgWrapper.className = `overflow-hidden bg-neutral-100 aspect-square rounded-sm ${obraVinculada ? 'cursor-pointer' : ''} group`;
+                            imgWrapper.className = `overflow-hidden bg-neutral-100 aspect-square rounded-sm ${obraVinculada ? 'cursor-pointer' : 'cursor-pointer md:cursor-default'} group`;
                             
                             const imgEl = document.createElement('img');
                             imgEl.loading = index === 0 ? 'eager' : 'lazy';
@@ -424,9 +438,14 @@
                             imgEl.alt = `Ejemplo de ${tituloARenderizar}`;
                             imgEl.className = "w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105";
                             
-                            if (obraVinculada) {
-                                imgWrapper.addEventListener('click', () => abrirModal(obraVinculada));
-                            }
+                            imgWrapper.addEventListener('click', () => {
+                                const esMovil = window.innerWidth < 768;
+                                if (esMovil) {
+                                    activarFiltro();
+                                } else if (obraVinculada) {
+                                    abrirModal(obraVinculada);
+                                }
+                            });
                             
                             imgWrapper.appendChild(imgEl);
                             collageContenedor.appendChild(imgWrapper);
@@ -438,17 +457,7 @@
 
                     const btnInfo = document.getElementById(`btn-info-${index}`);
                     if(btnInfo) {
-                        btnInfo.addEventListener('click', () => {
-                            if (info.tipo) {
-                                filtroActual = info.tipo;
-                                subfiltroActual = 'todos';
-                            }
-                            renderizarFiltrosPrincipales();
-                            renderizerSubfiltros();
-                            aplicarFiltro();
-                            
-                            document.getElementById('filtros-contenedor').scrollIntoView({ behavior: 'smooth' });
-                        });
+                        btnInfo.addEventListener('click', activarFiltro);
                     }
                 });
             }
