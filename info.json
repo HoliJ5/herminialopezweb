@@ -1,7 +1,10 @@
 [
   {
     "tipo": "Retratos personalizados",
-    "descripcion": "Un rostro transmite mucho más que unas facciones, guarda vivencias y expresiones propias. Mi trabajo se centra en trasladar al soporte esa naturalidad de las personas a través de una pintura que busca capturar la historia que se esconde detrás de cada mirada.",
+    "descripcion": [
+      "Un rostro transmite mucho más que unas facciones, guarda vivencias y expresiones propias. Mi trabajo se centra en trasladar al soporte esa naturalidad de las personas a través de una pintura que busca capturar la historia que se esconde detrás de cada mirada.",
+      "El precio aproximado para un retrato individual tamaño A4 o A3 va de 80€ a 250€, dependiendo de la técnica, número de personas, tamaño de lo obra, soporte utilizado, etc. En base a tus preferencias elaboraré un presupuesto a medida."
+    ],
     "imagenes": [
       "img/angelita.webp",
       "img/Ana-esperanza.webp"
