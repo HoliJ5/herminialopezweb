@@ -1,3 +1,32 @@
+// Limpieza automática de la extensión .html en la barra de direcciones (Clean URLs)
+if (window.location.protocol.startsWith('http')) {
+    if (window.location.pathname.endsWith('/index.html')) {
+        const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/') + window.location.search + window.location.hash;
+        window.history.replaceState(null, '', cleanPath);
+    } else if (window.location.pathname.endsWith('.html')) {
+        const cleanPath = window.location.pathname.replace(/\.html$/, '') + window.location.search + window.location.hash;
+        window.history.replaceState(null, '', cleanPath);
+    }
+}
+
+// Compatibilidad local: si se abre con protocolo file://, ajustar enlaces para que apunten al .html correspondiente
+if (window.location.protocol === 'file:') {
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a');
+        if (link) {
+            const href = link.getAttribute('href');
+            if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('mailto:') && !href.startsWith('tel:') && !href.endsWith('.html')) {
+                const [path, search] = href.split('?');
+                if (path === './' || path === '/') {
+                    link.href = 'index.html';
+                } else {
+                    link.href = path + '.html' + (search ? '?' + search : '');
+                }
+            }
+        }
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     
     const cargarComponente = (idContenedor, archivoHtml, callback = null) => {
@@ -83,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     contPortfolio.innerHTML = ''; 
                     
                     const btnTodosPort = document.createElement('a');
-                    btnTodosPort.href = "portfolio.html";
+                    btnTodosPort.href = "portfolio";
                     btnTodosPort.textContent = "Mostrar todos";
                     btnTodosPort.className = "block w-full hover:text-white transition-colors py-1 truncate text-[13px]";
                     
@@ -104,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     tiposPortfolio.forEach(tipo => {
                         // Construir el enlace principal del TIPO
                         const btnTipo = document.createElement('a');
-                        btnTipo.href = `portfolio.html?filtro=${encodeURIComponent(tipo)}`;
+                        btnTipo.href = `portfolio?filtro=${encodeURIComponent(tipo)}`;
                         btnTipo.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
                         btnTipo.className = "block w-full hover:text-white transition-colors py-1 mt-2 truncate text-[13px]";
                         
@@ -127,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         if (subtipos.length > 0) {
                             subtipos.forEach(sub => {
                                 const btnSub = document.createElement('a');
-                                btnSub.href = `portfolio.html?filtro=${encodeURIComponent(tipo)}&subfiltro=${encodeURIComponent(sub)}`;
+                                btnSub.href = `portfolio?filtro=${encodeURIComponent(tipo)}&subfiltro=${encodeURIComponent(sub)}`;
                                 btnSub.textContent = "- " + sub;
                                 btnSub.className = "block w-full hover:text-white text-neutral-400 transition-colors py-1 truncate pl-3 text-[11px]";
                                 
@@ -157,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     contStock.innerHTML = '';
                     
                     const btnTodosStock = document.createElement('a');
-                    btnTodosStock.href = "stock.html";
+                    btnTodosStock.href = "stock";
                     btnTodosStock.textContent = "Mostrar todos";
                     btnTodosStock.className = "block w-full hover:text-white transition-colors py-1 truncate text-[13px]";
                     btnTodosStock.addEventListener('click', (e) => {
@@ -175,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     tiposStock.forEach(tipo => {
                         const btnTipo = document.createElement('a');
-                        btnTipo.href = `stock.html?filtro=${encodeURIComponent(tipo)}`;
+                        btnTipo.href = `stock?filtro=${encodeURIComponent(tipo)}`;
                         btnTipo.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
                         btnTipo.className = "block w-full hover:text-white transition-colors py-1 mt-2 truncate text-[13px]";
                         
