@@ -2,7 +2,8 @@
   {
     "tipo": "Retratos personalizados",
     "descripcion": "Un rostro transmite mucho más que unas facciones, guarda vivencias y expresiones propias. Mi trabajo se centra en trasladar al soporte esa naturalidad de las personas a través de una pintura que busca capturar la historia que se esconde detrás de cada mirada.",
-    "descripcion-precio": "El precio aproximado para un retrato individual tamaño A4 o A3 va de 80€ a 250€, dependiendo de la técnica, número de personas, tamaño de la obra, soporte utilizado, etc. En base a tus preferencias elaboraré un presupuesto a medida.",
+    "descripcion-precio": ["**Comparte tus ideas para empezar con el proyecto**",
+    "El precio aproximado para un retrato individual tamaño A4 o A3 va de 80€ a 250€, dependiendo de la técnica, número de personas, tamaño de la obra, soporte utilizado, etc. En base a tus preferencias elaboraré un presupuesto a medida."],
     "imagenes": [
       "img/angelita.webp",
       "img/Ana-esperanza.webp"
@@ -17,7 +18,10 @@
   },
   {
     "tipo": "Abanicos artesanales",
-    "descripcion": "Aquí el secreto está en la paciencia: desde el deshilachado hasta el cuidado con el que colocamos telas como el lino, el mikado o efecto seda sobre cada varilla. Es un lienzo donde las pinceladas y los bordados tienen cabida, todo pensado desde el primer día para ser 100% auténtica y hecha a mano. Trabajamos con maderas nobles que llevan el sello de creadores españoles bajo el distintivo AEA.",
+    "descripcion": ["Aquí el secreto está en la paciencia: desde el deshilachado hasta el cuidado con el que colocamos telas como el lino, el mikado o efecto seda sobre cada varilla. Es un lienzo donde las pinceladas y los bordados tienen cabida, todo pensado desde el primer día para ser 100% auténtica y hecha a mano.",
+    "Trabajamos con maderas nobles que llevan el sello de creadores españoles bajo el distintivo AEA."],
+    "descripcion-precio":["**Puedes pasarme tus ideas o imágenes de referencia para empezar a diseñar**",
+    "El precio aproximado para los abanicos va de 50€ a 160€, dependiendo del modelo y del tema a pintar o bordar. Hablaremos para concretar la técnica, acordar el precio definitivo y fijar los plazos, buscando siempre un resultado que se ajuste a tus preferencias."],
     "imagenes": [
       "img/abanico-seda-pajaro.webp",
       "img/Abanico marina_3.webp"
@@ -25,7 +29,8 @@
   },
   {
     "tipo": "Bodas y eventos",
-    "descripcion": "Esta galería reúne una selección de piezas textiles, abanicos de alta artesanía y papelería creados para acompañar días señalados. Cada proyecto nace de un boceto personalizado y adaptado para la ocasión, con la libertad de dar vida a una idea nueva o de reinterpretar diseños anteriores que hayan inspirado tu elección.",
+    "descripcion": ["Esta galería reúne una selección de piezas textiles, abanicos de alta artesanía y papelería creados para acompañar días señalados.",
+    " Cada proyecto nace de un boceto personalizado y adaptado para la ocasión, con la libertad de dar vida a una idea nueva o de reinterpretar diseños anteriores que hayan inspirado tu elección."],
     "imagenes": [
       "img/Bandana Whisky_4.webp",
       "img/Cinta ramo edith.webp",
@@ -43,28 +48,33 @@
   },
   {
     "subtipo": "Pintado a mano",
-    "descripcion": " Diseños pintados a mano sobre la base firme de un auténtico varillaje certificado AEA, creados no como un simple accesorio",
+    "descripcion": [" Diseños pintados a mano sobre la base firme de un auténtico varillaje certificado AEA, creados no como un simple accesorio.",
+    "Los diseños que ves aquí son solo una muestra de piezas que ya han encontrado dueño, pero no son un límite. Si tienes una idea concreta o un motivo especial que quieras ver en un abanico, escríbeme y buscaremos la fórmula para plasmarlo."],
     "imagenes": [
       "img/Colibri_flores.webp"
     ]
   }
   ,{
     "subtipo": "Abanicos de alta artesania",
-    "descripcion": "Un espacio donde el verdadero sentido nace del oficio y de las manos que lo moldean. El protagonismo aquí late en la paciencia de un deshilachado o en el cuidado con el que tejidos como el lino, el mikado o la imitación seda se asientan sobre el varillaje. Son maderas nobles que sostienen el sello de nuestros artesanos españoles bajo el distintivo AEA; una base limpia donde el trazo del pincel y el detalle del bordado intervienen con la dedicación necesaria para acompañar a un objeto que se ha pensado, desde su origen, para ser puramente artesanal.",
+    "descripcion": ["Un espacio donde el verdadero sentido nace del oficio y de las manos que lo moldean. ",
+    "El protagonismo aquí late en la paciencia de un deshilachado o en el cuidado con el que tejidos como el lino, el mikado o la imitación seda se asientan sobre el varillaje.",
+    "Son maderas nobles que sostienen el sello de nuestros artesanos españoles bajo el distintivo AEA; una base limpia donde el trazo del pincel y el detalle del bordado intervienen con la dedicación necesaria para acompañar a un objeto que se ha pensado, desde su origen, para ser puramente artesanal."],
     "imagenes": [
       "img/Mari Abanico flecos beig.webp"
     ]
   }
   ,{
     "subtipo": "Bastidores y Saquitos",
-    "descripcion": "El diseño comienza partir de tus propios gustos, transformando piezas anteriores del taller o trasladando al tejido la identidad de tus invitaciones de boda, así logramos que todo esté en armonía.",
+    "descripcion": ["El diseño comienza partir de tus propios gustos, transformando piezas anteriores del taller o trasladando al tejido la identidad de tus invitaciones de boda, así logramos que todo esté en armonía.",
+    "Puedes pasarme tus ideas o imágenes de referencia para empezar a diseñar. El precio aproximado para los saquitos va de 25€ a 40€, y para los bastidores de 40€ a 80€, dependiendo del modelo, el tamaño y el tema a pintar o bordar."],
     "imagenes": [
       "img/saquito_inma.webp"
     ]
   }
   ,{
     "subtipo": "Cintas de ramo",
-    "descripcion": "El diseño nace de tus propias ideas a través de la pintura: desde plasmar con pincel una frase emocional con significado para ti, hasta adaptar piezas anteriores del taller o inspirarte en tus invitaciones de boda.",
+    "descripcion": ["El diseño nace de tus propias ideas: desde plasmar una frase emocional con significado para ti, hasta adaptar piezas anteriores del taller o inspirarte en tus invitaciones de boda.",
+    "Puedes pasarme tus ideas o imágenes de referencia para empezar a diseñar. El precio aproximado para las cintas de ramo va de 40€ a 70€, dependiendo del modelo, el tejido y el tema a pintar o bordar."],
     "imagenes": [
       "img/lazo-Marina-y-jose_4.webp"
     ]
