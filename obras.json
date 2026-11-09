@@ -789,7 +789,7 @@
       "img/Saco-navidad.webp"
     ],
     "almacen": 1,
-    "precio": "OFERTA: 50",
+    "precio": "PRECIO ESPECIAL: 50",
     "tipo-venta": "Navidad"
   },
   {
@@ -803,7 +803,7 @@
       "img/Saco navidad 3.webp"
     ],
     "almacen": 1,
-    "precio": "OFERTA: 50",
+    "precio": "PRECIO ESPECIAL: 50",
     "tipo-venta": "Navidad"
   },
   {
@@ -1785,7 +1785,7 @@
       "img/cazador-Mickey.webp"
     ],
     "almacen": 1,
-    "precio": "Oferta: 70",
+    "precio": "PRECIO ESPECIAL: 70",
     "tipo-venta": "Ropa y complementos"
   },
   {
