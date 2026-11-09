@@ -6,11 +6,15 @@
     <title>Portfolio | Herminia López</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
         .font-serif { font-family: 'Playfair Display', serif; }
         .font-sans { font-family: 'Inter', sans-serif; }
         .titulo-fluido {
             font-size: clamp(1.75rem, 4vw, 3rem);
+        }
+        b, strong {
+            font-weight: 600;
+            color: #171717;
         }
     </style>
 </head>
@@ -417,7 +421,7 @@
                         : (typeof info.descripcion === 'string' ? info.descripcion.split(/\n\n+/) : []);
 
                     const descripcionHtml = parrafos.map((p, i) => 
-                        `<p class="text-neutral-600 text-sm sm:text-base leading-relaxed pointer-events-none ${claseDescripcion} ${i > 0 ? 'mt-3' : ''}">${p.replace(/\n/g, '<br>')}</p>`
+                        `<p class="text-neutral-600 font-light text-sm sm:text-base leading-relaxed pointer-events-none ${claseDescripcion} ${i > 0 ? 'mt-3' : ''}">${formatearTexto(p)}</p>`
                     ).join('');
 
                     bloqueInfo.innerHTML = `
@@ -470,6 +474,13 @@
                 });
             }
 
+            function formatearTexto(texto) {
+                if (!texto) return '';
+                return String(texto)
+                    .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-neutral-900">$1</strong>')
+                    .replace(/\n/g, '<br>');
+            }
+
             function getColumnasGaleria() {
                 if (window.innerWidth >= 1024) return 4;
                 if (window.innerWidth >= 640) return 3;
@@ -481,13 +492,13 @@
                 bloque.className = 'col-span-full py-2 sm:py-3 px-4 text-center flex flex-col items-center justify-center';
                 bloque.style.gridColumn = '1 / -1';
 
-                let html = '';
-                if (Array.isArray(texto)) {
-                    html = texto.map((p, i) => `<p class="text-neutral-600 font-light text-sm sm:text-base md:text-lg leading-relaxed ${i > 0 ? 'mt-2' : ''}">${p}</p>`).join('');
-                } else {
-                    const parrafos = String(texto).split(/\n\n+/);
-                    html = parrafos.map((p, i) => `<p class="text-neutral-600 font-light text-sm sm:text-base md:text-lg leading-relaxed ${i > 0 ? 'mt-2' : ''}">${p.replace(/\n/g, '<br>')}</p>`).join('');
-                }
+                const parrafos = Array.isArray(texto)
+                    ? texto
+                    : (typeof texto === 'string' ? texto.split(/\n\n+/) : []);
+
+                const html = parrafos.map((p, i) => 
+                    `<p class="text-neutral-600 font-light text-sm sm:text-base md:text-lg leading-relaxed ${i > 0 ? 'mt-2 sm:mt-3' : ''}">${formatearTexto(p)}</p>`
+                ).join('');
 
                 bloque.innerHTML = `
                     <div class="max-w-2xl mx-auto">
@@ -511,7 +522,7 @@
                 const textoPrecio = (filtroActual !== 'todos' && subfiltroActual === 'todos' && infoTipo && infoTipo['descripcion-precio'])
                     ? infoTipo['descripcion-precio']
                     : null;
-                const tienePrecio = textoPrecio && (typeof textoPrecio === 'string' ? textoPrecio.trim() !== '' : textoPrecio.length > 0);
+                const tienePrecio = textoPrecio && (typeof textoPrecio === 'string' ? textoPrecio.trim() !== '' : (Array.isArray(textoPrecio) ? textoPrecio.length > 0 : false));
 
                 const columnas = getColumnasGaleria();
                 const indicePrecio = tienePrecio ? Math.min(columnas * 3, filtradas.length) : -1;
