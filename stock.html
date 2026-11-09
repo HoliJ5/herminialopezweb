@@ -90,6 +90,197 @@
             let startX = 0;
             let currentX = 0;
 
+            // ---------- Zoom táctil: pellizco, arrastre con la imagen ampliada y doble toque ----------
+            const ZOOM_MAX = 5;
+            const ZOOM_DOBLE_TOQUE = 2.5;
+            let zoom = 1;
+            let panX = 0;
+            let panY = 0;
+            let modoGesto = 'ninguno'; // 'ninguno' | 'swipe' | 'pellizco' | 'pan'
+            let pellizco = null;
+            let panPrev = { x: 0, y: 0 };
+            let tapInicio = null;
+            let ultimoTap = { t: 0, x: 0, y: 0 };
+
+            function imagenActual() {
+                const slide = sliderTrack.children[indiceModalActual];
+                return slide ? slide.firstElementChild : null;
+            }
+
+            function limitar(v, min, max) {
+                return Math.min(max, Math.max(min, v));
+            }
+
+            // Evita que la imagen ampliada se salga del marco más de lo necesario.
+            function limitarPan() {
+                const img = imagenActual();
+                if (!img) { panX = 0; panY = 0; return; }
+                const maxX = Math.max(0, (img.offsetWidth * zoom - sliderContenedor.clientWidth) / 2);
+                const maxY = Math.max(0, (img.offsetHeight * zoom - sliderContenedor.clientHeight) / 2);
+                panX = limitar(panX, -maxX, maxX);
+                panY = limitar(panY, -maxY, maxY);
+            }
+
+            function aplicarZoom(animar) {
+                const img = imagenActual();
+                if (img) {
+                    img.style.transition = animar ? 'transform 0.2s ease-out' : 'none';
+                    img.style.transform = (zoom === 1 && panX === 0 && panY === 0)
+                        ? ''
+                        : `translate(${panX}px, ${panY}px) scale(${zoom})`;
+                }
+                // Con zoom, el dedo debe poder moverse en cualquier dirección sin que el navegador haga scroll.
+                sliderContenedor.style.touchAction = zoom > 1 ? 'none' : '';
+            }
+
+            function resetZoom() {
+                zoom = 1;
+                panX = 0;
+                panY = 0;
+                sliderTrack.querySelectorAll('img').forEach(i => {
+                    i.style.transition = '';
+                    i.style.transform = '';
+                });
+                sliderContenedor.style.touchAction = '';
+            }
+
+            function alternarZoomEn(x, y) {
+                if (!imagenActual()) return;
+                if (zoom > 1) {
+                    zoom = 1; panX = 0; panY = 0;
+                } else {
+                    const r = sliderContenedor.getBoundingClientRect();
+                    zoom = ZOOM_DOBLE_TOQUE;
+                    panX = -(zoom - 1) * (x - (r.left + r.width / 2));
+                    panY = -(zoom - 1) * (y - (r.top + r.height / 2));
+                    limitarPan();
+                }
+                aplicarZoom(true);
+            }
+
+            function distanciaToques(t) {
+                return Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+            }
+
+            function centroToques(t) {
+                return { x: (t[0].clientX + t[1].clientX) / 2, y: (t[0].clientY + t[1].clientY) / 2 };
+            }
+
+            function toqueInicio(e) {
+                if (e.touches.length === 2) {
+                    // Un segundo dedo cancela cualquier deslizamiento de galería en curso.
+                    if (isDragging) {
+                        isDragging = false;
+                        currentX = 0;
+                        actualizarVistaModal();
+                    }
+                    const r = sliderContenedor.getBoundingClientRect();
+                    const c = centroToques(e.touches);
+                    const cx = r.left + r.width / 2;
+                    const cy = r.top + r.height / 2;
+                    modoGesto = 'pellizco';
+                    tapInicio = null;
+                    pellizco = {
+                        dist: distanciaToques(e.touches) || 1,
+                        zoom: zoom,
+                        cx: cx,
+                        cy: cy,
+                        // Punto de la imagen (sin escalar) que queda bajo el centro del pellizco
+                        px: (c.x - cx - panX) / zoom,
+                        py: (c.y - cy - panY) / zoom
+                    };
+                    return;
+                }
+
+                if (e.touches.length === 1) {
+                    const t = e.touches[0];
+                    tapInicio = { x: t.clientX, y: t.clientY, t: Date.now() };
+                    if (zoom > 1) {
+                        modoGesto = 'pan';
+                        panPrev = { x: t.clientX, y: t.clientY };
+                    } else {
+                        modoGesto = 'swipe';
+                        iniciarArrastre(e);
+                    }
+                }
+            }
+
+            function toqueMovimiento(e) {
+                if (tapInicio && e.touches.length === 1) {
+                    const t = e.touches[0];
+                    if (Math.hypot(t.clientX - tapInicio.x, t.clientY - tapInicio.y) > 10) tapInicio = null;
+                }
+
+                if (modoGesto === 'pellizco') {
+                    if (e.touches.length !== 2 || !pellizco) return;
+                    e.preventDefault();
+                    const c = centroToques(e.touches);
+                    zoom = limitar(pellizco.zoom * distanciaToques(e.touches) / pellizco.dist, 1, ZOOM_MAX);
+                    panX = c.x - pellizco.cx - zoom * pellizco.px;
+                    panY = c.y - pellizco.cy - zoom * pellizco.py;
+                    limitarPan();
+                    aplicarZoom(false);
+                } else if (modoGesto === 'pan') {
+                    if (e.touches.length !== 1) return;
+                    e.preventDefault();
+                    const t = e.touches[0];
+                    panX += t.clientX - panPrev.x;
+                    panY += t.clientY - panPrev.y;
+                    panPrev = { x: t.clientX, y: t.clientY };
+                    limitarPan();
+                    aplicarZoom(false);
+                } else if (modoGesto === 'swipe') {
+                    arrastrar(e);
+                }
+            }
+
+            function toqueFin(e) {
+                if (modoGesto === 'pellizco') {
+                    if (e.touches.length < 2) {
+                        if (zoom < 1.05) {
+                            zoom = 1; panX = 0; panY = 0;
+                            aplicarZoom(true);
+                        } else {
+                            limitarPan();
+                            aplicarZoom(false);
+                        }
+                        if (e.touches.length === 1 && zoom > 1) {
+                            // Queda un dedo: sigue moviendo la imagen ampliada
+                            modoGesto = 'pan';
+                            panPrev = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+                        } else {
+                            modoGesto = 'ninguno';
+                        }
+                        pellizco = null;
+                    }
+                    tapInicio = null;
+                    return;
+                }
+
+                if (modoGesto === 'swipe') finalizarArrastre();
+
+                if (e.touches.length === 0) {
+                    modoGesto = 'ninguno';
+
+                    // Doble toque: alterna entre zoom y vista normal
+                    if (tapInicio && e.type === 'touchend' && e.changedTouches.length === 1) {
+                        const ahora = Date.now();
+                        const t = e.changedTouches[0];
+                        if (ahora - tapInicio.t < 250) {
+                            const esDoble = ahora - ultimoTap.t < 300 &&
+                                Math.hypot(t.clientX - ultimoTap.x, t.clientY - ultimoTap.y) < 40;
+                            if (esDoble) {
+                                alternarZoomEn(t.clientX, t.clientY);
+                                ultimoTap = { t: 0, x: 0, y: 0 };
+                            } else {
+                                ultimoTap = { t: ahora, x: t.clientX, y: t.clientY };
+                            }
+                        }
+                    }
+                    tapInicio = null;
+                }
+            }
+
             function actualizarMiniaturas() {
                 Array.from(modalMiniaturas.children).forEach((thumb, index) => {
                     if (index === indiceModalActual) {
@@ -129,6 +320,7 @@
             }
 
             function actualizarVistaModal() {
+                resetZoom();
                 sliderTrack.style.transition = 'transform 0.3s ease-out';
                 sliderTrack.style.transform = `translateX(-${indiceModalActual * 100}%)`;
                 precargarSlides(indiceModalActual);
@@ -204,6 +396,7 @@
                     });
                 }
 
+                resetZoom();
                 sliderTrack.style.transition = 'none';
                 sliderTrack.style.transform = `translateX(0%)`;
                 precargarSlides(0);
@@ -215,6 +408,8 @@
             }
 
             function cerrarModal() {
+                resetZoom();
+                modoGesto = 'ninguno';
                 if (observadorMiniaturas) observadorMiniaturas.disconnect();
                 modal.classList.add('hidden');
                 sliderTrack.innerHTML = '';
@@ -268,9 +463,14 @@
                 currentX = 0;
             }
 
-            sliderContenedor.addEventListener('touchstart', iniciarArrastre, { passive: true });
-            sliderContenedor.addEventListener('touchmove', arrastrar, { passive: false });
-            sliderContenedor.addEventListener('touchend', finalizarArrastre);
+            sliderContenedor.addEventListener('touchstart', toqueInicio, { passive: true });
+            sliderContenedor.addEventListener('touchmove', toqueMovimiento, { passive: false });
+            sliderContenedor.addEventListener('touchend', toqueFin);
+            sliderContenedor.addEventListener('touchcancel', toqueFin);
+            // Safari iOS: evita que el gesto de pellizco haga zoom de toda la página
+            ['gesturestart', 'gesturechange'].forEach(ev =>
+                sliderContenedor.addEventListener(ev, (e) => e.preventDefault())
+            );
 
             function renderizarFiltrosPrincipales() {
                 const contenedorFiltros = document.getElementById('filtros-contenedor');
