@@ -11,15 +11,15 @@
   },
   {
     "tipo": "Obras pictoricas",
-    "descripcion": "Un recorrido por mi pintura y mi forma de mirar, donde reinterpreto la realidad para buscar su propia luz. Esta galería reúne obras que ya habitan en colecciones privadas junto a piezas disponibles en el taller, creadas con la intención de encontrar un nuevo espacio.",
+    "descripcion": "Un recorrido por mi pintura y mi forma de mirar, donde **reinterpreto la realidad** para buscar su propia luz. Esta galería reúne obras que ya habitan en colecciones privadas junto a piezas disponibles en el taller, creadas con la intención de encontrar un nuevo espacio.",
     "imagenes": [
       "img/Aras.webp"
     ]
   },
   {
     "tipo": "Abanicos artesanales",
-    "descripcion": ["Aquí el secreto está en la paciencia: desde el deshilachado hasta el cuidado con el que colocamos telas como el lino, el mikado o efecto seda sobre cada varilla. Es un lienzo donde las pinceladas y los bordados tienen cabida, todo pensado desde el primer día para ser 100% auténtica y hecha a mano.",
-    "Trabajamos con maderas nobles que llevan el sello de creadores españoles bajo el distintivo AEA."],
+    "descripcion": ["Aquí el secreto está en la paciencia: desde el deshilachado hasta el cuidado con el que colocamos telas como el lino, el mikado o efecto seda sobre cada varilla. Es un lienzo donde las pinceladas y los bordados tienen cabida, todo pensado desde el primer día para ser **100% auténtica** y **hecha a mano**.",
+    "Trabajamos con maderas nobles que llevan el sello de creadores españoles bajo el **distintivo AEA**."],
     "descripcion-precio":["**Puedes pasarme tus ideas o imágenes de referencia para empezar a diseñar**",
     "El precio aproximado para los abanicos va de 50€ a 160€, dependiendo del modelo y del tema a pintar o bordar. Hablaremos para concretar la técnica, acordar el precio definitivo y fijar los plazos, buscando siempre un resultado que se ajuste a tus preferencias."],
     "imagenes": [
@@ -30,7 +30,7 @@
   {
     "tipo": "Bodas y eventos",
     "descripcion": ["Esta galería reúne una selección de piezas textiles, abanicos de alta artesanía y papelería creados para acompañar días señalados.",
-    " Cada proyecto nace de un boceto personalizado y adaptado para la ocasión, con la libertad de dar vida a una idea nueva o de reinterpretar diseños anteriores que hayan inspirado tu elección."],
+    " Cada proyecto nace de un **boceto personalizado** y adaptado para la ocasión, con la libertad de dar vida a una idea nueva o de reinterpretar diseños anteriores que hayan inspirado tu elección."],
     "imagenes": [
       "img/Bandana Whisky_4.webp",
       "img/Cinta ramo edith.webp",
@@ -40,7 +40,7 @@
   },
   {
     "tipo": "Complementos pintados a mano",
-    "descripcion": "Cojines, ropa y bolsos personalizados. Pinceladas con estilo propio sobre diferentes soportes textiles y artesanales. Una selección de accesorios creados para acompañarte.",
+    "descripcion": "Cojines, ropa y bolsos personalizados. Pinceladas con estilo propio sobre diferentes soportes textiles y artesanales. Una selección de accesorios **creados para acompañarte**.",
     "imagenes": [
       "img/Cojin_flores_1.webp",
       "img/Vestido mceli_1.webp"
@@ -48,8 +48,8 @@
   },
   {
     "subtipo": "Pintado a mano",
-    "descripcion": [" Diseños pintados a mano sobre la base firme de un auténtico varillaje certificado AEA, creados no como un simple accesorio.",
-    "Los diseños que ves aquí son solo una muestra de piezas que ya han encontrado dueño, pero no son un límite. Si tienes una idea concreta o un motivo especial que quieras ver en un abanico, escríbeme y buscaremos la fórmula para plasmarlo."],
+    "descripcion": [" Diseños pintados a mano sobre la base firme de un auténtico varillaje **certificado AEA**, creados no como un simple accesorio.",
+    "Los diseños que ves aquí son solo una muestra de piezas que ya han encontrado dueño, pero **no son un límite**. Si tienes una idea concreta o un motivo especial que quieras ver en un abanico, escríbeme y buscaremos la fórmula para plasmarlo."],
     "imagenes": [
       "img/Colibri_flores.webp"
     ]
@@ -58,7 +58,7 @@
     "subtipo": "Abanicos de alta artesania",
     "descripcion": ["Un espacio donde el verdadero sentido nace del oficio y de las manos que lo moldean. ",
     "El protagonismo aquí late en la paciencia de un deshilachado o en el cuidado con el que tejidos como el lino, el mikado o la imitación seda se asientan sobre el varillaje.",
-    "Son maderas nobles que sostienen el sello de nuestros artesanos españoles bajo el distintivo AEA; una base limpia donde el trazo del pincel y el detalle del bordado intervienen con la dedicación necesaria para acompañar a un objeto que se ha pensado, desde su origen, para ser puramente artesanal."],
+    "Son maderas nobles que sostienen el sello de nuestros artesanos españoles bajo el **distintivo AEA**; una base limpia donde el trazo del pincel y el detalle del bordado intervienen con la dedicación necesaria para acompañar a un objeto que se ha pensado, desde su origen, para ser puramente artesanal."],
     "imagenes": [
       "img/Mari Abanico flecos beig.webp"
     ]
