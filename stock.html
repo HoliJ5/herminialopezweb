@@ -64,6 +64,18 @@
 
     <script src="componentes.js"></script>
     <script>
+        // Ruta de la miniatura: img/foto.webp -> img/thumbs/foto.webp
+        // (las genera scripts/generar-miniaturas.py)
+        const rutaMiniatura = (ruta) => ruta.replace(/^img\//, 'img/thumbs/');
+
+        // Si una miniatura aún no existe, se muestra el original (una sola vez, sin bucles).
+        document.addEventListener('error', (e) => {
+            const img = e.target;
+            if (img.tagName !== 'IMG' || !img.dataset.original || img.dataset.fallback) return;
+            img.dataset.fallback = '1';
+            img.src = img.dataset.original;
+        }, true);
+
         document.addEventListener('DOMContentLoaded', () => {
             const contenedor = document.getElementById('almacen-contenedor');
             const modal = document.getElementById('modal-obra');
@@ -382,7 +394,8 @@
                 if (imagenesModalActuales.length > 1) {
                     imagenesModalActuales.forEach((imgSrc, index) => {
                         const thumb = document.createElement('img');
-                        thumb.dataset.src = imgSrc;
+                        thumb.dataset.src = rutaMiniatura(imgSrc);
+                        thumb.dataset.original = imgSrc;
                         thumb.decoding = 'async';
                         thumb.alt = `Vista ${index + 1} de ${obra.titulo}`;
                         thumb.className = 'w-12 h-12 sm:w-16 sm:h-16 flex-shrink-0 object-cover cursor-pointer border-2 transition-all duration-200 bg-white/10 text-transparent';
@@ -522,7 +535,7 @@
 
                     obraElement.innerHTML = `
                         <div class="overflow-hidden bg-neutral-100 aspect-[4/5] relative mb-3 rounded-sm">
-                            <img src="${obra.imagen}" alt="${obra.titulo}" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                            <img src="${rutaMiniatura(obra.imagen)}" data-original="${obra.imagen}" alt="${obra.titulo}" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
                             ${etiquetaVenta}
                         </div>
                         <h3 class="font-serif text-base sm:text-lg font-medium text-neutral-800">${obra.titulo}</h3>
