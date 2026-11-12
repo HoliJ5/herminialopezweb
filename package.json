@@ -1,0 +1,12 @@
+{
+  "name": "herminialopezweb",
+  "private": true,
+  "description": "Web de Herminia López. El CSS de Tailwind se compila a estilos.css",
+  "scripts": {
+    "build": "tailwindcss -c tailwind.config.js -i src/input.css -o estilos.css --minify",
+    "watch": "tailwindcss -c tailwind.config.js -i src/input.css -o estilos.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.19"
+  }
+}
