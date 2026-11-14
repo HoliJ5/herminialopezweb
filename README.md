@@ -39,3 +39,20 @@ Mientras trabajas puedes usar `npm run watch`, que recompila solo al guardar.
 
 Si se te olvida recompilar, las clases nuevas simplemente no tendrán estilo. Los estilos propios que
 están en el `<style>` de cada página no necesitan recompilación.
+
+## 🔤 Tipografías (alojadas en el repo)
+Inter (texto), Playfair Display (títulos) y Montserrat (logo) se sirven desde la carpeta `fonts/`,
+no desde Google. Las reglas `@font-face` están en `fuentes.css`. Ambos se **generan** con un script:
+
+```
+python scripts/descargar-fuentes.py
+```
+
+Necesita conexión a internet y no requiere instalar nada. Solo hay que volver a ejecutarlo si cambias
+las familias o los pesos: edita la lista `FUENTES` al principio del script (por ejemplo, para añadir
+`font-bold` hay que declarar el peso 700) y haz commit de `fonts/` y `fuentes.css`.
+
+Pesos declarados: Inter 300/400/600, Playfair Display 400/600 y Montserrat 600. Si una página pide un
+peso que no está declarado, el navegador usa el más cercano. No hay cursivas.
+
+Las tres fuentes usan la licencia SIL Open Font License 1.1, que permite alojarlas libremente.
