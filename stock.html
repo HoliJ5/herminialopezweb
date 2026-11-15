@@ -488,6 +488,31 @@
                 sliderContenedor.addEventListener(ev, (e) => e.preventDefault())
             );
 
+            // La dirección del navegador refleja la sección que se está viendo (?filtro=...).
+            // Así se puede copiar el enlace, recargar la página y usar los botones atrás/adelante.
+            function urlDeLaSeccion() {
+                const consulta = filtroActual !== 'todos' ? '?filtro=' + encodeURIComponent(filtroActual) : '';
+                return window.location.pathname + consulta;
+            }
+
+            // Tras un cambio de sección hecho por la persona (filtros, menú lateral):
+            // se actualiza la dirección y se muestra la sección nueva desde arriba del todo, como si fuera otra página.
+            function seccionCambiada() {
+                const nueva = urlDeLaSeccion();
+                if (nueva !== window.location.pathname + window.location.search) {
+                    history.pushState(null, '', nueva);
+                }
+                window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+            }
+
+            // Botones atrás/adelante del navegador: se vuelve a la sección que indica la dirección.
+            window.addEventListener('popstate', () => {
+                if (!modal.classList.contains('hidden')) cerrarModal();
+                filtroActual = new URLSearchParams(window.location.search).get('filtro') || 'todos';
+                renderizarFiltrosPrincipales();
+                aplicarFiltro();
+            });
+
             function renderizarFiltrosPrincipales() {
                 const contenedorFiltros = document.getElementById('filtros-contenedor');
                 contenedorFiltros.innerHTML = '';
@@ -501,6 +526,7 @@
                     filtroActual = 'todos';
                     renderizarFiltrosPrincipales(); 
                     aplicarFiltro();
+                    seccionCambiada();
                 });
                 contenedorFiltros.appendChild(btnTodos);
 
@@ -513,6 +539,7 @@
                         filtroActual = tipo;
                         renderizarFiltrosPrincipales(); 
                         aplicarFiltro();
+                        seccionCambiada();
                     });
                     
                     contenedorFiltros.appendChild(btn);
