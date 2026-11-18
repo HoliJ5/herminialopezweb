@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock | Herminia López</title>
+    <meta name="description" content="Piezas disponibles de Herminia López para envío inmediato: obras originales, prints, abanicos y complementos pintados a mano.">
+    <link rel="canonical" href="https://herminialopez.es/stock">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Herminia López">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Stock | Herminia López">
+    <meta property="og:description" content="Piezas disponibles de Herminia López para envío inmediato: obras originales, prints, abanicos y complementos pintados a mano.">
+    <meta property="og:url" content="https://herminialopez.es/stock">
+    <meta property="og:image" content="https://herminialopez.es/img/principales/compartir.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Piezas disponibles de Herminia López">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -116,6 +129,8 @@
             let panPrev = { x: 0, y: 0 };
             let tapInicio = null;
             let ultimoTap = { t: 0, x: 0, y: 0 };
+            let arrastreRaton = null;       // arrastre de la imagen ampliada con el ratón
+            let huboArrastreRaton = false;  // para que soltar el ratón tras arrastrar no cierre el modal
 
             function imagenActual() {
                 const slide = sliderTrack.children[indiceModalActual];
@@ -146,6 +161,7 @@
                 }
                 // Con zoom, el dedo debe poder moverse en cualquier dirección sin que el navegador haga scroll.
                 sliderContenedor.style.touchAction = zoom > 1 ? 'none' : '';
+                sliderContenedor.style.cursor = zoom > 1 ? (arrastreRaton ? 'grabbing' : 'grab') : '';
             }
 
             function resetZoom() {
@@ -157,6 +173,7 @@
                     i.style.transform = '';
                 });
                 sliderContenedor.style.touchAction = '';
+                sliderContenedor.style.cursor = '';
             }
 
             function alternarZoomEn(x, y) {
@@ -306,6 +323,13 @@
                         thumb.classList.remove('border-white', 'opacity-100');
                     }
                 });
+
+                // La tira no muestra barra de desplazamiento: se centra la miniatura activa para que siempre se vea.
+                const activa = modalMiniaturas.children[indiceModalActual];
+                if (activa) {
+                    const posicion = activa.getBoundingClientRect().left - modalMiniaturas.getBoundingClientRect().left + modalMiniaturas.scrollLeft;
+                    modalMiniaturas.scrollTo({ left: Math.max(0, posicion - (modalMiniaturas.clientWidth - activa.offsetWidth) / 2), behavior: 'smooth' });
+                }
             }
 
             // Asigna el src real solo a la imagen actual y a sus vecinas
@@ -488,30 +512,83 @@
                 sliderContenedor.addEventListener(ev, (e) => e.preventDefault())
             );
 
-            // La dirección del navegador refleja la sección que se está viendo (?filtro=...).
-            // Así se puede copiar el enlace, recargar la página y usar los botones atrás/adelante.
-            function urlDeLaSeccion() {
-                const consulta = filtroActual !== 'todos' ? '?filtro=' + encodeURIComponent(filtroActual) : '';
-                return window.location.pathname + consulta;
-            }
-
-            // Tras un cambio de sección hecho por la persona (filtros, menú lateral):
-            // se actualiza la dirección y se muestra la sección nueva desde arriba del todo, como si fuera otra página.
-            function seccionCambiada() {
-                const nueva = urlDeLaSeccion();
-                if (nueva !== window.location.pathname + window.location.search) {
-                    history.pushState(null, '', nueva);
+            // ---------- Zoom con la rueda del ratón (ordenador) ----------
+            // Rueda hacia arriba: acerca. Rueda hacia atrás: aleja, hasta la vista normal.
+            // También responde al pellizco del trackpad (llega como rueda con Ctrl).
+            // Se amplía hacia el punto donde está el cursor, con las mismas variables que el zoom táctil.
+            sliderContenedor.addEventListener('wheel', (e) => {
+                if (!imagenActual()) return;
+                e.preventDefault();
+                const delta = e.deltaMode === 1 ? e.deltaY * 33 : e.deltaMode === 2 ? e.deltaY * 100 : e.deltaY;
+                const nuevoZoom = limitar(zoom * Math.exp(-delta * (e.ctrlKey ? 0.01 : 0.0016)), 1, ZOOM_MAX);
+                if (nuevoZoom === zoom) return;
+                const r = sliderContenedor.getBoundingClientRect();
+                const cx = r.left + r.width / 2;
+                const cy = r.top + r.height / 2;
+                // Punto de la imagen (sin escalar) que está bajo el cursor
+                const px = (e.clientX - cx - panX) / zoom;
+                const py = (e.clientY - cy - panY) / zoom;
+                zoom = nuevoZoom;
+                if (zoom < 1.01) {
+                    zoom = 1; panX = 0; panY = 0;
+                } else {
+                    panX = e.clientX - cx - zoom * px;
+                    panY = e.clientY - cy - zoom * py;
+                    limitarPan();
                 }
+                aplicarZoom(!e.ctrlKey && Math.abs(delta) >= 50);
+            }, { passive: false });
+
+            // Con la imagen ampliada se puede mover arrastrándola con el ratón.
+            sliderContenedor.addEventListener('mousedown', (e) => {
+                if (e.button !== 0 || zoom <= 1) return;
+                if (e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents) return; // ratón simulado por un toque
+                e.preventDefault();
+                arrastreRaton = { x: e.clientX, y: e.clientY, iniX: e.clientX, iniY: e.clientY, movido: false };
+                sliderContenedor.style.cursor = 'grabbing';
+            });
+
+            window.addEventListener('mousemove', (e) => {
+                if (!arrastreRaton) return;
+                if (!(e.buttons & 1)) { // el botón se soltó fuera de la ventana
+                    arrastreRaton = null;
+                    sliderContenedor.style.cursor = zoom > 1 ? 'grab' : '';
+                    return;
+                }
+                if (Math.abs(e.clientX - arrastreRaton.iniX) + Math.abs(e.clientY - arrastreRaton.iniY) > 3) arrastreRaton.movido = true;
+                panX += e.clientX - arrastreRaton.x;
+                panY += e.clientY - arrastreRaton.y;
+                arrastreRaton.x = e.clientX;
+                arrastreRaton.y = e.clientY;
+                limitarPan();
+                aplicarZoom(false);
+            });
+
+            window.addEventListener('mouseup', () => {
+                if (!arrastreRaton) return;
+                huboArrastreRaton = arrastreRaton.movido;
+                arrastreRaton = null;
+                sliderContenedor.style.cursor = zoom > 1 ? 'grab' : '';
+                setTimeout(() => { huboArrastreRaton = false; }, 0);
+            });
+
+            // Soltar el ratón tras arrastrar no debe contar como clic: si se suelta sobre el fondo, cerraría el modal.
+            modal.addEventListener('click', (e) => {
+                if (huboArrastreRaton) e.stopImmediatePropagation();
+            }, true);
+
+            // La tira de miniaturas no muestra barra de desplazamiento: con el ratón, la rueda la mueve en horizontal.
+            modalMiniaturas.addEventListener('wheel', (e) => {
+                if (modalMiniaturas.scrollWidth <= modalMiniaturas.clientWidth || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+                e.preventDefault();
+                modalMiniaturas.scrollLeft += e.deltaY;
+            }, { passive: false });
+
+            // Tras un cambio de sección hecho por la persona (filtros, bloques de información, menú lateral)
+            // se muestra la sección nueva desde arriba del todo, como si fuera otra página.
+            function seccionCambiada() {
                 window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
             }
-
-            // Botones atrás/adelante del navegador: se vuelve a la sección que indica la dirección.
-            window.addEventListener('popstate', () => {
-                if (!modal.classList.contains('hidden')) cerrarModal();
-                filtroActual = new URLSearchParams(window.location.search).get('filtro') || 'todos';
-                renderizarFiltrosPrincipales();
-                aplicarFiltro();
-            });
 
             function renderizarFiltrosPrincipales() {
                 const contenedorFiltros = document.getElementById('filtros-contenedor');
