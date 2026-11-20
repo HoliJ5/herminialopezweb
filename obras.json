@@ -12,7 +12,7 @@
     "almacen": 0
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Iglesia El Carmen",
     "subtitulo": "Acuarela papel 100% algodón",
@@ -25,10 +25,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Caballo",
-    "subtitulo": "Acrílico sobre lienzo lino 70x100 cm",
+    "subtitulo": "Acrílico sobre lienzo lino 70x100cm",
     "imagen": "img/Retrato caballo 1.webp",
     "imagenes": [
       "img/Retrato caballo 2.webp",
@@ -50,7 +50,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Bastidores y Saquitos",
+    "subtipo": "Bastidores y saquitos",
     "titulo": "Bastidor 'Inma y Juan'",
     "subtitulo": "Tela algodón 22cm pintado y bordado a mano",
     "imagen": "img/bastidor-Inma-juan.webp",
@@ -62,16 +62,16 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Mimi",
-    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela lino beig, desflecado a mano",
+    "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela lino beige, desflecado a mano",
     "imagen": "img/Mari Abanico flecos beig.webp",
     "imagenes": [],
     "almacen": 0
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Bordado Estrellas",
     "subtitulo": "Madera de kotibe, medida cerrado 25cm, tela lino natural, desflecado a mano",
     "imagen": "img/abanico bordado.webp",
@@ -97,7 +97,7 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico floral chino",
     "subtitulo": "Madera de kotibe, medida cerrado 27cm, efecto seda",
     "imagen": "img/abanico-seda-pajaro.webp",
@@ -245,7 +245,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Bastidores y Saquitos",
+    "subtipo": "Bastidores y saquitos",
     "titulo": "Bastidor y Saquito 'Juan y Mari'",
     "subtitulo": "Tela algodón pintado y bordado a mano",
     "imagen": "img/bastidor-saquito-juan-mari.webp",
@@ -282,7 +282,7 @@
   },
   {
      "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Garzas",
     "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela lino brillo rosado",
     "imagen": "img/Abanico garzas lino rosa.webp",
@@ -295,7 +295,7 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Aves - Plateados",
     "subtitulo": "Madera de kotibe, medida cerrado 30cm, tela lino natural, desflecado a mano",
     "imagen": "img/Carrasquilla.webp",
@@ -318,7 +318,7 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Hogar",
-    "titulo": "Cojín cuento de Hadas",
+    "titulo": "Cojín cuento de hadas",
     "subtitulo": "Cojín pintado a mano con escena de cuento",
     "imagen": "img/cojin-cuento.webp",
     "imagenes": [
@@ -433,7 +433,7 @@
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
     "titulo": "Gabardina Tucán",
-    "subtitulo": "Gabardina pintada a mano, Talla M",
+    "subtitulo": "Gabardina pintada a mano, talla M",
     "imagen": "img/Gabardina verde tucán.webp",
     "imagenes": [
       "img/Gabardina verde tucán_1.webp",
@@ -467,7 +467,7 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Golondrinas",
     "subtitulo": "Madera de kotibe, medida cerrado 24cm, efecto seda",
     "imagen": "img/golondrina-seda.webp",
@@ -495,7 +495,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Bastidores y Saquitos",
+    "subtipo": "Bastidores y saquitos",
     "titulo": "Bastidor 'Ignacio y Sara'",
     "subtitulo": "Tela algodón 22cm pintado y bordado a mano",
     "imagen": "img/Ignacio-y-Sara.webp",
@@ -589,7 +589,7 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Cintas de ramo ' Ainhoa y Guille'",
+    "titulo": "Cintas de ramo 'Ainhoa y Guille'",
     "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/lazo-Guille.webp",
     "imagenes": [],
@@ -598,7 +598,7 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Cintas de ramo 'Marina y Jose'",
+    "titulo": "Cintas de ramo 'Marina y José'",
     "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/lazo-Marina-y-jose.webp",
     "imagenes": [
@@ -613,7 +613,7 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Cintas de ramo 'Olga y Luis",
+    "titulo": "Cintas de ramo 'Olga y Luis'",
     "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/lazo-Olga.webp",
     "imagenes": [
@@ -625,7 +625,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Bastidores y Saquitos",
+    "subtipo": "Bastidores y saquitos",
     "titulo": "Limosnera 'Ainhoa y Guille'",
     "subtitulo": "Tela algodón pintado a mano",
     "imagen": "img/limosnera-guille.webp",
@@ -667,7 +667,7 @@
   },
   {
      "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Magnolias",
     "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela mikado",
     "imagen": "img/Magnolias-seda-oro.webp",
@@ -733,7 +733,7 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Aves - Dorados",
     "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela de lino natural, desflecado a mano",
     "imagen": "img/Pajaritos-dorados-flecos.webp",
@@ -828,7 +828,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Bastidores y Saquitos",
+    "subtipo": "Bastidores y saquitos",
     "titulo": "Saquito y Cinta de ramo 'Antonio y Ángela'",
     "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/saquito-lazo-Antonio-y-Angela.webp",
@@ -840,7 +840,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Bastidores y Saquitos",
+    "subtipo": "Bastidores y saquitos",
     "titulo": "Bastidor y Saquito 'Ainhoa y Guille'",
     "subtitulo": "Tela algodón pintado y bordado a mano",
     "imagen": "img/Saquito_guille.webp",
@@ -849,7 +849,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Bastidores y Saquitos",
+    "subtipo": "Bastidores y saquitos",
     "titulo": "Saquito 'Inma y Juan'",
     "subtitulo": "Tela algodón con cinta de terciopelo, pintado y bordado a mano",
     "imagen": "img/saquito_inma.webp",
@@ -872,9 +872,9 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Papeleria",
+    "subtipo": "Papelería",
     "titulo": "Meseros de ciudades",
-    "subtitulo": "Acuarela y tinta papel 100% algodón arena filo artesano 15x20 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón arena filo artesano 15x20cm",
     "imagen": "img/meseros_3.webp",
     "imagenes": [
       "img/Mesero Budapest.webp",
@@ -911,10 +911,10 @@
     "almacen": 0
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Aras",
-    "subtitulo": "Acrílico y acuarela sobre lienzo lino 70x100 cm",
+    "subtitulo": "Acrílico y acuarela sobre lienzo lino 70x100cm",
     "imagen": "img/Aras.webp",
     "imagenes": [
       "img/Aras 1.webp",
@@ -939,10 +939,10 @@
     "almacen": 0
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Savia",
-    "subtitulo": "Acrílico sobre lienzo lino 70x100 cm",
+    "subtitulo": "Acrílico sobre lienzo lino 70x100cm",
     "imagen": "img/Savia.webp",
     "imagenes": [
       "img/Savia_1.webp",
@@ -966,9 +966,9 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Papeleria",
-    "titulo": "Album de fotos 'Enrique y Sonia'",
-    "subtitulo": "Tela lino beige 30x31 cm 60 páginas pintado a mano",
+    "subtipo": "Papelería",
+    "titulo": "Álbum de fotos 'Enrique y Sonia'",
+    "subtitulo": "Tela lino beige 30x31cm 60 páginas pintado a mano",
     "imagen": "img/Album Sonia.webp",
     "imagenes": [
       "img/Album Sonia_1.webp",
@@ -1028,9 +1028,9 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Papeleria",
+    "subtipo": "Papelería",
     "titulo": "Meseros tropicales",
-    "subtitulo": "Acuarela papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Meseros tropical.webp",
     "imagenes": [
       "img/Mesero tigre.webp",
@@ -1041,10 +1041,10 @@
     "almacen": 0
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Wellington",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Wellington.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1052,10 +1052,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Bruselas",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Bruselas.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1063,10 +1063,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Budapest",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Budapest.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1074,10 +1074,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
-    "titulo": "Amsterdam",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "titulo": "Ámsterdam",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Amsterdam.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1085,10 +1085,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Edimburgo",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Edimburgo.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1096,10 +1096,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Estambul",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Estambul.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1107,10 +1107,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Londres",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Londres.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1118,10 +1118,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Madrid",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Madrid.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1129,10 +1129,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Hanoi",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Hanoi.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1140,10 +1140,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Kioto",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Kioto.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1151,10 +1151,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "La Habana",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/La Habana.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1162,10 +1162,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "París",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/París.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1173,10 +1173,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Marrakech",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Marrakech.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1184,10 +1184,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Nueva York",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Nueva York.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1195,10 +1195,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Oslo",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Oslo.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1206,10 +1206,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Roma",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Roma.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1218,9 +1218,9 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Papeleria",
+    "subtipo": "Papelería",
     "titulo": "Invitación de boda",
-    "subtitulo": "Acuarela papel 100% algodón arena 25x27 cm",
+    "subtitulo": "Acuarela papel 100% algodón arena 25x27cm",
     "imagen": "img/ElCarmen_4.webp",
     "imagenes": [
       "img/ElCarmen_2.webp",
@@ -1229,10 +1229,10 @@
     "almacen": 0
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "San José",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/San José.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1240,10 +1240,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Bangkok",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Bangkok.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1251,10 +1251,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
-    "titulo": "Seul",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "titulo": "Seúl",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Seul.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1262,10 +1262,10 @@
     "tipo-venta": "Prints"
   },
   {
-    "tipo": ["Obras pictoricas"],
+    "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Singapur",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21 cm",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
     "imagen": "img/Singapur.webp",
     "imagenes": [],
     "almacen": 1,
@@ -1306,7 +1306,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Castillo De Almodovar",
+    "titulo": "Abanico Castillo de Almodóvar",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Almodóvar_1.webp",
     "imagenes": ["img/Abanico Almodóvar.webp"],
@@ -1353,7 +1353,7 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Cinta de ramo 'Álvaro y gloria'",
+    "titulo": "Cinta de ramo 'Álvaro y Gloria'",
     "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/Cinta ramo Álvaro y gloria.webp",
     "imagenes": [],
@@ -1470,8 +1470,8 @@
   },
   {
      "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
-    "titulo": "Abanico Ramas De Olivo",
+    "subtipo": "Abanicos de alta artesanía",
+    "titulo": "Abanico Ramas de Olivo",
     "subtitulo": "Madera de kotibe, medida cerrado 24cm, efecto seda",
     "imagen": "img/Abanico aceitunas seda verde.webp",
     "imagenes": [
@@ -1483,7 +1483,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Abubilla Con Ramas De Olivo",
+    "titulo": "Abanico Abubilla con Ramas de Olivo",
     "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Aceitunas pájaro la coral.webp",
     "imagenes": [
@@ -1540,7 +1540,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico libeluas",
+    "titulo": "Abanico libélulas",
     "subtitulo": "Madera de abedul calado, medida cerrado 24cm, tela de algodón",
     "imagen": "img/Magnolias libélulas la coral.webp",
     "imagenes": [
@@ -1619,7 +1619,7 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico flores silvestres",
     "subtitulo": "Madera de kotibe, medida cerrado 28cm, tela de lino natural, desflecado a mano",
     "imagen": "img/Abanico florecitas lino flecos.webp",
@@ -1631,7 +1631,7 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico hada",
     "subtitulo": "Madera de kotibe, medida cerrado 24cm, tela lino",
     "imagen": "img/Abanico hada.webp",
@@ -1790,7 +1790,7 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Mimi",
     "subtitulo": "Madera de kotibe, medida cerrado 25-31cm, tela lino natural, desflecado a mano",
     "imagen": "img/Abanico lino flecos.webp",
@@ -1802,7 +1802,7 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Claveles",
     "subtitulo": "Madera de kotibe, medida cerrado 25cm, tela lino natural, desflecado y bordado a mano",
     "imagen": "img/Abanico Sonia 2.webp",
@@ -1829,7 +1829,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico M de Maria",
+    "titulo": "Abanico M de María",
     "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/abanico m María.webp",
     "imagenes": [
@@ -1853,7 +1853,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen del Rocio ref 1",
+    "titulo": "Abanico Virgen del Rocío ref 1",
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Virgen Rocío.webp",
     "imagenes": [
@@ -1865,7 +1865,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen del Rocio ref 2",
+    "titulo": "Abanico Virgen del Rocío ref 2",
     "subtitulo": "Madera de kotibe calada, medida cerrado 24cm, tela algodón",
     "imagen": "img/Rocío ermita calado.webp",
     "imagenes": [
@@ -1904,7 +1904,7 @@
   {
     "tipo": ["Abanicos artesanales"],
     "subtipo": "Pintado a mano",
-    "titulo": "Abanico Virgen  de Araceli ref 8",
+    "titulo": "Abanico Virgen de Araceli ref 8",
     "subtitulo": "Madera frutal / abedul, medida cerrado 23cm, tela algodón",
     "imagen": "img/Abanico virgen ref 8.webp",
     "imagenes": [
@@ -1975,7 +1975,7 @@
   },
   {
     "tipo": ["Bodas y eventos"],
-    "subtipo": "Papeleria",
+    "subtipo": "Papelería",
     "titulo": "Minuta",
     "subtitulo": "Acuarela papel 100% algodón arena filo artesano 11x21 cm",
     "imagen": "img/Minuta boda.webp",
@@ -2009,7 +2009,7 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Vestido Eden",
+    "titulo": "Vestido Edén",
     "subtitulo": "Vestido invitada alta costura pintado a mano con flores silvestres",
     "imagen": "img/Vestido mceli.webp",
     "imagenes": [
@@ -2029,7 +2029,7 @@
   {
     "tipo": ["Complementos pintados a mano"],
     "subtipo": "Ropa",
-    "titulo": "Falda orbita",
+    "titulo": "Falda órbita",
     "subtitulo": "Falda pintada a mano con motivos circulares",
     "imagen": "img/Falda gelu.webp",
     "imagenes": [
@@ -2072,7 +2072,7 @@
   },
   {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
-    "subtipo": "Abanicos de alta artesania",
+    "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Marina",
     "subtitulo": "Madera de kotibe, medida cerrado 27cm, tela lino natural, desflecado a mano",
     "imagen": "img/Abanico marina.webp",
@@ -2087,7 +2087,7 @@
   {
     "tipo": ["Bodas y eventos"],
     "subtipo": "Cintas de ramo",
-    "titulo": "Cinta de ramo 'Miguel Ángel y Mº Carmen'",
+    "titulo": "Cinta de ramo 'Miguel Ángel y Mª Carmen'",
     "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/Cinta ramo margaritas.webp",
     "imagenes": [
