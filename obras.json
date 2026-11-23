@@ -505,15 +505,6 @@
     "almacen": 0
   },
   {
-    "tipo": ["Bodas y eventos"],
-    "subtipo": "Cintas de ramo",
-    "titulo": "Cintas de ramo 'Iván y Laura'",
-    "subtitulo": "Tela lino beige pintado y desflecado a mano",
-    "imagen": "img/Ivan-y-Laura.webp",
-    "imagenes": [],
-    "almacen": 0
-  },
-  {
     "tipo": ["Retratos personalizados"],
     "subtipo": "Acrílico",
     "titulo": "Acrílico",
@@ -1333,7 +1324,7 @@
     "subtitulo": "Tela lino blanco pintado y desflecado a mano",
     "imagen": "img/Cinta ramo edith.webp",
     "imagenes": [
-      "img/Cinta ramo edith_1.webp",
+      "img/cinta ramo edith_1.webp",
       "img/Cinta ramo edith_2.webp"
     ],
     "almacen": 0
@@ -1908,12 +1899,12 @@
     "subtitulo": "Madera frutal / abedul, medida cerrado 23cm, tela algodón",
     "imagen": "img/Abanico virgen ref 8.webp",
     "imagenes": [
-      "img/Abanico Virgen ref 8_1.webp",
-      "img/Abanico Virgen ref 8_2.webp",
-      "img/Abanico Virgen ref 8_3.webp",
-      "img/Abanico Virgen ref 8_4.webp",
-      "img/Abanico Virgen ref 8_5.webp",
-      "img/Abanico Virgen ref 8_6.webp"
+      "img/Abanico virgen ref 8_1.webp",
+      "img/Abanico virgen ref 8_2.webp",
+      "img/Abanico virgen ref 8_3.webp",
+      "img/Abanico virgen ref 8_4.webp",
+      "img/Abanico virgen ref 8_5.webp",
+      "img/Abanico virgen ref 8_6.webp"
     ],
     "almacen": 0
   },
@@ -2066,7 +2057,7 @@
     "subtitulo": "Madera de abedul, medida cerrado 23cm",
     "imagen": "img/Abanico Virgen Rosario.webp",
     "imagenes": [
-      "img/Abanico Virgen Rosario_1.webp"
+      "img/Abanico Virgen rosario_1.webp"
     ],
     "almacen": 0
   },
