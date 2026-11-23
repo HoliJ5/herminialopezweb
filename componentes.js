@@ -77,23 +77,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // --- LÓGICA DE ACORDEONES DENTRO DEL MENÚ LATERAL ---
+        const alternarAcordeon = (btn, contenido, icono) => {
+            const estaAbierto = !contenido.classList.contains('hidden');
+            contenido.classList.toggle('hidden', estaAbierto);
+            contenido.classList.toggle('flex', !estaAbierto);
+            icono.classList.toggle('rotate-45', !estaAbierto);
+            btn.setAttribute('aria-expanded', String(!estaAbierto));
+        };
+
         const configurarAcordeon = (btnId, contenidoId, iconoId) => {
             const btn = document.getElementById(btnId);
             const contenido = document.getElementById(contenidoId);
             const icono = document.getElementById(iconoId);
             if(btn && contenido && icono) {
-                btn.addEventListener('click', () => {
-                    const estaAbierto = !contenido.classList.contains('hidden');
-                    if(estaAbierto) {
-                        contenido.classList.add('hidden');
-                        contenido.classList.remove('flex');
-                        icono.classList.remove('rotate-45');
-                    } else {
-                        contenido.classList.remove('hidden');
-                        contenido.classList.add('flex');
-                        icono.classList.add('rotate-45');
-                    }
-                });
+                btn.setAttribute('aria-expanded', 'false');
+                btn.addEventListener('click', () => alternarAcordeon(btn, contenido, icono));
             }
         };
 
@@ -109,74 +107,110 @@ document.addEventListener("DOMContentLoaded", () => {
                 // 1. POBLAR ACORDEÓN DE PORTFOLIO
                 const contPortfolio = document.getElementById('contenido-acordeon-portfolio');
                 if (contPortfolio) {
-                    contPortfolio.innerHTML = ''; 
-                    
-                    const btnTodosPort = document.createElement('a');
-                    btnTodosPort.href = "portfolio";
-                    btnTodosPort.textContent = "Mostrar todos";
-                    btnTodosPort.className = "block w-full hover:text-white transition-colors py-1 truncate text-[13px]";
-                    
-                    // Si ya estamos en galería, simulamos el click para no recargar la página entera
-                    btnTodosPort.addEventListener('click', (e) => {
-                        if (window.location.pathname.includes('portfolio')) {
-                            e.preventDefault();
-                            const btnOriginal = Array.from(document.querySelectorAll('#filtros-contenedor button')).find(b => b.textContent.toLowerCase() === 'mostrar todos');
-                            if (btnOriginal) btnOriginal.click();
+                    contPortfolio.innerHTML = '';
+
+                    const buscarBotonFiltro = (selectorContenedor, texto) =>
+                        Array.from(document.querySelectorAll(`${selectorContenedor} button`))
+                            .find(b => b.textContent.toLowerCase() === texto.toLowerCase());
+
+                    const filtrarPorTipo = (tipo) => {
+                        const btnT = buscarBotonFiltro('#filtros-contenedor', tipo);
+                        if (btnT) btnT.click();
+                    };
+
+                    const filtrarPorSubtipo = (tipo, sub) => {
+                        // Clicamos el tipo y esperamos unos milisegundos a que aparezcan los subtipos para clicar el correcto
+                        filtrarPorTipo(tipo);
+                        setTimeout(() => {
+                            const btnS = buscarBotonFiltro('#subfiltros-contenedor', sub);
+                            if (btnS) btnS.click();
+                        }, 50);
+                    };
+
+                    // Enlace final del menú: si ya estamos en galería, simulamos el click para no recargar la página entera.
+                    // En cualquier caso se cierra el menú al elegir.
+                    const crearEnlaceFiltro = (href, texto, clases, aplicarFiltro) => {
+                        const enlace = document.createElement('a');
+                        enlace.href = href;
+                        enlace.textContent = texto;
+                        enlace.className = clases;
+                        enlace.addEventListener('click', (e) => {
+                            if (window.location.pathname.includes('portfolio')) {
+                                e.preventDefault();
+                                aplicarFiltro();
+                            }
                             cerrarMenu();
-                        }
-                    });
-                    contPortfolio.appendChild(btnTodosPort);
+                        });
+                        return enlace;
+                    };
+
+                    const clasesEnlaceTipo = "block w-full hover:text-white transition-colors py-1 mt-2 truncate text-[13px]";
+                    const clasesEnlaceSub = "block w-full hover:text-white text-neutral-400 transition-colors py-1 truncate text-[11px]";
+
+                    contPortfolio.appendChild(crearEnlaceFiltro(
+                        "portfolio",
+                        "Mostrar todos",
+                        "block w-full hover:text-white transition-colors py-1 truncate text-[13px]",
+                        () => filtrarPorTipo('mostrar todos')
+                    ));
 
                     // Extraer los tipos
                     const tiposPortfolio = [...new Set(obras.flatMap(o => Array.isArray(o.tipo) ? o.tipo : [o.tipo]).filter(Boolean))];
-                    
-                    tiposPortfolio.forEach(tipo => {
-                        // Construir el enlace principal del TIPO
-                        const btnTipo = document.createElement('a');
-                        btnTipo.href = `portfolio?filtro=${encodeURIComponent(tipo)}`;
-                        btnTipo.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
-                        btnTipo.className = "block w-full hover:text-white transition-colors py-1 mt-2 truncate text-[13px]";
-                        
-                        btnTipo.addEventListener('click', (e) => {
-                            if (window.location.pathname.includes('portfolio')) {
-                                e.preventDefault();
-                                const btnOriginal = Array.from(document.querySelectorAll('#filtros-contenedor button')).find(b => b.textContent.toLowerCase() === tipo.toLowerCase());
-                                if (btnOriginal) btnOriginal.click();
-                                cerrarMenu();
-                            }
-                        });
-                        contPortfolio.appendChild(btnTipo);
 
-                        // Extraer y construir los SUBTIPOS para este tipo concreto
+                    tiposPortfolio.forEach(tipo => {
+                        const nombreTipo = tipo.charAt(0).toUpperCase() + tipo.slice(1);
+                        const hrefTipo = `portfolio?filtro=${encodeURIComponent(tipo)}`;
+
+                        // Extraer los SUBTIPOS para este tipo concreto
                         const subtipos = [...new Set(obras.filter(o => {
                             const esDelTipo = Array.isArray(o.tipo) ? o.tipo.includes(tipo) : o.tipo === tipo;
                             return esDelTipo && o.subtipo;
                         }).map(o => o.subtipo))];
 
-                        if (subtipos.length > 0) {
-                            subtipos.forEach(sub => {
-                                const btnSub = document.createElement('a');
-                                btnSub.href = `portfolio?filtro=${encodeURIComponent(tipo)}&subfiltro=${encodeURIComponent(sub)}`;
-                                btnSub.textContent = "- " + sub;
-                                btnSub.className = "block w-full hover:text-white text-neutral-400 transition-colors py-1 truncate pl-3 text-[11px]";
-                                
-                                btnSub.addEventListener('click', (e) => {
-                                    if (window.location.pathname.includes('portfolio')) {
-                                        e.preventDefault();
-                                        // Clicamos el tipo y esperamos unos milisegundos a que aparezcan los subtipos para clicar el correcto
-                                        const btnT = Array.from(document.querySelectorAll('#filtros-contenedor button')).find(b => b.textContent.toLowerCase() === tipo.toLowerCase());
-                                        if (btnT) btnT.click();
-                                        
-                                        setTimeout(() => {
-                                            const btnS = Array.from(document.querySelectorAll('#subfiltros-contenedor button')).find(b => b.textContent.toLowerCase() === sub.toLowerCase());
-                                            if (btnS) btnS.click();
-                                        }, 50);
-                                        cerrarMenu();
-                                    }
-                                });
-                                contPortfolio.appendChild(btnSub);
-                            });
+                        // Tipo sin subtipos: enlace que filtra directamente
+                        if (subtipos.length === 0) {
+                            contPortfolio.appendChild(crearEnlaceFiltro(hrefTipo, nombreTipo, clasesEnlaceTipo, () => filtrarPorTipo(tipo)));
+                            return;
                         }
+
+                        // Tipo con subtipos: botón que abre/cierra su propio subdesplegable
+                        const grupo = document.createElement('div');
+                        grupo.className = "w-full mt-2";
+
+                        const btnTipo = document.createElement('button');
+                        btnTipo.type = "button";
+                        btnTipo.className = "w-full flex items-center justify-between gap-2 py-1 text-left text-[13px] uppercase tracking-wider hover:text-white transition-colors focus:outline-none";
+                        btnTipo.setAttribute('aria-expanded', 'false');
+                        btnTipo.innerHTML = `
+                            <span class="truncate"></span>
+                            <svg class="w-4 h-4 flex-shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        `;
+                        btnTipo.querySelector('span').textContent = nombreTipo;
+                        const iconoTipo = btnTipo.querySelector('svg');
+
+                        const contSubtipos = document.createElement('div');
+                        contSubtipos.className = "hidden flex-col mt-1 pl-3 space-y-1";
+
+                        contSubtipos.appendChild(crearEnlaceFiltro(
+                            hrefTipo,
+                            `Ver todo`,
+                            "block w-full hover:text-white transition-colors py-1 truncate text-[11px]",
+                            () => filtrarPorTipo(tipo)
+                        ));
+
+                        subtipos.forEach(sub => {
+                            contSubtipos.appendChild(crearEnlaceFiltro(
+                                `portfolio?filtro=${encodeURIComponent(tipo)}&subfiltro=${encodeURIComponent(sub)}`,
+                                "- " + sub,
+                                clasesEnlaceSub,
+                                () => filtrarPorSubtipo(tipo, sub)
+                            ));
+                        });
+
+                        btnTipo.addEventListener('click', () => alternarAcordeon(btnTipo, contSubtipos, iconoTipo));
+
+                        grupo.append(btnTipo, contSubtipos);
+                        contPortfolio.appendChild(grupo);
                     });
                 }
 
