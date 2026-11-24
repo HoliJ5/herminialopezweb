@@ -61,6 +61,21 @@
     "almacen": 0
   },
   {
+    "tipo": ["Obras pictóricas"],
+    "subtipo": "",
+    "titulo": "Virgen de Araceli",
+    "subtitulo": "Técnica mixta sobre papel acrílico 24x32cm",
+    "imagen": "img/Virgen_Araceli_pic.webp",
+    "imagenes": [
+      "img/Virgen_Araceli_pic_1.webp",
+      "img/Virgen_Araceli_pic_2.webp",
+      "img/Virgen_Araceli_pic_3.webp"
+    ],
+    "almacen": 1,
+    "precio": "sin marco 215",
+    "tipo-venta": "Obras originales"
+  },
+  {
     "tipo": ["Abanicos artesanales","Bodas y eventos"],
     "subtipo": "Abanicos de alta artesanía",
     "titulo": "Abanico Mimi",
@@ -933,7 +948,7 @@
     "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Savia",
-    "subtitulo": "Acrílico sobre lienzo lino 70x100cm con marco",
+    "subtitulo": "Acrílico sobre lienzo lino 70x100cm",
     "imagen": "img/Savia.webp",
     "imagenes": [
       "img/Savia_1.webp",
@@ -941,7 +956,7 @@
       "img/Savia_3.webp"
     ],
     "almacen": 1,
-    "precio": "350",
+    "precio": "con marco 350",
     "tipo-venta": "Obras originales"
   },
   {
