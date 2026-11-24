@@ -15,13 +15,13 @@
     "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Iglesia El Carmen",
-    "subtitulo": "Acuarela papel 100% algodón",
+    "subtitulo": "Acuarela papel 100% algodón A4",
     "imagen": "img/ElCarmen_1.webp",
     "imagenes": [
       "img/ElCarmen_5.webp"
     ],
     "almacen": 1,
-    "precio": "Prints desde 18",
+    "precio": "Prints 18",
     "tipo-venta": "Prints"
   },
   {
@@ -933,7 +933,7 @@
     "tipo": ["Obras pictóricas"],
     "subtipo": "",
     "titulo": "Savia",
-    "subtitulo": "Acrílico sobre lienzo lino 70x100cm",
+    "subtitulo": "Acrílico sobre lienzo lino 70x100cm con marco",
     "imagen": "img/Savia.webp",
     "imagenes": [
       "img/Savia_1.webp",
@@ -1039,7 +1039,7 @@
     "imagen": "img/Wellington.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1050,7 +1050,7 @@
     "imagen": "img/Bruselas.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1061,7 +1061,7 @@
     "imagen": "img/Budapest.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1072,7 +1072,7 @@
     "imagen": "img/Amsterdam.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1083,7 +1083,7 @@
     "imagen": "img/Edimburgo.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1094,7 +1094,7 @@
     "imagen": "img/Estambul.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1105,7 +1105,7 @@
     "imagen": "img/Londres.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1116,7 +1116,7 @@
     "imagen": "img/Madrid.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1127,7 +1127,7 @@
     "imagen": "img/Hanoi.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1138,7 +1138,7 @@
     "imagen": "img/Kioto.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1149,7 +1149,7 @@
     "imagen": "img/La Habana.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1160,7 +1160,7 @@
     "imagen": "img/París.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1171,7 +1171,7 @@
     "imagen": "img/Marrakech.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1182,7 +1182,7 @@
     "imagen": "img/Nueva York.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1193,7 +1193,7 @@
     "imagen": "img/Oslo.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1204,7 +1204,7 @@
     "imagen": "img/Roma.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1227,7 +1227,7 @@
     "imagen": "img/San José.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1238,7 +1238,7 @@
     "imagen": "img/Bangkok.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1249,7 +1249,7 @@
     "imagen": "img/Seul.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
@@ -1260,7 +1260,7 @@
     "imagen": "img/Singapur.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints desde 15",
+    "precio": "Prints 15",
     "tipo-venta": "Prints"
   },
   {
