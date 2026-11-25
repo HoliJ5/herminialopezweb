@@ -21,7 +21,7 @@
       "img/ElCarmen_5.webp"
     ],
     "almacen": 1,
-    "precio": "Prints 18",
+    "precio": "Prints 18€",
     "tipo-venta": "Prints"
   },
   {
@@ -72,7 +72,7 @@
       "img/Virgen_Araceli_pic_3.webp"
     ],
     "almacen": 1,
-    "precio": "sin marco 215",
+    "precio": "sin marco 215€",
     "tipo-venta": "Obras originales"
   },
   {
@@ -305,7 +305,7 @@
       "img/Abanico garzas lino rosa_1.webp"
     ],
     "almacen": 1,
-    "precio": "95",
+    "precio": "95€",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -428,7 +428,7 @@
       "img/Falda marrón y granate_1.webp"
     ],
     "almacen": 1,
-    "precio": "85",
+    "precio": "85€",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -441,7 +441,7 @@
       "img/Falda negra garza_1.webp"
     ],
     "almacen": 1,
-    "precio": "50",
+    "precio": "50€",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -748,7 +748,7 @@
       "img/Pajaritos-dorados-flecos_2.webp"
     ],
     "almacen": 1,
-    "precio": "90",
+    "precio": "90€",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -795,7 +795,7 @@
       "img/Saco-navidad.webp"
     ],
     "almacen": 1,
-    "precio": "PRECIO ESPECIAL: 50",
+    "precio": "PRECIO ESPECIAL: 50€",
     "tipo-venta": "Navidad"
   },
   {
@@ -809,7 +809,7 @@
       "img/Saco navidad 3.webp"
     ],
     "almacen": 1,
-    "precio": "PRECIO ESPECIAL: 50",
+    "precio": "PRECIO ESPECIAL: 50€",
     "tipo-venta": "Navidad"
   },
   {
@@ -956,7 +956,7 @@
       "img/Savia_3.webp"
     ],
     "almacen": 1,
-    "precio": "con marco 350",
+    "precio": "con marco 350€",
     "tipo-venta": "Obras originales"
   },
   {
@@ -1054,7 +1054,7 @@
     "imagen": "img/Wellington.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1065,7 +1065,7 @@
     "imagen": "img/Bruselas.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1076,7 +1076,7 @@
     "imagen": "img/Budapest.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1087,7 +1087,7 @@
     "imagen": "img/Amsterdam.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1098,7 +1098,7 @@
     "imagen": "img/Edimburgo.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1109,7 +1109,7 @@
     "imagen": "img/Estambul.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1120,7 +1120,7 @@
     "imagen": "img/Londres.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1131,7 +1131,7 @@
     "imagen": "img/Madrid.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1142,7 +1142,7 @@
     "imagen": "img/Hanoi.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1153,7 +1153,7 @@
     "imagen": "img/Kioto.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1164,7 +1164,7 @@
     "imagen": "img/La Habana.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1175,7 +1175,7 @@
     "imagen": "img/París.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1186,7 +1186,7 @@
     "imagen": "img/Marrakech.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1197,7 +1197,7 @@
     "imagen": "img/Nueva York.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1208,7 +1208,7 @@
     "imagen": "img/Oslo.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1219,7 +1219,51 @@
     "imagen": "img/Roma.webp",
     "imagenes": [],
     "almacen": 1,
-    "precio": "Prints 15",
+    "precio": "Prints 15€",
+    "tipo-venta": "Prints"
+  },
+  {
+    "tipo": ["Obras pictóricas"],
+    "subtipo": "",
+    "titulo": "San José",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
+    "imagen": "img/San José.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "Prints 15€",
+    "tipo-venta": "Prints"
+  },
+  {
+    "tipo": ["Obras pictóricas"],
+    "subtipo": "",
+    "titulo": "Bangkok",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
+    "imagen": "img/Bangkok.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "Prints 15€",
+    "tipo-venta": "Prints"
+  },
+  {
+    "tipo": ["Obras pictóricas"],
+    "subtipo": "",
+    "titulo": "Seúl",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
+    "imagen": "img/Seul.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "Prints 15€",
+    "tipo-venta": "Prints"
+  },
+  {
+    "tipo": ["Obras pictóricas"],
+    "subtipo": "",
+    "titulo": "Singapur",
+    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
+    "imagen": "img/Singapur.webp",
+    "imagenes": [],
+    "almacen": 1,
+    "precio": "Prints 15€",
     "tipo-venta": "Prints"
   },
   {
@@ -1233,50 +1277,6 @@
       "img/ElCarmen_3.webp"
     ],
     "almacen": 0
-  },
-  {
-    "tipo": ["Obras pictóricas"],
-    "subtipo": "",
-    "titulo": "San José",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
-    "imagen": "img/San José.webp",
-    "imagenes": [],
-    "almacen": 1,
-    "precio": "Prints 15",
-    "tipo-venta": "Prints"
-  },
-  {
-    "tipo": ["Obras pictóricas"],
-    "subtipo": "",
-    "titulo": "Bangkok",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
-    "imagen": "img/Bangkok.webp",
-    "imagenes": [],
-    "almacen": 1,
-    "precio": "Prints 15",
-    "tipo-venta": "Prints"
-  },
-  {
-    "tipo": ["Obras pictóricas"],
-    "subtipo": "",
-    "titulo": "Seúl",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
-    "imagen": "img/Seul.webp",
-    "imagenes": [],
-    "almacen": 1,
-    "precio": "Prints 15",
-    "tipo-venta": "Prints"
-  },
-  {
-    "tipo": ["Obras pictóricas"],
-    "subtipo": "",
-    "titulo": "Singapur",
-    "subtitulo": "Acuarela y tinta papel 100% algodón filo artesano 15x21cm",
-    "imagen": "img/Singapur.webp",
-    "imagenes": [],
-    "almacen": 1,
-    "precio": "Prints 15",
-    "tipo-venta": "Prints"
   },
   {
     "tipo": ["Retratos personalizados"],
@@ -1306,7 +1306,7 @@
       "img/Navidad bola flamenco.webp"
     ],
     "almacen": 1,
-    "precio": "Desde 7",
+    "precio": "Desde 7€",
     "tipo-venta": "Navidad"
   },
   {
@@ -1705,7 +1705,7 @@
       "img/Tote tropical 2.webp"
     ],
     "almacen": 1,
-    "precio": "30",
+    "precio": "30€",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -1718,7 +1718,7 @@
       "img/Tote libélulas_1.webp"
     ],
     "almacen": 1,
-    "precio": "30",
+    "precio": "VENDIDO",
     "tipo-venta": "Ropa y complementos"
   },
   {
@@ -1791,7 +1791,7 @@
       "img/cazador-Mickey.webp"
     ],
     "almacen": 1,
-    "precio": "PRECIO ESPECIAL: 70",
+    "precio": "PRECIO ESPECIAL: 70€",
     "tipo-venta": "Ropa y complementos"
   },
   {

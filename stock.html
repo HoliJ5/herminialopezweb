@@ -390,7 +390,7 @@
                 modalTitulo.textContent = obra.titulo;
                 
                 const textoDescriptivo = obra.subtitulo || obra.tecnica || '';
-                modalDetalles.textContent = textoDescriptivo ? `${textoDescriptivo} — ${obra.precio}€` : `${obra.precio}€`;
+                modalDetalles.textContent = textoDescriptivo ? `${textoDescriptivo} — ${obra.precio}` : `${obra.precio}`;
                 
                 const numeroWhatsApp = "34644241265";
                 const mensaje = encodeURIComponent(`¡Hola! Me gustaría comprar / pedir información sobre "${obra.titulo}".`);
@@ -649,7 +649,7 @@
                             ${etiquetaVenta}
                         </div>
                         <h3 class="font-serif text-base sm:text-lg font-medium text-neutral-800">${obra.titulo}</h3>
-                        <p class="text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-0.5">${obra.precio}€</p>
+                        <p class="text-[10px] sm:text-xs text-neutral-400 uppercase tracking-wider mt-0.5">${obra.precio}</p>
                     `;
                     obraElement.addEventListener('click', () => abrirModal(obra));
                     contenedor.appendChild(obraElement);
